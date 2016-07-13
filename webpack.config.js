@@ -1,4 +1,4 @@
-var webpack = require('webpack');
+const webpack = require('webpack');
 
 module.exports = {
 	entry: [
@@ -7,11 +7,17 @@ module.exports = {
 		'./src/index.js'
 	],
 	module: {
-		loaders: [{
-			test: /\.js?$/,
-			exclude: /node_modules/,
-			loader: 'react-hot!babel'
-		}]
+		loaders: [
+			{
+				test: /\.js?$/,
+				exclude: /node_modules/,
+				loader: 'react-hot!babel'
+			},
+			{
+				test: /\.scss$/,
+				loaders: ['style', 'css', 'sass']
+			}
+		]
 	},
 	resolve: {
 		extensions: ['', '.js']
