@@ -6,6 +6,9 @@ export default class App extends Component {
 		return (
 			<div id="app">
 				<SideMenu />
+				<div>
+					Porfolio coming soon.
+				</div>
 			</div>
 		);
 	}

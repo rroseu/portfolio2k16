@@ -4,7 +4,8 @@
   "description": "a portfolio in the works.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "webpack -p",
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "express": "^4.14.0",
     "history": "^3.0.0",
     "react": "^15.2.1",
     "react-dom": "^15.2.1",
