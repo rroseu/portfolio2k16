@@ -44,7 +44,7 @@ const config = {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new ExtractTextPlugin('style.css');
+		new ExtractTextPlugin('style.css')
 	]
 };
 
