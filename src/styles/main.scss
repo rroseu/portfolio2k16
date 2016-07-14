@@ -1,7 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Karla);
+@import 'base/variables';
+@import 'components/sidemenu';
 
-$karla: 'Karla', sans-serif;
+html, body {
+	height: 100%;
+	margin: 0;
+}
 
-body {
-	font-family: $karla;
+#app {
+	height: 100%;
+	font-family: $karla-sans;
+	color: $darkgray;
+	background: $lightgray;
 } 
