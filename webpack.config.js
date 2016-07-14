@@ -1,4 +1,5 @@
 const webpack = require('webpack');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const buildPath = path.resolve(__dirname, 'dist');
@@ -30,7 +31,7 @@ const config = {
 			},
 			{
 				test: /\.scss$/,
-				loaders: ['style', 'css', 'sass']
+				loader: ExtractTextPlugin.extract('style', 'css!sass')
 			}
 		]
 	},
@@ -42,7 +43,8 @@ const config = {
 		hot: true
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin()
+		new webpack.HotModuleReplacementPlugin(),
+		new ExtractTextPlugin('style.css');
 	]
 };
 
