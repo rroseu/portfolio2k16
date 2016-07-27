@@ -31,7 +31,7 @@ const config = {
 			},
 			{
 				test: /\.scss$/,
-				loader: ExtractTextPlugin.extract('style', 'css!sass')
+				loaders: ["style", "css", "sass"]
 			}
 		]
 	},
@@ -44,7 +44,6 @@ const config = {
 	},
 	plugins: [
 		new webpack.HotModuleReplacementPlugin(),
-		new ExtractTextPlugin('style.css')
 	]
 };
 

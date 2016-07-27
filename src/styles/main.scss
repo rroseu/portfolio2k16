@@ -1,5 +1,8 @@
+@import 'mixins/bourbon/bourbon';
+@import 'mixins/neat/neat';
 @import 'base/variables';
-@import 'components/sidemenu';
+@import 'components/nav';
+@import 'components/about';
 
 html, body {
 	height: 100%;
@@ -10,5 +13,4 @@ html, body {
 	height: 100%;
 	font-family: $karla-sans;
 	color: $darkgray;
-	background: $lightgray;
 } 

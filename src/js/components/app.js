@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
-import SideMenu from './sidemenu';
+import Landing from './Landing';
 
 export default class App extends Component {
 	render() {
 		return (
 			<div id="app">
-				<SideMenu />
-				<div>
-					Porfolio coming soon.
-				</div>
+				<Landing />
 			</div>
 		);
 	}
