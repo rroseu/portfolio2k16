@@ -14,6 +14,7 @@
 
 .landing.nav-container {
 	@include span-columns(12);
+	margin-top: 40px;
 }
 
 .header {
@@ -27,6 +28,7 @@ h1 {
 	font-size: 48px;
 	letter-spacing: 1.2px;
 	line-height: 65px;
+	margin-bottom: 0px;
 }
 
 .divider {
