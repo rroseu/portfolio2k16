@@ -10,13 +10,20 @@ html, body {
 	margin: 0;
 }
 
-.test {
+.app-container {
 	height: 100%;
 	// border: 1px solid blue;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+
+.content-container {
+	@include span-columns(12);
+	// border: 2px solid orange;
+	margin-top: 40px;
 }
 
 #app {
-	// border: 1px dashed black;
 	@include outer-container(1280px);
 	height: 100%;
 	font-family: $karla-sans;

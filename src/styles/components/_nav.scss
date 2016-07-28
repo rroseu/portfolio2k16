@@ -1,4 +1,8 @@
 .nav-container {
+	@include span-columns(12);
+}
+
+.nav-inner-container {
 	@include span-columns(4);
 }
 
