@@ -8,7 +8,7 @@ export default class Landing extends Component {
 				<div className="landing header-container">
 					<div className="header">
 						<h1>Rachel Rose Ulgado</h1>
-						<h1 className="divider">–</h1>
+						<div className="header-divider"></div>
 						<p>
 							Interactive developer & designer<br />based in the Bay Area.
 						</p>
