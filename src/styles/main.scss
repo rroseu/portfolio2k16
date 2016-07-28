@@ -3,13 +3,21 @@
 @import 'base/variables';
 @import 'components/nav';
 @import 'components/about';
+@import 'components/landing';
 
 html, body {
 	height: 100%;
 	margin: 0;
 }
 
+.test {
+	height: 100%;
+	// border: 1px solid blue;
+}
+
 #app {
+	// border: 1px dashed black;
+	@include outer-container(1280px);
 	height: 100%;
 	font-family: $karla-sans;
 	color: $darkgray;

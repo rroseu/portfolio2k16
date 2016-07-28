@@ -4,8 +4,9 @@ import Landing from './Landing';
 export default class App extends Component {
 	render() {
 		return (
-			<div id="app">
+			<div className="test">
 				<Landing />
+				{this.props.children}
 			</div>
 		);
 	}

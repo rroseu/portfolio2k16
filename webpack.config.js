@@ -1,5 +1,4 @@
 const webpack = require('webpack');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const path = require('path');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const buildPath = path.resolve(__dirname, 'dist');
@@ -39,6 +38,7 @@ const config = {
 		extensions: ['', '.js']
 	},
 	devServer: {
+		historyApiFallback: true,
 		contentBase: './dist',
 		hot: true
 	},

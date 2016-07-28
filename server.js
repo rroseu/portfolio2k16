@@ -3,12 +3,10 @@ const path = require('path');
 const port = process.env.PORT || 3000;
 const app = express();
 
-const publicPath = path.resolve(__dirname, 'dist');
-
-app.use(express.static(publicPath));
+app.use(express.static(path.join(__dirname, 'dist')));
 
 app.get('*', (req, res) => {
-	res.sendFile(path.resolve(__dirname, 'index.html'));
+	res.sendFile(path.resolve(__dirname, 'dist', 'index.html'));
 });
 
 app.listen(port, function() {
