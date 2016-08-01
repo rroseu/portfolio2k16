@@ -28,7 +28,7 @@ export default class Work extends Component {
 					<Nav />
 					{this.renderSideMenu()}
 					<div className='project-container'>
-						hello a project will go here
+						coming soon.
 					</div>
 				</div>
 			</div>
