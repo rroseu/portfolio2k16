@@ -1,11 +1,11 @@
 @import 'mixins/bourbon/bourbon';
-// @import 'mixins/neat/settings/grid';
 @import 'mixins/neat/neat';
 @import 'base/variables';
 @import 'components/nav';
 @import 'components/about';
 @import 'components/landing';
 @import 'components/resume';
+@import 'components/work';
 
 html, body {
 	height: 100%;
@@ -16,8 +16,6 @@ html, body {
 	@include span-columns(12);
 	height: 100%;
 	// border: 1px solid blue;
-	padding-top: 60px;
-	padding-bottom: 60px;
 }
 
 .content-container {
