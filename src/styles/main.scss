@@ -1,9 +1,11 @@
 @import 'mixins/bourbon/bourbon';
+// @import 'mixins/neat/settings/grid';
 @import 'mixins/neat/neat';
 @import 'base/variables';
 @import 'components/nav';
 @import 'components/about';
 @import 'components/landing';
+@import 'components/resume';
 
 html, body {
 	height: 100%;
@@ -11,6 +13,7 @@ html, body {
 }
 
 .app-container {
+	@include span-columns(12);
 	height: 100%;
 	// border: 1px solid blue;
 	padding-top: 60px;
@@ -18,13 +21,13 @@ html, body {
 }
 
 .content-container {
-	@include span-columns(12);
-	// border: 2px solid orange;
-	margin-top: 40px;
+	@include pad();
+	height: 100%;
+	// border: 1px solid black;
 }
 
 #app {
-	@include outer-container(1280px);
+	@include outer-container();
 	height: 100%;
 	font-family: $karla-sans;
 	color: $darkgray;

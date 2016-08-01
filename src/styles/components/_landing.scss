@@ -8,6 +8,7 @@
 
 .landing-container {
 	@include span-columns(12);
+	@include pad();
 	// border: 2px solid orange;
 	@include vertical-align;
 }

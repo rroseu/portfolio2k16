@@ -1,4 +1,7 @@
 .about-container {
-	@include span-columns(4);
-	line-height: 30px;
+	@include span-columns(5);
+	p {
+		font-size: 24px;
+		line-height: 48px;
+	}
 }
