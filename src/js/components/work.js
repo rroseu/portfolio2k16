@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Nav from './nav';
+import { projects } from '../data/projects';
 
 export default class Work extends Component {
 	renderSideMenu() {
@@ -7,14 +8,13 @@ export default class Work extends Component {
 			<div className='sidemenu'>
 				<div className="section section-work">
 					<ul className="projects">
-						<li className="project-title">Catching Tigers & Flies</li>
-						<li>PocktVR</li>
-						<li>The Memory Observatory</li>
-						<li>Lunaites</li>
-						<li>VidCoach</li>
-						<li>Euphonious</li>
-						<li>Galaxy Audio Visualization</li>
-						<li>Series: Little Renders</li>
+						{
+							projects.map(function (project) {
+								return (
+									<li key={project.title}>{project.title}</li>
+								);
+							})
+						}
 					</ul>
 				</div>
 			</div>
@@ -22,13 +22,14 @@ export default class Work extends Component {
 	}
 
 	render() {
+		console.log(projects);
 		return (
 			<div className='app-container'>
 				<div className='content-container'>
 					<Nav />
 					{this.renderSideMenu()}
 					<div className='project-container'>
-						coming soon.
+						{ projects[1].title }
 					</div>
 				</div>
 			</div>
