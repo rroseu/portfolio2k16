@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './nav';
 
 // REDO THIS SOON YOU LAZY SACK OF SHIT
 export default class Resume extends Component {
@@ -33,17 +32,23 @@ export default class Resume extends Component {
 				</div>
 				<div className='content'>
 					<p className='emphasize'>Design Technologist Apprentice</p>
-					<p>Junior, San Francisco, CA</p><br/>
+					<p>Junior, San Francisco, CA</p>
+					<p>January - May 2016</p><br/>
 					<p className='emphasize'>Creative Technologist in Residence</p>
-					<p>Schema Design</p><br/>
+					<p>Schema Design</p>
+					<p>April - October 2015</p><br/>
 					<p className='emphasize'>UX Design Graduate Intern</p>
-					<p>Intel</p><br/>
+					<p>Intel</p>
+					<p>June - September 2014</p><br/>
 					<p className='emphasize'>Graduate Researcher</p>
-					<p>University of Washington</p><br/>
+					<p>University of Washington</p>
+					<p>September 2013 - June 2014</p><br/>
 					<p className='emphasize'>UX Design Intern</p>
-					<p>IBM</p><br/>
+					<p>IBM</p>
+					<p>July 2012 - June 2013</p><br/>
 					<p className='emphasize'>Undergraduate Researcher</p>
 					<p>University of California Irvine</p>
+					<p>June 2011 - March 2013</p>
 				</div>
 			</div>
 		);
@@ -85,11 +90,11 @@ export default class Resume extends Component {
 					<h3>Publications</h3>
 				</div>
 				<div className='content'>
-					<p>Fox, S., Ulgado, R. R., & Rosner, D. (2015, February). <a className='publication-title' href='http://dl.acm.org/citation.cfm?id=2675223' target='_blank'> Hacking Culture, Not Devices: Access and Recognition in Feminist Hackerspaces.</a> In Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing (pp. 56-68). ACM.</p><br/>
+					<p>Fox, S., Ulgado, R. R., & Rosner, D. (2015, February). <a className='publication-title' href='http://dl.acm.org/citation.cfm?id=2675223' target='_blank'> Hacking Culture, Not Devices: Access and Recognition in Feminist Hackerspaces.</a> In Proceedings of the 18th ACM Conference on Computer Supported Cooperative Work & Social Computing (pp. 56-68). ACM.</p><br />
+					<p>Ulgado, R. R. <a className='publication-title' href='https://github.com/allisonburtch/Critical-Theory-of-Technology/blob/master/zine.pdf' target="_blank">“On Imaginary Real Utopia.”</a> Critical Theory of Technology Zine by The School for Poetic Computation, Fall 2014.</p><br />
 					<p>Ulgado, R. R., Nguyen, K., Custodio, V. E., Waterhouse, A., Weiner, R., & Hayes, G. (2013, June). <a className='publication-title' href='http://dl.acm.org/citation.cfm?id=2485870' target='_blank'> VidCoach: A mobile video modeling system for youth with special needs.</a> In Proceedings of the 12th International Conference on Interaction Design and Children (pp. 581-584). ACM.</p><br/>
 					<p>Hayes, G.R., Custodio, V.E., Haimson, O.L., Nguyen, K., Ringland, K.E., Ulgado, R.R., Waterhouse, A., and Weiner, R. <a className='publication-title' href='http://content.iospress.com/articles/journal-of-vocational-rehabilitation/jvr775' target='_blank'>Mobile video modeling for employment interviews for individuals with autism.</a> Journal of Vocational Rehabilitation.</p><br/>
-					<p>Nguyen, K., Custodio, V.E., Ulgado, R.R., Weiner, R., Waterhouse, A., O’Neal, L., and Hayes, G.R. <a className='publication-title' href='https://www.researchgate.net/publication/268143717_Evaluation_of_the_Use_of_Mobile_Video_Modeling_for_Job_Interviews' target='_blank'>Evaluation of the Use of Mobile Video Modeling for Job Interviews.</a> 2014 International Meeting for Autism Research.</p><br/>
-					<p>Ulgado, R. R. <a className='publication-title' href='https://github.com/allisonburtch/Critical-Theory-of-Technology/blob/master/zine.pdf' target="_blank">“On Imaginary Real Utopia.”</a> Critical Theory of Technology Zine by The School for Poetic Computation, Fall 2014.</p>
+					<p>Nguyen, K., Custodio, V.E., Ulgado, R.R., Weiner, R., Waterhouse, A., O’Neal, L., and Hayes, G.R. <a className='publication-title' href='https://www.researchgate.net/publication/268143717_Evaluation_of_the_Use_of_Mobile_Video_Modeling_for_Job_Interviews' target='_blank'>Evaluation of the Use of Mobile Video Modeling for Job Interviews.</a> 2014 International Meeting for Autism Research.</p>
 				</div>
 			</div>
 		);
@@ -120,7 +125,6 @@ export default class Resume extends Component {
 		return (
 			<div className='app-container'>
 				<div className='content-container'>
-					<Nav />
 					<div className='resume-container'>
 						{this.renderEducation()}
 						{this.renderExperience()}

@@ -4,24 +4,14 @@
 @import 'components/nav';
 @import 'components/about';
 @import 'components/landing';
+@import 'components/menu';
 @import 'components/resume';
-@import 'components/work';
+@import 'components/projects';
+@import 'components/project';
 
 html, body {
 	height: 100%;
 	margin: 0;
-}
-
-.app-container {
-	@include span-columns(12);
-	height: 100%;
-	// border: 1px solid blue;
-}
-
-.content-container {
-	@include pad();
-	height: 100%;
-	// border: 1px solid black;
 }
 
 #app {
@@ -30,3 +20,15 @@ html, body {
 	font-family: $karla-sans;
 	color: $darkgray;
 } 
+
+.app-container {
+	height: 100%;
+	@include pad(50px);
+	@include span-columns(12);
+	border: 1px solid blue;
+}
+
+.content-container {
+	height: 100%;
+	border: 1px solid black;
+}

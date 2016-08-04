@@ -1,8 +1,32 @@
-.about-container {
-	@include span-columns(5);
+div.page.header {
+	@include span-columns(12);
+	// border: 1px solid blue;
+
+	h2 {
+		font-size: 24px;
+		letter-spacing: 0.9px;
+		// border: 1px solid black;
+	}
+}
+
+.page.header-divider {
+	margin-top: -8px;
+	margin-left: 2px;
+	height: 3px;
+	width: 32px;
+	background-color: $black;
+}
+
+.about-container-outer {
+	@include span-columns(12);
+	border: 1px solid black;
 
 	p {
-		// font-size: 20px;
-		// line-height: 42px;
+		font-size: 20px;
+		line-height: 42px;
 	}
+}
+
+.about-container-inner {
+	@include outer-container(500px);
 }

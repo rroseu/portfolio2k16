@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
-import Nav from './nav';
+import Project from './project';
+import Menu from './menu';
 import { projects } from '../data/projects';
 
 export default class Work extends Component {
-	renderSideMenu() {
+	renderMenu() {
 		return (
 			<div className='sidemenu'>
 				<div className="section section-work">
@@ -21,16 +22,34 @@ export default class Work extends Component {
 		);
 	}
 
+	// render() {
+	// 	return (
+	// 		<div className='app-container'>
+	// 			<div className='content-container'>
+	// 				<Nav />
+	// 				{this.renderSideMenu()}
+	// 				<div className='project-container'>
+	// 					{
+	// 						projects.map(function (project) {
+	// 							return (
+	// 								<Project key={project.title} project={project} />
+	// 							);
+	// 						})
+	// 					}
+	// 				</div>
+	// 			</div>
+	// 		</div>
+	// 	);
+	// }
 	render() {
-		console.log(projects);
+		const menuTitles = projects.map(function (project) {
+			return project.title;
+		});
+
 		return (
 			<div className='app-container'>
 				<div className='content-container'>
-					<Nav />
-					{this.renderSideMenu()}
-					<div className='project-container'>
-						{ projects[1].title }
-					</div>
+					<Menu titles={menuTitles} />
 				</div>
 			</div>
 		);

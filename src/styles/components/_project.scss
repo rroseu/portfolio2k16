@@ -1,0 +1,13 @@
+.project-container {
+	// border: 1px solid black;
+	height: 100%;
+
+	h2 {
+		color: $lightgray;
+		margin-top: 0;
+	}
+}
+
+.hero-container img{
+	@include fill-parent;
+}

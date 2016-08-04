@@ -1,9 +1,9 @@
 @mixin vertical-align {
-		position: relative;
-    top: 70%;
-    -webkit-transform: translateY(-70%);
-    -ms-transform: translateY(-70%);
-    transform: translateY(-70%);
+	position: relative;
+	top: 40%;
+	-webkit-transform: translateY(-70%);
+	-ms-transform: translateY(-70%);
+	transform: translateY(-70%);
 }
 
 .landing-container {
@@ -11,11 +11,6 @@
 	@include pad();
 	// border: 2px solid orange;
 	@include vertical-align;
-}
-
-.landing.nav-container {
-	@include span-columns(12);
-	margin-top: 40px;
 }
 
 .header {

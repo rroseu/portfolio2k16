@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Nav from './nav';
 
 export default class Landing extends Component {
 	render() {
@@ -13,9 +12,6 @@ export default class Landing extends Component {
 							Interactive developer & designer<br />based in the Bay Area.
 						</p>
 					</div>
-				</div>
-				<div className="landing nav-container">
-					<Nav />
 				</div>
 			</div>
 		);
