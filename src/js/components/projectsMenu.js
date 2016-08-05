@@ -9,7 +9,7 @@ export default class ProjectsMenu extends Component {
 			<div className='projects-menu-container'>
 				<ul>
 					{
-						projects.map(function (project) {
+						_.map(projects, function (project) {
 							return (
 								<li key={project.title}>
 									<div className='title-container'>

@@ -1,27 +1,23 @@
 import React, { Component } from 'react';
+import _ from 'lodash';
 import { projects } from '../data/projects';
 
 export default class Project extends Component {
-	constructor(props) {
-		super(props);
-	}
-
 	render() {
-		if (this.props) {
-			console.log('[PROPS: ]', this.props);
+		var currentProject;
+		if (this.props.params.url) {
+			currentProject = projects[this.props.params.url];
 		}
-		console.log('Projects: ', projects);
-		console.log('Params: ', this.props.params.project);
 
 		return (
 			<div className='project-container'>
-				<h2>Project title goes here</h2>
+				<h2>{currentProject.title}</h2>
 				<div className='hero-container'>
-					Project hero image goes here
+					<img src={currentProject.hero} />
 				</div>
 				<div className='description-container'>
-					<p>Project description goes here</p>
-					<span><a href='<Project/website/link/goes/here>' target='_blank'>website</a></span>
+					<p>{currentProject.description}</p>
+					<span><a href={currentProject.link}>website</a></span>
 				</div>
 				<div className='relatedLinks-container'>
 					Project related links go here

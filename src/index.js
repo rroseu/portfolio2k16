@@ -19,11 +19,11 @@ ReactDOM.render(
 			<Route path='about' component={About} />
 			<Route path='work' component={Work}>
 				<IndexRoute component={ProjectsMenu} />
-				<Route path='/work/:project' component={Project} />
 			</Route>
 			<Route path='resume' component={Resume} />
 			<Route path='contact' component={Contact} />
 		</Route>
+		<Route path='/work/:url' component={Project} />
 	</Router>,
 	document.getElementById('app')
 );
