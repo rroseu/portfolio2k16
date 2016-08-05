@@ -1,6 +1,7 @@
 .projects-menu-container {
+
 	@include span-columns(6);
-	border: 1px solid black;
+	@include shift(3);
 
 	ul {
 		padding: 0;
@@ -10,8 +11,12 @@
 			list-style-type: none;
 			color: $lightgray;
 			font-size: 20px;
-			line-height: 32px;
+			line-height: 52px;
 			letter-spacing: 0.55px;
 		}
 	}
+}
+
+.title-container {
+	border-bottom: 2px solid #E7E7E7;
 }

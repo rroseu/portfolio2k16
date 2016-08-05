@@ -17,16 +17,12 @@ div.page.header {
 	background-color: $black;
 }
 
-.about-container-outer {
-	@include span-columns(12);
-	border: 1px solid black;
-
+.about-container {
+	@include span-columns(6);
+	@include shift(3);
+	// border: 1px solid black;
 	p {
-		font-size: 20px;
-		line-height: 42px;
+		font-size: 24px;
+		line-height: 48px;
 	}
-}
-
-.about-container-inner {
-	@include outer-container(500px);
 }

@@ -1,5 +1,7 @@
 .resume-container {
-	@include span-columns(12);
+	@include span-columns(8);
+	@include shift(2);
+	// border: 2px solid green;
 }
 
 h3 {
@@ -7,17 +9,14 @@ h3 {
 	margin: 0;
 }
 
-.section-container {
-	@include span-columns(12);
-	margin-bottom: 40px;
-}
-
 .label-container {
-	@include span-columns(3);
+	// border: 1px solid blue;
+	@include span-columns(3 of 8);
 }
 
 .content {
-	@include span-columns(7);
+	@include span-columns(5 of 8);
+	// border: 1px solid green;
 }
 
 .emphasize {

@@ -121,18 +121,32 @@ export default class Resume extends Component {
 		);
 	}
 
-	render() {
+	// render() {
+	// 	return (
+	// 		<div className='test'>
+	// 			<div className='page header'>
+	// 				<h2>Resume</h2>
+	// 				<div className="page header-divider"></div>
+	// 			</div>
+	// 			{this.renderEducation()}
+	// 			{this.renderExperience()}
+	// 			{this.renderTechnicalSkills()}
+	// 			{this.renderTools()}
+	// 			{this.renderPublications()}
+	// 			{this.renderEvents()}
+	// 		</div>
+	// 	);
+	// }
+	render() { 
 		return (
-			<div className='app-container'>
-				<div className='content-container'>
-					<div className='resume-container'>
-						{this.renderEducation()}
-						{this.renderExperience()}
-						{this.renderTechnicalSkills()}
-						{this.renderTools()}
-						{this.renderPublications()}
-						{this.renderEvents()}
-					</div>
+			<div>
+				<div className='page header'>
+					<h2>Resume</h2>
+					<div className="page header-divider"></div>
+				</div>
+				<div className='resume-container'>
+		
+					{this.renderExperience()}
 				</div>
 			</div>
 		);
