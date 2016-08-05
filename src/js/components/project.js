@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { projects } from '../data/projects';
 
 export default class Project extends Component {
 	constructor(props) {
@@ -9,17 +10,21 @@ export default class Project extends Component {
 		if (this.props) {
 			console.log('[PROPS: ]', this.props);
 		}
+		console.log('Projects: ', projects);
+		console.log('Params: ', this.props.params.project);
+
 		return (
 			<div className='project-container'>
-				<h2>{this.props.project.title}</h2>
+				<h2>Project title goes here</h2>
 				<div className='hero-container'>
-					<img src={this.props.project.hero} />
+					Project hero image goes here
 				</div>
 				<div className='description-container'>
-					<p>{this.props.project.description}</p>
-					<span><a href={this.props.project.link} target='_blank'>website</a></span>
+					<p>Project description goes here</p>
+					<span><a href='<Project/website/link/goes/here>' target='_blank'>website</a></span>
 				</div>
 				<div className='relatedLinks-container'>
+					Project related links go here
 				</div>
 			</div>
 		);

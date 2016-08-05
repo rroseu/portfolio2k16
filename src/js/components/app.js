@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Landing from './landing';
 import Nav from './nav';
 
 export default class App extends Component {

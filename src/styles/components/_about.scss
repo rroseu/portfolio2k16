@@ -10,10 +10,10 @@ div.page.header {
 }
 
 .page.header-divider {
-	margin-top: -8px;
+	margin-top: -12px;
 	margin-left: 2px;
 	height: 3px;
-	width: 32px;
+	width: 28px;
 	background-color: $black;
 }
 
@@ -22,7 +22,9 @@ div.page.header {
 	@include shift(3);
 	// border: 1px solid black;
 	p {
-		font-size: 24px;
-		line-height: 48px;
+		color: $lightgray;
+		font-size: 20px;
+		line-height: 52px;
+		letter-spacing: 0.55px;
 	}
 }

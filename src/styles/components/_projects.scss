@@ -19,4 +19,9 @@
 
 .title-container {
 	border-bottom: 2px solid #E7E7E7;
+
+	a, a:hover, a:visited {
+		text-decoration: none;
+		color: $darkgray;
+	}
 }
