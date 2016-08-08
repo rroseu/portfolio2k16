@@ -23,14 +23,28 @@
 	}
 }
 
-.title-container {
+.contact-title-container {
+	@include span-columns(6 of 6);
 	border-bottom: 2px solid #E7E7E7;
-
-	a {
-		text-decoration: none;
+	
+	.link-container {
+		@include span-columns(5 of 6);
 	}
 
 	a, a:hover, a:visited {
 		color: $darkgray;
 	}
+}
+
+.icon-container {
+	@include span-columns(1 of 6);
+	height: 52px;
+	// border: 1px solid black;
+}
+
+.icon {
+	float: right;
+	max-width: 22px;
+	width: 22px;
+	height: 52px;
 }

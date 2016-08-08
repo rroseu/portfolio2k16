@@ -21,6 +21,10 @@ html, body {
 	color: $darkgray;
 } 
 
+a {
+	text-decoration: none;
+}
+
 .app-container {
 	height: 100%;
 	@include pad(50px);

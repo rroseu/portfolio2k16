@@ -1,11 +1,9 @@
 div.page.header {
 	@include span-columns(12);
-	// border: 1px solid blue;
 
 	h2 {
 		font-size: 24px;
 		letter-spacing: 0.9px;
-		// border: 1px solid black;
 	}
 }
 
@@ -20,7 +18,7 @@ div.page.header {
 .about-container {
 	@include span-columns(6);
 	@include shift(3);
-	// border: 1px solid black;
+
 	p {
 		color: $lightgray;
 		font-size: 20px;

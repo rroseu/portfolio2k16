@@ -11,7 +11,7 @@ export default class About extends Component {
 				<div className='about-container'>
 					<p className='emphasize'>Hi, I'm Rachel.</p>
 					<p>I'm an interactive developer & designer with a background in human–computer interaction and qualitative UX research.</p><br/>	
-					<p>I enjoy experimenting with code as an medium for exploring new ways of engaging with the world. My goals are to create works that enable participation through interactivity and to promote honest design with openness and transparency.</p>
+					<p>I experiment using code as an medium to explore new ways of engaging with the world. I aim to create works that enable participation through interactivity and to promote honest design through openness and transparency.</p>
 					</div>
 			</div>
 		);
