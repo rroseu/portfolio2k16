@@ -5,6 +5,7 @@
 @import 'components/about';
 @import 'components/landing';
 @import 'components/resume';
+@import 'components/contact';
 @import 'components/projects';
 @import 'components/project';
 
@@ -30,4 +31,8 @@ html, body {
 .content-container {
 	height: 100%;
 	// border: 1px solid black;
+}
+
+.emphasize {
+	font-weight: bold;
 }

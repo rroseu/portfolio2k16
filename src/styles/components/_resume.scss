@@ -1,12 +1,10 @@
 .resume-container {
 	@include span-columns(12);
-	// @include shift(1);
 	// border: 1px solid blue;
 
 	h3 {
 		font-size: 20px;
 		letter-spacing: 0.55px;
-		// line-height: 42px;
 	}
 
 	p {
@@ -16,19 +14,12 @@
 	}
 }
 
-
 .content {
 	@include span-columns(5 of 10);
-	// border: 1px solid black;
 }
 
-.emphasize {
-	font-weight: bold;
-}
-
-a.publication-title, a.publication-title:hover, a.publication-title:active, a.publication-title:visited {
-	font-weight: bold;
-	color: #4A90E2;
-	text-decoration: none;
-}
-
+// a.publication-title, a.publication-title:hover, a.publication-title:active, a.publication-title:visited {
+// 	font-weight: bold;
+// 	color: #4A90E2;
+// 	text-decoration: none;
+// }

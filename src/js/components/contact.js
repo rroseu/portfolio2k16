@@ -8,11 +8,34 @@ export default class Contact extends Component {
 					<h2>Contact</h2>
 					<div className="page header-divider"></div>
 				</div>
-				<div>
-					<p>email: rachel[dot]ulgado[at]@gmail.com</p><br/>
-					<p>twitter: <a href='http://www.twitter.com/rachelulgado' target='_blank'>@rachelulgado</a></p><br/>
-					<p>linkedin: <a href='http://www.linkedin.com/in/rachelulgado
-' target='_blank'>rachelulgado</a></p>
+				<div className='contact-container'>
+					<ul>
+						<li>
+							<div className='title-container'>
+								<a href='mailto:rachel.ulgado@gmail.com'>Email</a>
+							</div>
+						</li>
+						<li>
+							<div className='title-container'>
+								<a href='http://www.linkedin.com/in/rachelulgado' target='_blank'>LinkedIn</a>
+							</div>
+						</li>
+						<li>
+							<div className='title-container'>
+								<a href='http://github.com/rroseu' target='_blank'>GitHub</a>
+							</div>
+						</li>
+						<li>
+							<div className='title-container'>
+								<a href='http://www.twitter.com/rachelulgado' target='_blank'>Twitter</a>
+							</div>
+						</li>
+						<li>
+							<div className='title-container'>
+								<a href='http://www.behance.net/rachelulgado' target='_blank'>Behance</a>
+							</div>
+						</li>
+					</ul>
 				</div>
 			</div>
 		);

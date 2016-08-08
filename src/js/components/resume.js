@@ -110,7 +110,7 @@ export default class Resume extends Component {
 				<div className='page header'>
 					<h2>Resume</h2>
 					<div className="page header-divider"></div>
-					<a href='' target='_blank'>link to full resume</a>
+					<a href='http://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>link to full resume</a>
 				</div>
 				<div className='resume-container'>
 					{this.renderEducation()}

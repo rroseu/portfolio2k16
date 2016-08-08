@@ -1,0 +1,36 @@
+.contact-container {
+	@include span-columns(6);
+	@include shift(3);
+
+	p {
+		color: $lightgray;
+		font-size: 20px;
+		line-height: 52px;
+		letter-spacing: 0.55px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
+		
+		li {
+			list-style-type: none;
+			color: $lightgray;
+			font-size: 20px;
+			line-height: 52px;
+			letter-spacing: 0.55px;
+		}
+	}
+}
+
+.title-container {
+	border-bottom: 2px solid #E7E7E7;
+
+	a {
+		text-decoration: none;
+	}
+
+	a, a:hover, a:visited {
+		color: $darkgray;
+	}
+}

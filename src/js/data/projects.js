@@ -35,6 +35,15 @@ export const projects = {
 		'link': '',
 		'relatedLinks': ['', '', '']
 	},
+	'critical-design-feminist-hackerspaces': {
+		'route': '/work/critical-design-feminist-hackerspaces',
+		'title': 'Critical Design + Feminist Hackerspaces',
+		'description': '',
+		'hero': '',
+		'thumbnails': [],
+		'link': '',
+		'relatedLinks': ['', '', '']
+	},
 	'lunaites': {
 		'route': '/work/lunaites',
 		'title': 'Lunaites',
