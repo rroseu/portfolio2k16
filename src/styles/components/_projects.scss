@@ -20,8 +20,20 @@
 .title-container {
 	border-bottom: 2px solid #E7E7E7;
 
-	a, a:hover, a:visited {
+	a {
 		text-decoration: none;
-		color: $darkgray;
 	}
+
+	a, a:hover, a:visited {
+		// color: $darkgray;
+	}
+}
+
+span.outer a:hover {
+	color: yellow;
+	text-decoration: line-through;
+}
+
+span.inner {
+	color: $darkgray;
 }

@@ -4,52 +4,35 @@ import React, { Component } from 'react';
 export default class Resume extends Component {
 	renderEducation() {
 		return (
-			<div className='section-container'>
-				<div className='label-container'>
-					<h3>Education</h3>
-				</div>
-				<div className='content'>
-					<p className='emphasize'>M.S. Human Centered Design & Engineering</p>
-					<p>University of Washington</p>
-					<p>2013 - 2015</p><br/>
-					<p className='emphasize'>Student</p>
-					<p>School for Poetic Computation</p>
-					<p>Fall 2014</p><br/>
-					<p className='emphasize'>B.S. Informatics (Human–Computer Interaction Specialization)</p>
-					<p className='emphasize'>B.A. Anthropology</p>
-					<p>University of California Irvine</p>
-					<p>2008 - 2013</p>
-				</div>
+			<div className='left content'>
+				<h3>Education</h3>
+				<p className='emphasize'>M.S. Human Centered Design & Engineering</p>
+				<p>University of Washington</p><br/>
+				<p className='emphasize'>Student</p>
+				<p>School for Poetic Computation</p><br/>
+				<p className='emphasize'>B.S. Informatics</p>
+				<p className='emphasize'>Specialization in Human–Computer Interaction</p>
+				<p>University of California Irvine</p><br />
+				<p className='emphasize'>B.A. Anthropology</p>
+				<p>University of California Irvine</p>
 			</div>
 		);
 	}
 
 	renderExperience() {
 		return (
-			<div className='section-container'> 
-				<div className='label-container'>
-					<h3>Experience</h3>
-				</div>
-				<div className='content'>
-					<p className='emphasize'>Design Technologist Apprentice</p>
-					<p>Junior, San Francisco, CA</p>
-					<p>January - May 2016</p><br/>
-					<p className='emphasize'>Creative Technologist in Residence</p>
-					<p>Schema Design</p>
-					<p>April - October 2015</p><br/>
-					<p className='emphasize'>UX Design Graduate Intern</p>
-					<p>Intel</p>
-					<p>June - September 2014</p><br/>
-					<p className='emphasize'>Graduate Researcher</p>
-					<p>University of Washington</p>
-					<p>September 2013 - June 2014</p><br/>
-					<p className='emphasize'>UX Design Intern</p>
-					<p>IBM</p>
-					<p>July 2012 - June 2013</p><br/>
-					<p className='emphasize'>Undergraduate Researcher</p>
-					<p>University of California Irvine</p>
-					<p>June 2011 - March 2013</p>
-				</div>
+			<div className='right content'>
+				<h3>Experience</h3>
+				<p className='emphasize'>Design Technologist Apprentice</p>
+				<p>Junior, San Francisco, CA</p><br/>
+				<p className='emphasize'>Creative Technologist in Residence</p>
+				<p>Schema Design, Seattle, WA</p><br/>
+				<p className='emphasize'>UX Design Graduate Intern</p>
+				<p>Intel, Hillsboro, OR</p><br/>
+				<p className='emphasize'>Graduate Researcher</p>
+				<p>University of Washington, Seattle, WA</p><br/>
+				<p className='emphasize'>UX Design Intern</p>
+				<p>IBM, Costa Mesa, CA</p><br/>
 			</div>
 		);
 	}
@@ -121,31 +104,16 @@ export default class Resume extends Component {
 		);
 	}
 
-	// render() {
-	// 	return (
-	// 		<div className='test'>
-	// 			<div className='page header'>
-	// 				<h2>Resume</h2>
-	// 				<div className="page header-divider"></div>
-	// 			</div>
-	// 			{this.renderEducation()}
-	// 			{this.renderExperience()}
-	// 			{this.renderTechnicalSkills()}
-	// 			{this.renderTools()}
-	// 			{this.renderPublications()}
-	// 			{this.renderEvents()}
-	// 		</div>
-	// 	);
-	// }
 	render() { 
 		return (
 			<div>
 				<div className='page header'>
 					<h2>Resume</h2>
 					<div className="page header-divider"></div>
+					<a href='' target='_blank'>link to full resume</a>
 				</div>
 				<div className='resume-container'>
-		
+					{this.renderEducation()}
 					{this.renderExperience()}
 				</div>
 			</div>

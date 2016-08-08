@@ -13,7 +13,9 @@ export default class ProjectsMenu extends Component {
 							return (
 								<li key={project.title}>
 									<div className='title-container'>
-										<Link to={`${project.route}`}>{project.title}</Link>
+										<span className='outer'>
+											<Link to={`${project.route}`}><span className='inner'>{project.title}</span></Link>
+										</span>
 									</div>
 								</li>
 							);

@@ -1,22 +1,25 @@
 .resume-container {
-	@include span-columns(8);
-	@include shift(2);
-	// border: 2px solid green;
-}
-
-h3 {
-	padding: 0;
-	margin: 0;
-}
-
-.label-container {
+	@include span-columns(12);
+	// @include shift(1);
 	// border: 1px solid blue;
-	@include span-columns(3 of 8);
+
+	h3 {
+		font-size: 20px;
+		letter-spacing: 0.55px;
+		// line-height: 42px;
+	}
+
+	p {
+		font-size: 18px;
+		letter-spacing: 0.45px;
+		line-height: 36px;
+	}
 }
+
 
 .content {
-	@include span-columns(5 of 8);
-	// border: 1px solid green;
+	@include span-columns(5 of 10);
+	// border: 1px solid black;
 }
 
 .emphasize {
