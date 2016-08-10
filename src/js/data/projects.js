@@ -3,19 +3,28 @@ export const projects = {
 		'route': '/work/chinafile',
 		'title': 'Catching Tigers & Flies',
 		'description': 'Schema Design collaborated with ChinaFile, a publication by Asia Society, to create an interactive tool for visualizing and understanding corruption in China.',
-		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout the data collection process and collaborated with another developer to build the website.',
+		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
 		'tools': ['HTML, CSS', 'Javascript (C3, Isotope)'],
 		'hero': '../assets/projects/chinafile/chinafile_01.png',
 		'thumbnails': [],
 		'link': 'http://anticorruption.chinafile.com',
-		'relatedLinks': ['http://www.nytimes.com/2016/01/22/world/asia/china-database-tigers-and-flies-xi-jinping.html?_r=0', 'https://www.chinafile.com/infographics/visualizing-chinas-anti-corruption-campaign', '']
+		'relatedLinks': [
+			{
+				'from': 'New York Times',
+				'link': 'http://www.nytimes.com/2016/01/22/world/asia/china-database-tigers-and-flies-xi-jinping.html?_r=0'
+			}, 
+			{
+				'from': 'Chinafile',
+				'link': 'https://www.chinafile.com/infographics/visualizing-chinas-anti-corruption-campaign'
+			}
+		]
 	},
 	'pocktvr': {
 		'route': '/work/pocktvr',
 		'title': 'pocktVR',
-		'description': '',
-		'responsibilities': '',
-		'tools': [''],
+		'description': 'A web-based VR platform for creating and sharing immersive 360° photospheres.',
+		'responsibilities': 'As a design technologist apprentice at Junior I led the initial design process and UX research for this internal project. I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform.',
+		'tools': ['HTML (Jade)', 'CSS (Sass)', 'Javascript (React, Node, A-Frame)'],
 		'hero': '',
 		'thumbnails': [],
 		'link': '',

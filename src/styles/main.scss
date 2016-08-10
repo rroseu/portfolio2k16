@@ -19,6 +19,7 @@ div.page.header {
 }
 
 h2 {
+	line-height: 22px;
 	font-size: 20px;
 	font-weight: 400;
 	letter-spacing: 0.5px;
@@ -41,6 +42,7 @@ h2 {
 
 a {
 	text-decoration: none;
+	color: $darkgray;
 }
 
 a:visited {

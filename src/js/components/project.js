@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import { Link } from 'react-router'
 import { projects } from '../data/projects';
 
 export default class Project extends Component {
@@ -17,7 +18,7 @@ export default class Project extends Component {
 	renderDescription() {
 		return (
 			<div className='description-container'>
-				<h2>Description</h2>
+				<h2>About</h2>
 				<p>{this.state.currentProject.description}</p>
 			</div>
 		);
@@ -36,7 +37,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.link) {
 			return (
 				<div className='website-container'>
-					<a href={this.state.currentProject.link}>website</a>
+					<a href={this.state.currentProject.link}><h2>Launch website</h2></a>
 				</div>
 			);
 		}
@@ -53,6 +54,17 @@ export default class Project extends Component {
 			return (
 				<div className='project-links-container'>
 					<h2>Related Links</h2>
+					<ul>
+					{
+						_.map(this.state.currentProject.relatedLinks, (link) => {
+							return (
+								<li key={link.from}>
+									<a href={link.link} target='_blank'>{link.from}</a>
+								</li>
+							);
+						})
+					}
+					</ul>
 				</div>
 			);
 		}
@@ -80,19 +92,19 @@ export default class Project extends Component {
 			<div className='app-container'>
 				<div className='content-container'>
 					<div className='page header'>
-						<h2>{this.state.currentProject.title}</h2>
+						<h2 className='project-title'><Link to='/work'><img className='back' src='../../assets/nav/back-arrow-02.svg' /></Link>{this.state.currentProject.title}</h2>
 						<div className="page header-divider"></div>
 					</div>
 					<div className='project-container'>
 						<div className='project-info-container'>
 							{this.renderDescription()}
 							{this.renderResponsibilities()}
+							{this.renderTools()}
 							{this.renderWebsite()}
 						</div>
 						<div className='project-images-links-container'>
 							{this.renderImages()}
-							{this.renderRelatedLinks()}
-							{this.renderTools()}
+							{this.renderRelatedLinks()}		
 						</div>
 					</div>
 				</div>

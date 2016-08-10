@@ -9,7 +9,7 @@
 
 	h2 {
 		margin-bottom: 12px;
-		// font-size: 18px;
+		font-size: 18px;
 	}
 
 	p {
@@ -31,8 +31,9 @@
 }
 
 .project-images-links-container {
-	@include span-columns(7 of 12);
-	@include shift(1);
+	@include span-columns(7.5 of 12);
+	@include shift(0.5);
+	// border: 1px solid black;
 	height: 100%;
 
 	img {
@@ -41,9 +42,11 @@
 }
 
 .project-links-container {
-	@include span-columns(3 of 7);
+	@include fill-parent;
 }
 
-.tools-container {
-	@include span-columns(4 of 7);
+.back {
+	float: left;
+	margin-left: -40px;
+	height: 22px;
 }
