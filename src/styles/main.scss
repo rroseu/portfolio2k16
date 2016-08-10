@@ -14,6 +14,24 @@ html, body {
 	margin: 0;
 }
 
+div.page.header {
+	@include span-columns(12);
+
+	h2 {
+		font-size: 20px;
+		font-weight: 400;
+		letter-spacing: 0.9px;
+	}
+}
+
+.page.header-divider {
+	margin-top: -12px;
+	margin-left: 2px;
+	height: 3px;
+	width: 28px;
+	background-color: $black;
+}
+
 #app {
 	@include outer-container();
 	height: 100%;
@@ -23,6 +41,10 @@ html, body {
 
 a {
 	text-decoration: none;
+}
+
+a:visited {
+	color: $darkgray;
 }
 
 .app-container {
@@ -39,4 +61,20 @@ a {
 
 .emphasize {
 	font-weight: bold;
+}
+
+ul{
+	padding: 0;
+	margin: 0; 
+
+	li {
+		list-style-type: none;
+	}
+}
+
+p {
+	line-height: 28px;
+	font-size: 16px;
+	letter-spacing: 0.35px;
+	color: $darkgray;
 }

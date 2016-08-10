@@ -1,8 +1,7 @@
 .nav-container {
-	width: 400px;
-	// border: 1px solid blue;
+	width: 375px;
 	position: absolute;
-	bottom: 80px;
+	bottom: 70px;
 }
 
 .nav-links {
@@ -15,8 +14,7 @@
 
 	.nav-content {
 		list-style-type: none;
-		color: $darkgray;
-		letter-spacing: 0.55px;
+		letter-spacing: 0.35px;
 		display: inline-block;
 	}
 
@@ -53,4 +51,3 @@
 		transform: scaleX(1);
 	}
 }
-

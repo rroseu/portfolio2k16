@@ -1,25 +1,16 @@
-.resume-container {
-	@include span-columns(12);
-	// border: 1px solid blue;
-
-	h3 {
-		font-size: 20px;
-		letter-spacing: 0.55px;
-	}
-
+.resume {
 	p {
-		font-size: 18px;
-		letter-spacing: 0.45px;
-		line-height: 36px;
+		margin: 0;
 	}
+}
+
+.left, .right {
+	@include span-columns(5);
+	@include shift(1);
+	height: 100%;
 }
 
 .content {
-	@include span-columns(5 of 10);
+	// border: 1px solid blue;
+	padding-bottom: 20px;
 }
-
-// a.publication-title, a.publication-title:hover, a.publication-title:active, a.publication-title:visited {
-// 	font-weight: bold;
-// 	color: #4A90E2;
-// 	text-decoration: none;
-// }

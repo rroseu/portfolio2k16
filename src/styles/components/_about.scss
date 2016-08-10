@@ -1,28 +1,11 @@
-div.page.header {
-	@include span-columns(12);
-
-	h2 {
-		font-size: 24px;
-		letter-spacing: 0.9px;
-	}
-}
-
-.page.header-divider {
-	margin-top: -12px;
-	margin-left: 2px;
-	height: 3px;
-	width: 28px;
-	background-color: $black;
-}
-
 .about-container {
 	@include span-columns(6);
 	@include shift(3);
 
 	p {
-		color: $lightgray;
-		font-size: 20px;
-		line-height: 52px;
+		font-size: 18px;
+		line-height: 42px;
 		letter-spacing: 0.55px;
+		margin: 0;
 	}
 }
