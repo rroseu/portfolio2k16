@@ -4,7 +4,7 @@ export default class Resume extends Component {
 	renderEducation() {
 		return (
 			<div className='content'>
-				<h2>Education</h2>
+				<h2 className='underline'>Education</h2>
 				<p className='emphasize'>M.S. Human Centered Design & Engineering</p>
 				<p>University of Washington</p><br/>
 				<p className='emphasize'>Student</p>
@@ -19,7 +19,7 @@ export default class Resume extends Component {
 	renderExperience() {
 		return (
 			<div className='content'>
-				<h2>Experience</h2>
+				<h2 className='underline'>Experience</h2>
 				<p className='emphasize'>Design Technologist Apprentice</p>
 				<p>Junior, San Francisco, CA</p><br/>
 				<p className='emphasize'>Creative Technologist in Residence</p>
@@ -37,7 +37,7 @@ export default class Resume extends Component {
 	renderTechnicalSkills() {
 		return (
 			<div className='content'>
-				<h2>Technical Skills</h2>
+				<h2 className='underline'>Technical Skills</h2>
 				<p>HTML, CSS (Sass), Javascript (JQuery, Node, React), Git. Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
 			</div>
 		);
