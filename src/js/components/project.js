@@ -18,7 +18,7 @@ export default class Project extends Component {
 	renderDescription() {
 		return (
 			<div className='description-container'>
-				<h2>About</h2>
+				<h2 className='underline'>About</h2>
 				<p>{this.state.currentProject.description}</p>
 			</div>
 		);
@@ -27,7 +27,7 @@ export default class Project extends Component {
 	renderResponsibilities() {
 		return (
 			<div className='responsibilities-container'>
-				<h2>My role</h2>
+				<h2 className='underline'>My role</h2>
 				<p>{this.state.currentProject.responsibilities}</p>
 			</div>
 		);
@@ -36,13 +36,15 @@ export default class Project extends Component {
 	renderWebsite() {
 		if (this.state.currentProject.link) {
 			return (
-				<h2>
-				<a href={this.state.currentProject.link} target='_blank'>
-					<div className='website-container'>
-						<h2>Launch website <img className='forward' src='../../assets/nav/forward-arrow.svg' /></h2>
-					</div>
-				</a>	
-				</h2>
+				<div className='test-container'>
+					<h2>
+					<a href={this.state.currentProject.link} target='_blank'>
+						<div className='website-container'>
+							<h2>Launch website<img className='forward' src='../../assets/nav/forward-arrow.svg' /></h2>
+						</div>
+					</a>	
+					</h2>
+				</div>
 			);
 		}
 	} 
@@ -57,7 +59,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.relatedLinks.length !== 0) {
 			return (
 				<div className='project-links-container'>
-					<h2>Related Links</h2>
+					<h2 className='underline'>Related Links</h2>
 					<ul>
 					{
 						_.map(this.state.currentProject.relatedLinks, (link) => {
@@ -78,7 +80,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.tools) {
 			return (
 				<div className='tools-container'>
-					<h2>Tools</h2>
+					<h2 className='underline'>Tools</h2>
 					<ul>
 					{
 						_.map(this.state.currentProject.tools, (tool) => {
@@ -107,11 +109,11 @@ export default class Project extends Component {
 							{this.renderDescription()}
 							{this.renderResponsibilities()}
 							{this.renderTools()}
-							{this.renderWebsite()}
+							{this.renderRelatedLinks()}		
 						</div>
 						<div className='project-images-links-container'>
 							{this.renderImages()}
-							{this.renderRelatedLinks()}		
+							{this.renderWebsite()}
 						</div>
 					</div>
 				</div>
