@@ -16,16 +16,16 @@ html, body {
 
 div.page.header {
 	@include span-columns(12);
+}
 
-	h2 {
-		font-size: 20px;
-		font-weight: 400;
-		letter-spacing: 0.9px;
-	}
+h2 {
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
 }
 
 .page.header-divider {
-	margin-top: -12px;
+	margin-top: -8px;
 	margin-left: 2px;
 	height: 3px;
 	width: 28px;

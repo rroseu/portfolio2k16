@@ -9,8 +9,9 @@ export default class About extends Component {
 					<div className="page header-divider"></div>
 				</div>
 				<div className='about-container'>
-					<p>Hi, I'm Rachel.</p>
-					<p>I'm a developer & designer living in the bay area. My background is in human–computer interaction and qualitative UX research. I am a mostly self-taught developer experimenting with code and interactive media to explore new ways of engaging with the world.</p>
+					<h2>Hi, I'm Rachel.</h2>
+					<p>I'm a developer & designer living in the bay area. My background is in human–computer interaction and qualitative UX research.</p>
+					<p>I am a mostly self-taught developer experimenting with code and interactive media to explore new ways of engaging with the world.</p>
 					</div>
 			</div>
 		);

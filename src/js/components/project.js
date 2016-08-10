@@ -17,7 +17,7 @@ export default class Project extends Component {
 	renderDescription() {
 		return (
 			<div className='description-container'>
-				<h3>Description</h3>
+				<h2>Description</h2>
 				<p>{this.state.currentProject.description}</p>
 			</div>
 		);
@@ -26,7 +26,7 @@ export default class Project extends Component {
 	renderResponsibilities() {
 		return (
 			<div className='responsibilities-container'>
-				<h3>My role</h3>
+				<h2>My role</h2>
 				<p>{this.state.currentProject.responsibilities}</p>
 			</div>
 		);
@@ -52,7 +52,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.relatedLinks.length !== 0) {
 			return (
 				<div className='project-links-container'>
-					<h3>Related Links</h3>
+					<h2>Related Links</h2>
 				</div>
 			);
 		}
@@ -62,7 +62,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.tools) {
 			return (
 				<div className='tools-container'>
-					<h3>Tools</h3>
+					<h2>Tools</h2>
 					<ul>
 					{
 						_.map(this.state.currentProject.tools, (tool) => {

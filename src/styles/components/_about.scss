@@ -1,11 +1,9 @@
 .about-container {
-	@include span-columns(6);
-	@include shift(3);
+	@include span-columns(5);
+	@include shift(3.5);
 
 	p {
 		font-size: 18px;
 		line-height: 42px;
-		letter-spacing: 0.55px;
-		margin: 0;
 	}
 }

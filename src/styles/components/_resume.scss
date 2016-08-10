@@ -5,12 +5,11 @@
 }
 
 .left, .right {
-	@include span-columns(5);
-	@include shift(1);
+	@include span-columns(4.5);
+	@include shift(1.25);
 	height: 100%;
 }
 
 .content {
-	// border: 1px solid blue;
 	padding-bottom: 20px;
 }
