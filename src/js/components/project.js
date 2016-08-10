@@ -36,9 +36,13 @@ export default class Project extends Component {
 	renderWebsite() {
 		if (this.state.currentProject.link) {
 			return (
-				<div className='website-container'>
-					<a href={this.state.currentProject.link}><h2>Launch website</h2></a>
-				</div>
+				<h2>
+				<a href={this.state.currentProject.link} target='_blank'>
+					<div className='website-container'>
+						<h2>Launch website <img className='forward' src='../../assets/nav/forward-arrow.svg' /></h2>
+					</div>
+				</a>	
+				</h2>
 			);
 		}
 	} 
@@ -92,7 +96,10 @@ export default class Project extends Component {
 			<div className='app-container'>
 				<div className='content-container'>
 					<div className='page header'>
-						<h2 className='project-title'><Link to='/work'><img className='back' src='../../assets/nav/back-arrow-02.svg' /></Link>{this.state.currentProject.title}</h2>
+						<h2 className='project-title'>
+							<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
+							{this.state.currentProject.title}
+						</h2>
 						<div className="page header-divider"></div>
 					</div>
 					<div className='project-container'>
