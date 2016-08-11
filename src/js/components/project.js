@@ -92,14 +92,14 @@ export default class Project extends Component {
 	render() {
 		return (
 			<div className='app-container'>
+				<div className='page header'>
+					<h2 className='project-title'>
+						<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
+						{this.state.currentProject.title}
+					</h2>
+					<div className="page header-divider"></div>
+				</div>
 				<div className='content-container'>
-					<div className='page header'>
-						<h2 className='project-title'>
-							<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
-							{this.state.currentProject.title}
-						</h2>
-						<div className="page header-divider"></div>
-					</div>
 					<div className='project-container'>
 						<div className='project-info-container'>
 							{this.renderDescription()}
