@@ -4,10 +4,6 @@ export default class Contact extends Component {
 	render() {
 		return (
 			<div>
-				<div className='page header'>
-					<h2>Contact</h2>
-					<div className="page header-divider"></div>
-				</div>
 				<div className='contact-container'>
 					<ul className='contact-links'>
 						<li>

@@ -16,6 +16,7 @@ html, body {
 
 div.page.header {
 	@include span-columns(12);
+	// border: 1px solid black;
 }
 
 h2 {
@@ -57,7 +58,7 @@ a:visited {
 }
 
 .content-container {
-	height: 100%;
+	@include span-columns(12);
 	// border: 1px solid black;
 }
 

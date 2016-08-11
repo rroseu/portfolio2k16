@@ -59,10 +59,6 @@ export default class Resume extends Component {
 	render() { 
 		return (
 			<div>
-				<div className='page header'>
-					<h2>Resume</h2>
-					<div className="page header-divider"></div>
-				</div>
 				<div className='resume'>
 					<div className='left'>
 						{this.renderEducation()}
