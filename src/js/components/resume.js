@@ -53,14 +53,15 @@ export default class Resume extends Component {
 	}	
 
 	render() { 
-		return (
-			<div className='resume-outer-container'>
-				<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
-					<div className='button-container pdf-container'>
-						<span className='button-text'>download .pdf</span>
-					</div>
-				</a>	
+		return (	
 				<div className='resume-container'>
+					<div className='button-outer-container'>
+						<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
+							<div className='button-container pdf-container'>
+								<span className='button-text'>download .pdf</span>
+							</div>
+						</a>	
+					</div>
 					<div className='left'>
 						{this.renderEducation()}
 					</div>
@@ -72,7 +73,7 @@ export default class Resume extends Component {
 						{this.renderTools()}
 					</div>
 				</div>
-			</div>
+
 		);
 	}
 }
