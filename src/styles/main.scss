@@ -1,7 +1,9 @@
 @import 'mixins/bourbon/bourbon';
+@import 'mixins/grid-settings';
 @import 'mixins/neat/neat';
 @import 'base/variables';
 @import 'components/nav';
+@import 'components/header';
 @import 'components/about';
 @import 'components/landing';
 @import 'components/resume';
@@ -14,33 +16,11 @@ html, body {
 	margin: 0;
 }
 
-div.page.header {
-	@include span-columns(12);
-	// border: 1px solid black;
-	height: 10%;
-}
-
-h2 {
-	line-height: 24px;
-	font-size: 20px;
-	font-weight: 400;
-	letter-spacing: 0.5px;
-}
-
-.page.header-divider {
-	margin-top: -8px;
-	margin-left: 2px;
-	height: 3px;
-	width: 28px;
-	background-color: $black;
-}
-
 #app {
 	@include outer-container();
 	height: 100%;
 	font-family: $karla-sans;
 	color: $darkgray;
-	// border: 1px solid orange;
 } 
 
 a {
@@ -53,21 +33,23 @@ a:visited {
 }
 
 .app-container {
-	height: 100%;
-	@include pad(50px);
 	@include span-columns(12);
-	// border: 1px solid blue;
+	@include pad(default 0px default 0px);
+	height: 100%;
 }
 
 .content-container {
 	@include fill-parent;
-	height: 90%;
+	height: 100%;
 	// border: 1px solid orange;
-	overflow-y: auto;
+	position: relative;
 }
 
-.emphasize {
-	font-weight: bold;
+h2 {
+	line-height: 24px;
+	font-size: 20px;
+	font-weight: 400;
+	letter-spacing: 0.5px;
 }
 
 ul{
@@ -82,7 +64,7 @@ ul{
 p {
 	line-height: 28px;
 	font-size: 16px;
-	letter-spacing: 0.35px;
+	letter-spacing: 0.25px;
 	color: $darkgray;
 	margin: 0px;
 }

@@ -1,6 +1,6 @@
 .project-container {
-	@include fill-parent;
-	// height: 100%;
+	@include span-columns(10);
+	@include shift(1);
 
 	div {
 		padding-bottom: 20px;

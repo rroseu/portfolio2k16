@@ -1,7 +1,13 @@
+.nav-outer-container {
+	@include span-columns(10);
+	@include shift(1);
+	position: absolute;
+	bottom: 0px;
+}
+
 .nav-container {
 	width: 350px;
-	position: absolute;
-	bottom: 70px;
+	// border: 1px solid blue;
 }
 
 .nav-links {

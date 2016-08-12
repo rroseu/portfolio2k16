@@ -4,7 +4,7 @@ export default class Resume extends Component {
 	renderEducation() {
 		return (
 			<div className='content'>
-				<h2 className='underline'>Education</h2>
+				<h3 className='underline'>Education</h3>
 				<p className='emphasize'>M.S. Human Centered Design & Engineering</p>
 				<p>University of Washington</p><br/>
 				<p className='emphasize'>Student</p>
@@ -19,7 +19,7 @@ export default class Resume extends Component {
 	renderExperience() {
 		return (
 			<div className='content'>
-				<h2 className='underline'>Experience</h2>
+				<h3 className='underline'>Experience</h3>
 				<p className='emphasize'>Design Technologist Apprentice</p>
 				<p>Junior, San Francisco, CA</p><br/>
 				<p className='emphasize'>Creative Technologist in Residence</p>
@@ -37,7 +37,7 @@ export default class Resume extends Component {
 	renderTechnicalSkills() {
 		return (
 			<div className='content'>
-				<h2 className='underline'>Technical Skills</h2>
+				<h3 className='underline'>Technical Skills</h3>
 				<p>HTML, CSS (Sass), Javascript (JQuery, Node, React), Git. Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
 			</div>
 		);
@@ -45,13 +45,9 @@ export default class Resume extends Component {
 
 	renderTools() {
 		return (
-			<div className='section-container'>
-				<div className='label-container'>
-					<h2>Design Tools</h2>
-				</div>
-				<div className='content'>
-					<p>Sketch 3, Illustrator, Photoshop, Balsamiq, Pixate, Cinema 4D</p>
-				</div>
+			<div className='content'>
+				<h3 className='underline'>Design Tools</h3>
+				<p>Sketch 3, Illustrator, Photoshop, Balsamiq, Pixate, Cinema 4D</p>
 			</div>
 		);
 	}	
@@ -59,13 +55,16 @@ export default class Resume extends Component {
 	render() { 
 		return (
 			<div>
-				<div className='resume'>
+				<div className='resume-container'>
 					<div className='left'>
 						{this.renderEducation()}
-						{this.renderTechnicalSkills()}
+					</div>
+					<div className='middle'>
+						{this.renderExperience()}
 					</div>
 					<div className='right'>
-						{this.renderExperience()}
+						{this.renderTechnicalSkills()}
+						{this.renderTools()}
 					</div>
 				</div>
 			</div>

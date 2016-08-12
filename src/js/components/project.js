@@ -52,9 +52,15 @@ export default class Project extends Component {
 	} 
 
 	renderImages() {
-		return (
-			<img src={this.state.currentProject.hero} />
-		);
+		if (this.state.currentProject.images) {
+			return (
+				_.map(this.state.currentProject.images, (image) => {
+					return (
+						<img key={image} src={image} />
+					);
+				})
+			);
+		}
 	}
 
 	renderRelatedLinks() {
@@ -105,11 +111,11 @@ export default class Project extends Component {
 							{this.renderDescription()}
 							{this.renderResponsibilities()}
 							{this.renderTools()}
-							{this.renderRelatedLinks()}		
+							{this.renderRelatedLinks()}
+							{this.renderWebsite()}		
 						</div>
 						<div className='project-images-links-container'>
 							{this.renderImages()}
-							{this.renderWebsite()}
 						</div>
 					</div>
 				</div>
