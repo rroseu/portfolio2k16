@@ -55,7 +55,7 @@ export default class Resume extends Component {
 	render() { 
 		return (
 			<div className='resume-outer-container'>
-				<a href='' target='_blank'>
+				<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
 					<div className='button-container pdf-container'>
 						<span className='button-text'>download .pdf</span>
 					</div>
