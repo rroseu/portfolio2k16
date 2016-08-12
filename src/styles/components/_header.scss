@@ -1,4 +1,5 @@
 div.page.header {
+	// border:1px solid blue;
 	@include span-columns(10);
 	@include shift(1);
 	

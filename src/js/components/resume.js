@@ -54,7 +54,12 @@ export default class Resume extends Component {
 
 	render() { 
 		return (
-			<div>
+			<div className='resume-outer-container'>
+				<a href='' target='_blank'>
+					<div className='button-container pdf-container'>
+						<span className='button-text'>download .pdf</span>
+					</div>
+				</a>	
 				<div className='resume-container'>
 					<div className='left'>
 						{this.renderEducation()}

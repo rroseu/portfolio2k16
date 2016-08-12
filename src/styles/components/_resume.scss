@@ -1,6 +1,16 @@
-.resume-container {
+.resume-outer-container {
 	@include span-columns(10);
 	@include shift(1);
+
+	.pdf-container {
+		margin-top: 40px;
+	}
+}
+
+.resume-container {
+	// @include span-columns(10);
+	// @include shift(1);
+	// border: 1px solid blue;
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
@@ -17,5 +27,5 @@
 }
 
 .left, .middle, .right {
-	@include span-columns(3.3 of 10);
+	@include span-columns(3 of 10);
 }
