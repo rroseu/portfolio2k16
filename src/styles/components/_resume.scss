@@ -1,5 +1,5 @@
 .resume-container {
-	@include pad(20px 0px 0px 0px);
+	// @include pad(20px 0px 0px 0px);
 
 	@include media($mobile) {
 		@include span-columns(10);

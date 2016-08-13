@@ -6,13 +6,13 @@ export default class Nav extends Component {
 		return (
 			<div className='nav-container'>
 				<ul className='nav-links'>
-					<Link to='/about' activeClassName='nav-link-active' className='nav-link'>About</Link>
+					<Link to='about' activeClassName='nav-link-active' className='nav-link'>About</Link>
 					<li className='nav-divider'>/</li>
-					<Link to='/work' activeClassName='nav-link-active' className='nav-link'>Work</Link>
+					<Link to='work' activeClassName='nav-link-active' className='nav-link'>Work</Link>
 					<li className='nav-divider'>/</li>
-					<Link to='/resume' activeClassName='nav-link-active' className='nav-link'>Resume</Link>
+					<Link to='resume' activeClassName='nav-link-active' className='nav-link'>Resume</Link>
 					<li className='nav-divider'>/</li>
-					<Link to='/contact' activeClassName='nav-link-active' className='nav-link'>Contact</Link>
+					<Link to='contact' activeClassName='nav-link-active' className='nav-link'>Contact</Link>
 				</ul>
 			</div>
 		)

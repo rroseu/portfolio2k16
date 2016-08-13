@@ -1,7 +1,9 @@
 .nav-container {
 	position: absolute;
 	bottom: 0px;
-
+	background: white;
+	// border: 1px solid orange;
+	
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
@@ -37,7 +39,7 @@
 		height: 2px;
 		bottom: -3px;
 		left: 0;
-		background-color: $black;
+		background: $highlight;
 		visibility: hidden;
 		-webkit-transform: scaleX(0);
 		transform: scaleX(0);

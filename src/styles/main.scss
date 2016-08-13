@@ -40,21 +40,16 @@ html, body {
 .app-container-inner {
 	@include span-columns(12);
 	height: 100%;
-	// border: 1px solid blue;
 	position: relative;
 
 	@include media($mobile) {
-		@include pad(20px 0px 40px 0px);
-	}
-
-	@include media($screen-xl) {
-		@include pad(20px 0px default 0px);
+		@include pad(56px 0px 36px 0px);
 	}
 }
 
 .content-container {
+	// border: 1px solid blue;
 	@include span-columns(12);
-	// border: 1px solid black;
 	height: 100%;
 	overflow-y: auto;
 }
@@ -67,7 +62,6 @@ a {
 a:visited {
 	color: $darkgray;
 }
-
 
 h2 {
 	line-height: 24px;
