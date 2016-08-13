@@ -1,8 +1,15 @@
 .project-container {
-	@include span-columns(10);
-	@include shift(1);
 	margin-top: 12px;
-	// border: 1px solid black;
+	
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(12);
+		@include shift(0);
+	}
 
 	div {
 		padding-bottom: 20px;
@@ -23,27 +30,50 @@
 }
 
 .project-info-container {
-	@include span-columns(4);
 	height: 100%;
+
+	@include media($mobile) {
+		@include span-columns(12);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(4);
+		@include shift(0);
+	}
 }
 
 .description-container {
 	@include fill-parent;
+	// border: 1px solid blue;
 }
 
 .project-images-links-container {
-	@include span-columns(7.5);
-	@include shift(0.5);
 	// border: 1px solid black;
 	// height: 100%;
 
 	img {
 		@include fill-parent;
 	}
+
+	@include media($mobile) {
+		@include span-columns(12);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(7.5);
+		@include shift(0.5);
+	}
 }
 
 .back {
-	float: left;
-	margin-left: -40px;
-	height: 24px;
+	@include media($mobile) {
+		display: none;
+	}
+
+	@include media($screen-xl) {
+		display: inline;
+		float: left;
+		margin-left: -40px;
+		height: 24px;
+	}
 }

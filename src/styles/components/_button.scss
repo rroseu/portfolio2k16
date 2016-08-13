@@ -1,11 +1,12 @@
 .button-container.pdf-container {
-	position: absolute;
 	top: 0;
 	right: 0;
+	width: 120px;
 }
 
 .button-container {
-	width: 120px;
+	background: white;
+	position: absolute;
 	border: 2px solid $darkgray;
 	border-radius: 3px;
 	height: 40px;
@@ -15,5 +16,17 @@
 		font-size: 14px;
 		letter-spacing: 0.25px;
 		line-height: 38px;
+	}
+
+	@include media($mobile) {
+		bottom: 0;
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	@include media($screen-xl) {
+		top: 0;
+		right: 0;
+		width: 120px;
 	}
 }
