@@ -25,7 +25,7 @@ export default class App extends Component {
 		}
 
 		return (
-			<div className="app-container">
+			<div className='app-container-inner'>
 				<div className='content-container'>
 					{ header }
 					{this.props.children}

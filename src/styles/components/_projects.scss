@@ -1,23 +1,29 @@
 .projects-menu-container {
-	@include span-columns(5);
-	@include shift(3.5);
 	position: absolute;
 	top: 50%;
 	transform : translateY(-50%);
 
+	@include media($mobile) {
+		@include span-columns(10 of 12);
+		@include shift(1 of 12);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(5);
+		@include shift(3.5);
+	}
+
+
 	ul {		
 		li {
-			color: $lightgray;
 			font-size: 16px;
 			line-height: 40px;
-			letter-spacing: 0.35px;
 		}
 	}
 }
 
 .title-container {
-
-	border-bottom: 2px solid #E7E7E7;
+	border-bottom: 2px solid $divider-gray;
 
 	a {
 		text-decoration: none;

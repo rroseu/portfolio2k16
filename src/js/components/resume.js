@@ -54,26 +54,25 @@ export default class Resume extends Component {
 
 	render() { 
 		return (	
-				<div className='resume-container'>
-					<div className='button-outer-container'>
-						<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
-							<div className='button-container pdf-container'>
-								<span className='button-text'>download .pdf</span>
-							</div>
-						</a>	
-					</div>
-					<div className='left'>
-						{this.renderEducation()}
-					</div>
-					<div className='middle'>
-						{this.renderExperience()}
-					</div>
-					<div className='right'>
-						{this.renderTechnicalSkills()}
-						{this.renderTools()}
-					</div>
+			<div className='resume-container'>
+				<div className='button-outer-container'>
+					<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
+						<div className='button-container pdf-container'>
+							<span className='button-text'>download .pdf</span>
+						</div>
+					</a>	
 				</div>
-
+				<div className='left'>
+					{this.renderEducation()}
+				</div>
+				<div className='middle'>
+					{this.renderExperience()}
+				</div>
+				<div className='right'>
+					{this.renderTechnicalSkills()}
+					{this.renderTools()}
+				</div>
+			</div>
 		);
 	}
 }

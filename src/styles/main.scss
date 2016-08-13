@@ -1,5 +1,5 @@
 @import 'mixins/bourbon/bourbon';
-@import 'mixins/grid-settings';
+@import 'layout/grid-settings';
 @import 'mixins/neat/neat';
 @import 'base/variables';
 @import 'components/nav';
@@ -26,7 +26,29 @@ html, body {
 	height: 100%;
 	font-family: $karla-sans;
 	color: $darkgray;
+	letter-spacing: 0.35px;
+
+	@include media($screen-xl) {
+		@include pad(default 0px default 0px);
+	}
+
+	@include media($mobile) {
+		@include pad(40px 0px 40px 0px);
+	}
 } 
+
+.app-container-inner {
+	@include-span-columns(12);
+	height: 100%;
+	// border: 1px solid blue;
+	position: relative;
+}
+
+.content-container {
+	@include span-columns(12);
+	height: 100%;
+	// position: relative;
+}
 
 a {
 	text-decoration: none;
@@ -37,24 +59,11 @@ a:visited {
 	color: $darkgray;
 }
 
-.app-container {
-	@include span-columns(12);
-	@include pad(default 0px default 0px);
-	height: 100%;
-}
-
-.content-container {
-	@include fill-parent;
-	height: 100%;
-	// border: 1px solid orange;
-	position: relative;
-}
 
 h2 {
 	line-height: 24px;
 	font-size: 20px;
 	font-weight: 400;
-	letter-spacing: 0.5px;
 }
 
 ul{
@@ -63,13 +72,13 @@ ul{
 
 	li {
 		list-style-type: none;
+		color: $lightgray;
 	}
 }
 
 p {
 	line-height: 28px;
 	font-size: 16px;
-	letter-spacing: 0.25px;
 	color: $darkgray;
 	margin: 0px;
 }

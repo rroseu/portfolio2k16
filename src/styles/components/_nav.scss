@@ -1,13 +1,16 @@
-.nav-outer-container {
-	@include span-columns(10);
-	@include shift(1);
+.nav-container {
 	position: absolute;
 	bottom: 0px;
-}
 
-.nav-container {
-	width: 350px;
-	// border: 1px solid blue;
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+	}
+
+	@include media($screen-xl) {
+		@include shift(0);
+		width: 325px;
+	}	
 }
 
 .nav-links {
@@ -15,21 +18,11 @@
 	flex-direction: row;
 	justify-content: space-between;
 	list-style-type: none;
-	padding: 0;
-	margin: 0;
-
-	.nav-content {
-		list-style-type: none;
-		letter-spacing: 0.35px;
-		display: inline-block;
-	}
 
 	/* underline styling from http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
 
 	a.nav-link {
-		text-decoration: none;
 		position: relative;
-		margin: 0;
 		font-size: 14px;
 	}
 

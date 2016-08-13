@@ -1,15 +1,7 @@
 .resume-container {
 	@include span-columns(10);
 	@include shift(1);
-	position: absolute;
-	// border: 1px solid blue;
 	@include pad(20px 0px 0px 0px);
-	top: 50%;
-	transform: translateY(-50%);
-
-	.button-outer-container {
-		@include fill-parent;
-	}
 
 	h3 {
 		font-weight: 400;
@@ -23,5 +15,11 @@
 }
 
 .left, .middle, .right {
-	@include span-columns(3.3 of 10);
+	@include media($mobile) {
+		@include span-columns(12 of 12);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(3.3 of 10);	
+	}
 }

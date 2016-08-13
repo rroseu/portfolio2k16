@@ -1,9 +1,17 @@
 .about-container {
-	@include span-columns(5);
-	@include shift(4);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
+
+	@include media($mobile) {
+		@include span-columns(10 of 12);
+		@include shift(1 of 12);
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(5);
+		@include shift(3.5);
+	}
 
 	p {
 		font-size: 16px;
