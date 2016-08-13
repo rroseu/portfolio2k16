@@ -23,15 +23,21 @@
 }
 
 .title-container {
-	border-bottom: 2px solid $divider-gray;
-
 	a {
 		text-decoration: none;
+	}
+	
+	@include media($mobile) {
+		border-bottom: 2px solid #41D5FF;
+	}
+
+	@include media($screen-xl) {
+		border-bottom: 2px solid $divider-gray;
 	}
 }
 
 .title-container:hover {
-	border-bottom: 2px solid $darkgray;
+	border-bottom: 2px solid #41D5FF;
 	cursor: pointer;
 }
 

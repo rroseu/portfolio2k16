@@ -43,12 +43,12 @@ html, body {
 	// border: 1px solid blue;
 	position: relative;
 
-	@include media($screen-xl) {
-		@include pad(default 0px default 0px);
+	@include media($mobile) {
+		@include pad(20px 0px 40px 0px);
 	}
 
-	@include media($mobile) {
-		@include pad(0px 0px 40px 0px);
+	@include media($screen-xl) {
+		@include pad(20px 0px default 0px);
 	}
 }
 

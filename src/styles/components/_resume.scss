@@ -1,5 +1,4 @@
 .resume-container {
-	// border: 1px solid blue;
 	@include pad(20px 0px 0px 0px);
 
 	@include media($mobile) {
