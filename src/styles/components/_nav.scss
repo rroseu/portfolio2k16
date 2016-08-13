@@ -2,8 +2,10 @@
 	position: absolute;
 	bottom: 0px;
 	background: white;
+	height: 20px;
+	line-height: 20px;
 	// border: 1px solid orange;
-	
+
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
@@ -13,6 +15,10 @@
 		@include shift(0);
 		width: 325px;
 	}	
+
+	.nav-divider {
+		font-size: 20px;
+	}
 }
 
 .nav-links {
