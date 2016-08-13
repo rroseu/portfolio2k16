@@ -27,27 +27,37 @@ html, body {
 	font-family: $karla-sans;
 	color: $darkgray;
 	letter-spacing: 0.35px;
+	// border: 1px solid orange;
 
 	@include media($screen-xl) {
 		@include pad(default 0px default 0px);
 	}
 
 	@include media($mobile) {
-		@include pad(40px 0px 40px 0px);
+		@include pad(20px 0px 20px 0px);
 	}
 } 
 
 .app-container-inner {
-	@include-span-columns(12);
+	@include span-columns(12);
 	height: 100%;
 	// border: 1px solid blue;
 	position: relative;
+
+	@include media($screen-xl) {
+		@include pad(default 0px default 0px);
+	}
+
+	@include media($mobile) {
+		@include pad(0px 0px 60px 0px);
+	}
 }
 
 .content-container {
 	@include span-columns(12);
+	// border: 1px solid black;
 	height: 100%;
-	// position: relative;
+	overflow-y: auto;
 }
 
 a {

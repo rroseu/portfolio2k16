@@ -26,11 +26,11 @@ export default class App extends Component {
 
 		return (
 			<div className='app-container-inner'>
+				{ header }
 				<div className='content-container'>
-					{ header }
 					{this.props.children}
-					<Nav />
 				</div>
+				<Nav />
 			</div>
 		);
 	}
