@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+// redo this ! 
+
 export default class Resume extends Component {
 	renderEducation() {
 		return (
@@ -9,7 +11,8 @@ export default class Resume extends Component {
 				<p>University of Washington</p><br/>
 				<p className='emphasize'>Student</p>
 				<p>School for Poetic Computation</p><br/>
-				<p className='emphasize'>B.S. Informatics (Human–Computer Interaction),</p>
+				<p className='emphasize'>B.S. Informatics (Human–Computer Interaction)</p>
+				<p>University of California Irvine</p><br/>
 				<p className='emphasize'>B.A. Anthropology</p>
 				<p>University of California Irvine</p>
 			</div>
@@ -55,13 +58,6 @@ export default class Resume extends Component {
 	render() { 
 		return (	
 			<div className='resume-container'>
-				<div className='button-outer-container'>
-					<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
-						<div className='button-container pdf-container'>
-							<span className='button-text'>download .pdf</span>
-						</div>
-					</a>	
-				</div>
 				<div className='left'>
 					{this.renderEducation()}
 				</div>

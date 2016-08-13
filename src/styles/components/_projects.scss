@@ -22,11 +22,10 @@
 }
 
 .title-container {
-	a {
-		text-decoration: none;
-	}
-
 	border-bottom: 2px solid $divider-gray;
+	a {
+		text-transform: uppercase;
+	}
 }
 
 .title-container:hover {
