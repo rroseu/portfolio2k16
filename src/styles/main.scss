@@ -27,14 +27,13 @@ html, body {
 	font-family: $karla-sans;
 	color: $darkgray;
 	letter-spacing: 0.35px;
-	// border: 1px solid orange;
-
-	@include media($screen-xl) {
-		@include pad(default 0px default 0px);
-	}
 
 	@include media($mobile) {
 		@include pad(20px 0px 20px 0px);
+	}
+
+	@include media($screen-xl) {
+		@include pad(default 0px default 0px);
 	}
 } 
 
@@ -49,7 +48,7 @@ html, body {
 	}
 
 	@include media($mobile) {
-		@include pad(0px 0px 60px 0px);
+		@include pad(0px 0px 40px 0px);
 	}
 }
 

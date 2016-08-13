@@ -26,8 +26,8 @@ export default class App extends Component {
 
 		return (
 			<div className='app-container-inner'>
-				{ header }
 				<div className='content-container'>
+					{ header }
 					{this.props.children}
 				</div>
 				<Nav />
