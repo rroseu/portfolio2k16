@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
-import Iframe from 'react-iframe';
 import { Link } from 'react-router'
 import { projects } from '../data/projects';
 

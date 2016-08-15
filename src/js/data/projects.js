@@ -25,7 +25,7 @@ export const projects = {
 		'description': 'A web-based VR platform for creating and sharing immersive 360° photospheres.',
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform. In addition, I led the initial visual design process and UX research for this internal project.',
 		'tools': 'HTML (Jade), CSS (Sass), Javascript (React, Node, A-Frame), Sketch 3',
-		'images': [],
+		'images': ['../assets/projects/pocktvr/pocktvr-1.jpg'],
 		'link': 'http://pocktvr.io',
 		'relatedLinks': []
 	},
@@ -35,8 +35,8 @@ export const projects = {
 		'description': 'Junior collaborated with Kodak Alaris and Special Guest to create the Memory Observatory at SXSW 2016. People were able to share and step into a past memory with smells, colors, and custom sounds.',
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I built two ReactJS apps to support this experience.',
 		'tools': 'HTML, CSS (Sass), Javascript/ES6 (Node, React), Webpack', 
-		'hero': '../assets/projects/memory-observatory/memory-observatory-1.jpeg',
-		'images': [],
+		'video': '<iframe src="https://player.vimeo.com/video/164570589" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+		'images': ['../assets/projects/memory-observatory/memory-observatory-1.jpeg'],
 		'link': 'http://www.kodakmoments.com/sxsw/',
 		'relatedLinks': [
 			{

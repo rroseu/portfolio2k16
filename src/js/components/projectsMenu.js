@@ -11,11 +11,13 @@ export default class ProjectsMenu extends Component {
 					_.map(projects, (project) => {
 						return (
 							<li key={project.title}>
-								<div className='title-container'>
-									<span className='outer'>
-										<Link to={`${project.route}`}><span className='inner'>{project.title}</span></Link>
-									</span>
-								</div>
+								<Link to={`${project.route}`}>
+									<div className='title-container'>
+										<span className='outer'>
+											<span className='inner'>{project.title}</span>
+										</span>
+									</div>
+								</Link>
 							</li>
 						);
 					})
