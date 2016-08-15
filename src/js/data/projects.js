@@ -4,8 +4,8 @@ export const projects = {
 		'title': 'Catching Tigers & Flies',
 		'description': 'Schema Design collaborated with ChinaFile, a publication by Asia Society, to create an interactive tool for visualizing and understanding corruption in China.',
 		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
-		'tools': 'HTML, CSS, Javascript (C3, Isotope)',
-		'hero': '../assets/projects/chinafile/chinafile_01.png',
+		'tools': 'HTML, CSS, Javascript (C3, Isotope)',	
+		'video': '<iframe src="https://player.vimeo.com/video/150455606?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
 		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_02.png', '../assets/projects/chinafile/chinafile_03.png', '../assets/projects/chinafile/chinafile_04.png', '../assets/projects/chinafile/chinafile_05.png'],
 		'link': 'http://anticorruption.chinafile.com',
 		'relatedLinks': [

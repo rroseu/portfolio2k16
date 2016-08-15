@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import _ from 'lodash';
+import Iframe from 'react-iframe';
 import { Link } from 'react-router'
 import { projects } from '../data/projects';
 
@@ -59,6 +60,20 @@ export default class Project extends Component {
 		}
 	} 
 
+	createIframeMarkup() {
+		return {
+			__html: this.state.currentProject.video
+		}
+	}
+
+	renderVideo() {
+		if (this.state.currentProject.video) {
+			return (
+				<div dangerouslySetInnerHTML={this.createIframeMarkup()} />
+			);
+		}
+	}
+
 	renderImages() {
 		if (this.state.currentProject.images) {
 			return (
@@ -116,6 +131,7 @@ export default class Project extends Component {
 							{this.renderRelatedLinks()}
 						</div>
 						<div className='project-images-links-container'>
+							{this.renderVideo()}
 							{this.renderImages()}
 						</div>
 					</div>

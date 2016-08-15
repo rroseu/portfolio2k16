@@ -50,7 +50,9 @@
 .project-images-links-container {
 	// border: 1px solid black;
 	// height: 100%;
-
+	iframe {
+		@include fill-parent;
+	}
 	img {
 		@include fill-parent;
 	}
