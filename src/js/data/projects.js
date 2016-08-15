@@ -54,24 +54,45 @@ export const projects = {
 		'title': 'Galaxy Audio Visualization',
 		'description': 'I created this audio visualization for a Coursera course on \'Creative Programming for Digital Media & Mobile Apps.\'',
 		'tools': 'Processing',
-		'images': [],
-		'link': '',
-		'relatedLinks': []
+		'video': '<iframe src="https://player.vimeo.com/video/101334922" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+		'images': ['../assets/projects/galaxy/galaxy-1.png'],
+		'relatedLinks': [
+			{
+				'from': 'GitHub',
+				'link': 'https://github.com/rroseu/galaxy-audioviz'
+			}
+		]
 	},
 	'critical-design-feminist-hackerspaces': {
 		'route': '/work/critical-design-feminist-hackerspaces',
 		'title': 'Critical Design + Feminist Hackerspaces',
-		'description': '',
-		'responsibilities': '',
-		'link': '',
-		'relatedLinks': []
+		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on feminist hackerspaces.',
+		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
+		'tools': 'Participant observation, semi-structured interviews',
+		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
+		'relatedLinks': [
+			{
+				'from': 'CSCW 2015',
+				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
+			},
+			{
+				'from': 'Critical Design Workshop',
+				'link': 'http://depts.washington.edu/tatlab/criticaldesign/'
+			},
+			{
+				'from': 'Feminist Hackerspace Zine',
+				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
+			}
+		]
 	},
 	'lunaites': {
 		'route': '/work/lunaites',
 		'title': 'Lunaites',
-		'description': '',
-		'images': [],
-		'link': '',
+		'description': 'Asteroids impacting the moon result in debris that sometimes makes its way through earth\'s atmosphere. These are lunar meteorites, also known as \'lunaites.\' "Lunaites" is a web-based information visualization for exploring lunar meteorite landings on earth.',
+		'responsibilities': 'I designed and developed this visualization.',
+		'tools': 'HTML, CSS, Javascript (D3)',
+		'images': ['../assets/projects/lunaites/lunaites-1.png'],
+		'link': 'rroseu.github.io/lunaites',
 		'relatedLinks': []
 	},
 	'vidcoach': {
@@ -79,7 +100,7 @@ export const projects = {
 		'title': 'VidCoach',
 		'description': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
 		'responsibilities': 'I collaborated with an interdisciplinary team to reseach, design, and develop this project. I interviewed caretakers of individuals with ASD to understand their needs and involved them throughout the design process. I also led concept validation sessions to evaluate the effectiveness of the prototype.',
-		'images': [],
+		'images': ['../assets/projects/vidcoach/vidcoach-1.jpg'],
 		'relatedLinks': [
 			{
 				'from': 'IDC 2013',
@@ -112,9 +133,10 @@ export const projects = {
 	'euphonious': {
 		'route': '/work/euphonious',
 		'title': 'Euphonious',
-		'description': '',
-		'responsibilities': '',
-		'images': [],
+		'description': 'I don\'t have a music background but wanted to create a way for people like myself to participate in music-making, so I designed euphonious, a music-making app for iOS. Map various built-in sounds to a set of buttons, or record and map your own.',
+		'tools': 'Illustrator, XCode, Objective-C',
+		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
+		'images': ['../assets/projects/euphonious/euphonious-1.png'],
 		'link': '',
 		'relatedLinks': [
 	
