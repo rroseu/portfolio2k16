@@ -93,7 +93,6 @@ export const projects = {
 		'tools': 'HTML, CSS, Javascript (D3)',
 		'images': ['../assets/projects/lunaites/lunaites-1.png'],
 		'link': 'rroseu.github.io/lunaites',
-		'relatedLinks': []
 	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
@@ -138,8 +137,5 @@ export const projects = {
 		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
 		'images': ['../assets/projects/euphonious/euphonious-1.png'],
 		'link': '',
-		'relatedLinks': [
-	
-		]
 	}
 };
