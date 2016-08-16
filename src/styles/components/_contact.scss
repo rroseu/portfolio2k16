@@ -1,24 +1,48 @@
 .contact-container {
-	@include span-columns(5);
-	@include shift(3.5);
 	position: absolute;
 	top: 50%;
 	transform: translateY(-50%);
 
-		@include media($mobile) {
-			@include span-columns(10 of 12);
-			@include shift(1 of 12);
+	.contact-title-container {
+		@include span-columns(6 of 6);
+		border-bottom: 2px solid $divider-gray;
+
+		.link-container {
+			@include span-columns(5 of 6);
 		}
 
-		@include media($screen-xl) {
-			@include span-columns(5);
-			@include shift(3.5);
+		a, a:hover, a:visited {
+			color: $darkgray;
 		}
+	}
+
+	.contact-title-container:hover {
+		border-bottom: 2px solid $highlight;
+		cursor: pointer;
+	}
+
+	.icon-container {
+		@include span-columns(1 of 6);
+		height: 40px;
+	}
+
+	.icon {
+		float: right;
+		max-width: 22px;
+		width: 22px;
+		height: 40px;
+	}
 
 	ul {
 		padding: 0;
 		margin: 0;
-		
+	}
+
+	// breakpoints
+	@include media($mobile) {
+		@include span-columns(10 of 12);
+		@include shift(1 of 12);
+
 		li {
 			list-style-type: none;
 			color: $lightgray;
@@ -26,34 +50,16 @@
 			line-height: 40px;
 		}
 	}
-}
 
-.contact-title-container {
-	@include span-columns(6 of 6);
-	border-bottom: 2px solid $divider-gray;
-	
-	.link-container {
-		@include span-columns(5 of 6);
+	@include media($screen-xl) {
+		@include span-columns(5);
+		@include shift(3.5);
+
+		li {
+			list-style-type: none;
+			color: $lightgray;
+			font-size: 18px;
+			line-height: 44px;
+		}
 	}
-
-	a, a:hover, a:visited {
-		color: $darkgray;
-	}
-}
-
-.contact-title-container:hover {
-	border-bottom: 2px solid $highlight;
-	cursor: pointer;
-}
-
-.icon-container {
-	@include span-columns(1 of 6);
-	height: 40px;
-}
-
-.icon {
-	float: right;
-	max-width: 22px;
-	width: 22px;
-	height: 40px;
 }

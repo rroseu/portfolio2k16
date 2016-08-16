@@ -128,6 +128,7 @@ export default class Project extends Component {
 							{this.renderResponsibilities()}
 							{this.renderTools()}
 							{this.renderRelatedLinks()}
+							{this.renderWebsite()}
 						</div>
 						<div className='project-images-links-container'>
 							{this.renderVideo()}
@@ -135,7 +136,6 @@ export default class Project extends Component {
 						</div>
 					</div>
 				</div>
-				
 			</div>
 		);
 	}
