@@ -14,7 +14,6 @@ export default class App extends Component {
 			return (
 				<div className='page header'>
 					<h2>{ headerName }</h2>
-					{ this.renderDownloadBtn()}
 					<div className="page header-divider"></div>
 				</div>
 			);

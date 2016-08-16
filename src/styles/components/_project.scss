@@ -1,6 +1,13 @@
-.project-container {
-	margin-top: 12px;
-	
+.project-container-outer {	
+	@include span-columns(12);
+	height: 100%;
+	overflow-y: auto;
+}
+
+.project-container-inner {
+	margin-top: 70px;
+	margin-bottom: 40px;
+
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
@@ -24,6 +31,7 @@
 		line-height: 28px;
 	}
 }
+
 
 .underline {
 	border-bottom: 2px solid #E7E7E7;

@@ -1,10 +1,10 @@
 div.page.header {
-	// border: 1px solid orange;
+	background: $white;
+	position: absolute;
+	// border: 1px solid blue;
 	padding-top: 20px;
 	padding-bottom: 20px;
-	background: rgba(255, 255, 255, 0.9);
-	position: fixed;
-	top: 0;
+	top: 0px;
 
 	@include media($mobile) {
 		@include span-columns(10);
@@ -12,10 +12,10 @@ div.page.header {
 	}
 
 	@include media($screen-xl) {
-		@include span-columns(9);
+		@include span-columns(12);
 		@include shift(0);
-	}	
-	
+	}
+
 	h2 {
 		margin-top: 0px;
 	}
