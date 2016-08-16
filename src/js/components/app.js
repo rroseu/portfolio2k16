@@ -5,7 +5,7 @@ export default class App extends Component {
 	renderHeader() {
 		// this seems a bit overcomplicated for what it is trying to accomplish.
 		// but apparently react-router dropped support for named routes
-		console.log(this.props.location.pathname);
+		// console.log(this.props.location.pathname);
 
 		var headerName = this.props.location.pathname.replace(/^\/|\/$/g, '');
 		headerName = headerName.charAt(0).toUpperCase() + headerName.slice(1);
