@@ -11,7 +11,7 @@ export default class Resume extends Component {
 				<p>University of Washington</p><br/>
 				<p className='emphasize'>Student</p>
 				<p>School for Poetic Computation</p><br/>
-				<p className='emphasize'>B.S. Informatics (Human–Computer Interaction)</p>
+				<p className='emphasize'>B.S. Informatics (HCI Specialization)</p> 
 				<p>University of California Irvine</p><br/>
 				<p className='emphasize'>B.A. Anthropology</p>
 				<p>University of California Irvine</p>

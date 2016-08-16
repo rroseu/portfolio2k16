@@ -1,35 +1,39 @@
 .resume-container {
-	@include media($mobile) {
-		@include span-columns(10);
-		@include shift(1);
-	}
-
-	@include media($screen-xl) {
-		@include span-columns(12);
-		@include shift(0);
-	}	
-
 	h3 {
 		font-weight: 400;
 		font-size: 18px;
 		padding-bottom: 12px;
 	}
 
-	p {
-		font-size: 14px;
-	}
-
 	p.emphasize {
 		font-weight: bold;
 	}
-}
 
-.left, .middle, .right {
+	// breakpoints
 	@include media($mobile) {
-		@include span-columns(12 of 12);
+		@include span-columns(10);
+		@include shift(1);
+
+		p {
+			font-size: 16px;
+		}
+
+		.left, .middle, .right {
+			@include span-columns(12 of 12);
+		}
 	}
 
 	@include media($screen-xl) {
-		@include span-columns(3.3 of 10);	
-	}
+		@include span-columns(12);
+		@include shift(0);
+
+		p {
+			font-size: 16px;
+			line-height: 40px;
+		}
+
+		.left, .middle, .right {
+			@include span-columns(3.3 of 10);	
+		}
+	}		
 }
