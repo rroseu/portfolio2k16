@@ -2,6 +2,7 @@
 	@include span-columns(12);
 	height: 100%;
 	overflow-y: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 .project-container-inner {
