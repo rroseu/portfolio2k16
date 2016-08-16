@@ -47,7 +47,7 @@ html, body {
 	position: relative;
 
 	@include media($mobile) {
-		@include pad(56px 0px 36px 0px);
+		@include pad(40px 0px 36px 0px);
 	}
 }
 

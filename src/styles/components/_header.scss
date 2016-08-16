@@ -1,6 +1,9 @@
 div.page.header {
-	background: rgba(255, 255, 255, 0.3);
-	position: absolute;
+	// border: 1px solid orange;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background: rgba(255, 255, 255, 0.9);
+	position: fixed;
 	top: 0;
 
 	@include media($mobile) {
@@ -9,7 +12,7 @@ div.page.header {
 	}
 
 	@include media($screen-xl) {
-		@include span-columns(12);
+		@include span-columns(9);
 		@include shift(0);
 	}	
 	
