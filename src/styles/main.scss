@@ -28,7 +28,6 @@ html, body {
 	color: $darkgray;
 	letter-spacing: 0.15px;
 	overflow: hidden;
-	// border: 1px solid blue;
 
 	@include media($mobile) {
 		@include pad(0px 0px 0px 0px);
@@ -43,7 +42,6 @@ html, body {
 	@include span-columns(12);
 	height: 100%;
 	position: relative;
-	// border: 1px solid orange;
 	overflow: hidden;
 
 	@include media($mobile) {
@@ -56,7 +54,9 @@ html, body {
 }
 
 .content-container {
-	// border: 1px solid blue;
+	border: 1px solid blue;
+	background: white;
+	z-index: -1;
 	@include span-columns(12);
 	height: 100%;
 	overflow-y: auto;
