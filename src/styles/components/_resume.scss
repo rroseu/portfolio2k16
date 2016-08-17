@@ -1,5 +1,5 @@
 .resume-container {
-	// border: 1px solid green;
+	border: 1px solid green;
 
 	h3 {
 		font-weight: 400;
@@ -15,7 +15,8 @@
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		margin-bottom: 150px;
+		padding-top: 80px;
+		padding-bottom: 80px;
 
 		p {
 			font-size: 16px;
@@ -29,7 +30,8 @@
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
-		margin-bottom: 0px;
+		padding-top: 40px;
+		padding-bottom: 0px;
 
 		p {
 			font-size: 16px;

@@ -1,21 +1,26 @@
 .project-container-outer {	
 	@include span-columns(12);
 	height: 100%;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
+	
+	@include media($mobile) {
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
+	}
 }
 
 .project-container-inner {
-	padding-bottom: 150px;
-
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
+		padding-top: 80px;
+		padding-bottom: 80px;
 	}
 
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
+		padding-top: 40px;
+		padding-bottom: 0px;
 	}
 
 	div {
