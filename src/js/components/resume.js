@@ -41,7 +41,7 @@ export default class Resume extends Component {
 		return (
 			<div className='content'>
 				<h3 className='underline'>Technical Skills</h3>
-				<p>HTML, CSS (Sass), Javascript (JQuery, Node, React), Git. Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
+				<p>HTML, CSS (Sass, Bourbon, Neat, Bootstrap), Javascript (JQuery, Node, React, Redux), Git, Webpack. Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
 			</div>
 		);
 	}
@@ -58,6 +58,13 @@ export default class Resume extends Component {
 	render() { 
 		return (	
 			<div className='resume-container'>
+				<div className='resume-button-container'>
+				<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
+					<div className='button-container pdf-container'>
+						<span className='button-text'>Download PDF</span>
+					</div>
+				</a>	
+				</div>
 				<div className='left'>
 					{this.renderEducation()}
 				</div>

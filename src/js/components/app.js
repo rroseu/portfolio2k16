@@ -15,6 +15,7 @@ export default class App extends Component {
 				<div className='page header'>
 					<h2>{ headerName }</h2>
 					<div className="page header-divider"></div>
+					
 				</div>
 			);
 		} else {
@@ -31,7 +32,7 @@ export default class App extends Component {
 		return (
 			<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
 				<div className='button-container pdf-container'>
-					<span className='button-text'>Download .pdf</span>
+					<span className='button-text'>Download PDF</span>
 				</div>
 			</a>	
 		);

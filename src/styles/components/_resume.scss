@@ -1,5 +1,5 @@
 .resume-container {
-	margin-bottom: 150px;
+	// border: 1px solid green;
 
 	h3 {
 		font-weight: 400;
@@ -15,7 +15,8 @@
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		
+		margin-bottom: 150px;
+
 		p {
 			font-size: 16px;
 		}
@@ -28,7 +29,7 @@
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
-		margin-top: 40px;
+		margin-bottom: 0px;
 
 		p {
 			font-size: 16px;
@@ -37,6 +38,16 @@
 
 		.left, .middle, .right {
 			@include span-columns(3.3 of 10);	
+		}
+	}
+
+	.resume-button-container {
+		// border: 1px solid blue;
+		@include span-columns(12);
+
+		.button-container.pdf-container {
+			margin-left: 0px;
+			width: 120px;
 		}
 	}		
 }
