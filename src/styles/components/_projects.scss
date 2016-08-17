@@ -10,11 +10,6 @@
 		}
 	}
 
-	.title-container:hover {
-		border-bottom: 2px solid $highlight;
-		cursor: pointer;
-	}
-
 	// breakpoints
 	@include media($mobile) {
 		@include span-columns(10 of 12);
@@ -31,6 +26,11 @@
 	@include media($screen-xl) {
 		@include span-columns(5);
 		@include shift(3.5);
+
+		.title-container:hover {
+			border-bottom: 2px solid $highlight;
+			cursor: pointer;
+		}
 
 		ul {		
 			li {
