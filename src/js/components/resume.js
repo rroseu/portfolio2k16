@@ -3,6 +3,18 @@ import React, { Component } from 'react';
 // redo this ! 
 
 export default class Resume extends Component {
+	renderDownloadButton() {
+		return (
+			<div className='resume-button-container'>
+				<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
+					<div className='button-container pdf-container'>
+						<span className='button-text'>Download PDF</span>
+					</div>
+				</a>	
+			</div>
+		);
+	}
+
 	renderEducation() {
 		return (
 			<div className='content'>
@@ -58,13 +70,7 @@ export default class Resume extends Component {
 	render() { 
 		return (	
 			<div className='resume-container'>
-				<div className='resume-button-container'>
-				<a href='https://dl.dropboxusercontent.com/u/4599418/resume2016.pdf' target='_blank'>
-					<div className='button-container pdf-container'>
-						<span className='button-text'>Download PDF</span>
-					</div>
-				</a>	
-				</div>
+				{this.renderDownloadButton()}
 				<div className='left'>
 					{this.renderEducation()}
 				</div>
