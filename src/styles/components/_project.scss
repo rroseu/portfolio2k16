@@ -2,9 +2,9 @@
 	@include outer-container;
 	height: 100%;
 	z-index: -1;
-	border: 2px solid orange;
+
 	@include media($mobile) {
-		@include pad(60px 0px 40px 0px);
+		@include pad(80px 0px 40px 0px);
 	}
 
 	@include media($screen-xl) {
