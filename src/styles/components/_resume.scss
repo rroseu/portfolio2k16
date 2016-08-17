@@ -1,7 +1,5 @@
 .resume-container {
-	// border: 1px solid orange;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
+	border: 1px solid orange;
 
 	h3 {
 		font-weight: 400;
@@ -33,6 +31,7 @@
 		@include span-columns(12);
 		@include shift(0);
 		margin-top: 40px;
+		padding-top: 20px;
 		padding-bottom: 0px;
 
 		p {
