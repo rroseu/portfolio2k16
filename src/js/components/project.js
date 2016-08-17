@@ -17,12 +17,14 @@ export default class Project extends Component {
 
 	renderHeader() {
 		return (
-			<div className='page header project'>
-				<h2 className='project-title'>
-					<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
-					{this.state.currentProject.title}
-				</h2>
-				<div className="page header-divider"></div>
+			<div className='header-container-outer'>
+				<div className='page header project'>
+					<h2 className='project-title'>
+						<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
+						{this.state.currentProject.title}
+					</h2>
+					<div className="page header-divider"></div>
+				</div>
 			</div>
 		);
 	}
@@ -119,8 +121,8 @@ export default class Project extends Component {
 
 	render() {
 		return (
-			<div className='app-container-inner project'>
-				{this.renderHeader()}
+			<div className='app-container-inner'>
+			{this.renderHeader()}
 				<div className='project-container-outer'>
 					<div className='project-container-inner'>
 						<div className='project-info-container'>

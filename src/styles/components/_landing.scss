@@ -1,3 +1,9 @@
+.landing-container {
+	@include outer-container;
+	border: 2px solid orange;
+	height: 100%;
+}
+
 .header-container {
 	position: relative;
 	top: 50%;

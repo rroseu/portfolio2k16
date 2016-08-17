@@ -14,48 +14,22 @@
 
 html, body {
 	height: 100%;
+	min-height: 100%;
 	margin: 0;
 
-	div {
-		// border: 1px solid blue;
+	#app {
+		height: 100%;
+		font-family: $karla-sans;
+		color: $darkgray;
+		overflow: hidden;
 	}
 }
-
-#app {
-	@include outer-container();
-	height: 100%;
-	font-family: $karla-sans;
-	color: $darkgray;
-	// letter-spacing: 0.15px;
-	overflow: hidden;
-
-	@include media($mobile) {
-		@include pad(0px 0px 0px 0px);
-	}
-
-	@include media($screen-xl) {
-		@include pad(20px 0px 20px 0px);
-	}
-} 
 
 .app-container-inner {
-	@include span-columns(12);
 	height: 100%;
-	position: relative;
-	overflow: hidden;
-
-	@include media($mobile) {
-		@include pad(0px 0px 0px 0px);
-	}
-
-	@include media($screen-xl) {
-		@include pad(default 0px default 0px);
-	}
-}
-
-.content-container {
-	@include span-columns(12);
-	height: 100%;
+	border: 1px solid green;
+	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 }
 
 a {

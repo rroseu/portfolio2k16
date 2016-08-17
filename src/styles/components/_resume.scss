@@ -1,19 +1,8 @@
 .resume-container-outer {
+	@include outer-container;
+	position: relative;
 	height: 100%;
-	overflow-y: auto;
-	-webkit-overflow-scrolling: touch;
 
-	@include media($mobile) {
-		margin-top: 80px;
-		padding-bottom: 160px; 
-
-	}
-
-	@include media($screen-xl) {
-		margin-top: 0px;
-		padding-bottom: 20px;
-		padding-bottom: 0px;
-	}
 }
 
 .resume-container-inner {

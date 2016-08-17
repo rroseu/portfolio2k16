@@ -71,7 +71,7 @@ export default class Resume extends Component {
 		return (	
 			<div className='resume-container-outer'>
 				<div className='resume-container-inner'>
-					{this.renderDownloadButton()}
+					
 					<div className='left'>
 						{this.renderEducation()}
 					</div>

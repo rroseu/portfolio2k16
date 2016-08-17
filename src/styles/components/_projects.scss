@@ -1,4 +1,9 @@
-.projects-menu-container {
+.projects-menu-container-outer {
+	@include outer-container;
+	height: 100%;
+	position: relative;
+
+	.projects-menu-container-inner {
 	position: absolute;
 	top: 50%;
 	transform : translateY(-50%);
@@ -41,4 +46,4 @@
 		}
 	}
 }
-
+}

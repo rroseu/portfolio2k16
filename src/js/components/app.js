@@ -12,17 +12,20 @@ export default class App extends Component {
 
 		if (headerName === 'Resume') {
 			return (
-				<div className='page header'>
-					<h2>{ headerName }</h2>
-					<div className="page header-divider"></div>
-					
+				<div className='header-container-outer'>
+					<div className='page header'>
+						<h2>{ headerName }</h2>
+						<div className="page header-divider"></div>
+					</div>
 				</div>
 			);
 		} else {
 				return (
-					<div className='page header'>
-						<h2>{ headerName }</h2>
-						<div className="page header-divider"></div>
+					<div className='header-container-outer'>
+						<div className='page header'>
+							<h2>{ headerName }</h2>
+							<div className="page header-divider"></div>
+						</div>
 					</div>
 				);
 		}	
@@ -37,11 +40,8 @@ export default class App extends Component {
 
 		return (
 			<div className='app-container-inner'>
-				
-				<div className='content-container'>
 				{ header }
-					{this.props.children}
-				</div>
+				{this.props.children}
 				<Nav />
 			</div>
 		);

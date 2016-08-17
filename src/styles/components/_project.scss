@@ -1,18 +1,13 @@
 .project-container-outer {	
-	@include span-columns(12);
+	@include outer-container;
 	height: 100%;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
-	
+	border: 2px solid orange;
 	@include media($mobile) {
-		margin-top: 80px;
-		padding-bottom: 80px;
+		@include pad(40px 0px 40px 0px);
 	}
 
 	@include media($screen-xl) {
-		margin-top: 40px;
-		padding-top: 20px;
-		padding-bottom: 0px;
+		@include pad(default 0px default 0px);
 	}
 }
 

@@ -1,9 +1,12 @@
+.header-container-outer {
+	@include outer-container;
+	position: relative;
+}
+
 div.page.header {
-	// border: 1px solid green;
+	border: 1px solid green;
 	background: $white;
-	position: absolute;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	position: fixed;
 	top: 0px;
 
 	@include media($mobile) {
