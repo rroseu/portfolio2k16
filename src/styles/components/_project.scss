@@ -2,25 +2,28 @@
 	@include span-columns(12);
 	height: 100%;
 	border: 1px solid blue;
+	overflow: auto;
 	
 	@include media($mobile) {
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
 		padding-top: 80px;
 		padding-bottom: 80px;
 	}
 
 	@include media($screen-xl) {
-		padding-top: 40px;
+		margin-top: 40px;
+		padding-top: 20px;
 		padding-bottom: 0px;
 	}
 }
 
 .project-container-inner {
 	border: 1px solid purple;
+			
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
+		overflow-y: auto;
+		-webkit-overflow-scrolling: touch;
 		// margin-top: 80px;
 		// padding-bottom: 80px;
 	}
