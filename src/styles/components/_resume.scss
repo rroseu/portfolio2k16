@@ -1,8 +1,21 @@
-.resume-container {
-	// border: 1px solid orange;
+.resume-container-outer {
 	height: 100%;
 	overflow-y: auto;
 	-webkit-overflow-scrolling: touch;
+
+	@include media($mobile) {
+		margin-top: 80px;
+		padding-bottom: 80px;
+	}
+
+	@include media($screen-xl) {
+		margin-top: 0px;
+		padding-bottom: 20px;
+		padding-bottom: 0px;
+	}
+}
+
+.resume-container-inner {
 
 	h3 {
 		font-weight: 400;
@@ -18,9 +31,6 @@
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		margin-top: 80px;
-		// padding-top: 20px;
-		padding-bottom: 80px;
 
 		p {
 			font-size: 16px;

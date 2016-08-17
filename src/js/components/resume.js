@@ -69,8 +69,8 @@ export default class Resume extends Component {
 
 	render() { 
 		return (	
-		
-				<div className='resume-container'>
+			<div className='resume-container-outer'>
+				<div className='resume-container-inner'>
 					{this.renderDownloadButton()}
 					<div className='left'>
 						{this.renderEducation()}
@@ -83,7 +83,7 @@ export default class Resume extends Component {
 						{this.renderTools()}
 					</div>
 				</div>
-
+			</div>
 		);
 	}
 }
