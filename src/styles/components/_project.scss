@@ -1,29 +1,35 @@
 .project-container-outer {	
 	@include span-columns(12);
 	height: 100%;
+	border: 1px solid blue;
 	
 	@include media($mobile) {
 		overflow-y: auto;
 		-webkit-overflow-scrolling: touch;
-		padding-top: 80px;
-		padding-bottom: 80px;
+		// margin-top: 80px;
+		// padding-bottom: 80px;
 	}
 
 	@include media($screen-xl) {
-		padding-top: 40px;
-		padding-bottom: 0px;
+		// padding-top: 40px;
+		// padding-bottom: 0px;
 	}
 }
 
 .project-container-inner {
+	border: 1px solid purple;
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
+		margin-top: 80px;
+		padding-bottom: 80px;
 	}
 
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
+		padding-top: 40px;
+		padding-bottom: 0px;
 	}
 
 	div {
