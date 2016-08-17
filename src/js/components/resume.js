@@ -41,7 +41,7 @@ export default class Resume extends Component {
 		return (
 			<div className='content'>
 				<h3 className='underline'>Technical Skills</h3>
-				<p>HTML, CSS (Sass, Bourbon, Neat, Bootstrap), Javascript (JQuery, Node, React, Redux), Git, Webpack. Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
+				<p>HTML, CSS (Sass, Bourbon, Neat, Bootstrap), Javascript (JQuery, Node, React, Redux), Git, Webpack. <br/><br/> Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
 			</div>
 		);
 	}
