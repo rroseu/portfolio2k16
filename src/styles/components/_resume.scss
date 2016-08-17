@@ -5,7 +5,8 @@
 
 	@include media($mobile) {
 		margin-top: 80px;
-		padding-bottom: 80px;
+		padding-bottom: 160px; 
+
 	}
 
 	@include media($screen-xl) {
