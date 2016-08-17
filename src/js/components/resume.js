@@ -69,19 +69,21 @@ export default class Resume extends Component {
 
 	render() { 
 		return (	
-			<div className='resume-container'>
-				{this.renderDownloadButton()}
-				<div className='left'>
-					{this.renderEducation()}
+		
+				<div className='resume-container'>
+					{this.renderDownloadButton()}
+					<div className='left'>
+						{this.renderEducation()}
+					</div>
+					<div className='middle'>
+						{this.renderExperience()}
+					</div>
+					<div className='right'>
+						{this.renderTechnicalSkills()}
+						{this.renderTools()}
+					</div>
 				</div>
-				<div className='middle'>
-					{this.renderExperience()}
-				</div>
-				<div className='right'>
-					{this.renderTechnicalSkills()}
-					{this.renderTools()}
-				</div>
-			</div>
+
 		);
 	}
 }

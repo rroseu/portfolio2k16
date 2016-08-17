@@ -1,7 +1,6 @@
 .project-container-outer {	
 	@include span-columns(12);
 	height: 100%;
-	// border: 1px solid blue;
 	overflow: auto;
 	-webkit-overflow-scrolling: touch;
 	
@@ -18,7 +17,6 @@
 }
 
 .project-container-inner {
-	// border: 1px solid purple;
 			
 	@include media($mobile) {
 		@include span-columns(10);
@@ -75,7 +73,7 @@
 	iframe {
 		@include fill-parent;
 	}
-	
+
 	img {
 		@include fill-parent;
 	}
