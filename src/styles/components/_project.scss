@@ -1,8 +1,9 @@
 .project-container-outer {	
 	@include span-columns(12);
 	height: 100%;
-	border: 1px solid blue;
+	// border: 1px solid blue;
 	overflow: auto;
+	-webkit-overflow-scrolling: touch;
 	
 	@include media($mobile) {
 		margin-top: 80px;
@@ -17,13 +18,12 @@
 }
 
 .project-container-inner {
-	border: 1px solid purple;
+	// border: 1px solid purple;
 			
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		overflow-y: auto;
-		-webkit-overflow-scrolling: touch;
+		overflow-y: auto;	
 		// margin-top: 80px;
 		// padding-bottom: 80px;
 	}
@@ -69,15 +69,13 @@
 
 .description-container {
 	@include fill-parent;
-	// border: 1px solid blue;
 }
 
 .project-images-links-container {
-	// border: 1px solid black;
-	// height: 100%;
 	iframe {
 		@include fill-parent;
 	}
+	
 	img {
 		@include fill-parent;
 	}
