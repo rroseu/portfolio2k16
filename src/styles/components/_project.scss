@@ -3,13 +3,13 @@
 	height: 100%;
 	z-index: -1;
 	border: 2px solid orange;
-	// @include media($mobile) {
-	// 	@include pad(40px 0px 40px 0px);
-	// }
+	@include media($mobile) {
+		@include pad(60px 0px 40px 0px);
+	}
 
-	// @include media($screen-xl) {
-	// 	@include pad(default 0px default 0px);
-	// }
+	@include media($screen-xl) {
+		@include pad(default 0px default 0px);
+	}
 }
 
 .project-container-inner {
@@ -18,8 +18,8 @@
 		@include span-columns(10);
 		@include shift(1);
 		overflow-y: auto;	
-		margin-top: 40px;
-		margin-bottom: 40px;
+		// margin-top: 40px;
+		// margin-bottom: 40px;
 		// margin-top: 80px;
 		// padding-bottom: 80px;
 	}
