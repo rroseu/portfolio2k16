@@ -70,7 +70,7 @@ export const projects = {
 		'responsibilities': 'I designed and developed this visualization.',
 		'tools': 'HTML, CSS, Javascript (D3)',
 		'images': ['../assets/projects/lunaites/lunaites-1.png'],
-		'link': 'rroseu.github.io/lunaites',
+		'link': 'http://rroseu.github.io/lunaites',
 	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
@@ -96,14 +96,15 @@ export const projects = {
 	'little-renders': {
 		'route': '/work/little-renders',
 		'title': 'Series: Little Renders',
-		'description': 'An ongoing personal project for learning 3D graphics.',
-		'images': [],
+		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
+		'images': ['../assets/projects/little-renders/render-01.png'],
+		'link': 'http://rru.tumblr.com',
 		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
 		'relatedLinks': [
 			{
 				'from': 'Instagram',
 				'link': 'http://www.instagram.com/kitty.gif'
-			},
+			}
 		]
 	},
 	'euphonious': {
