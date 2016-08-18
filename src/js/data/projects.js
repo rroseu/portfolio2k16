@@ -121,7 +121,6 @@ export const projects = {
 		'description': 'An ongoing personal project for learning 3D graphics.',
 		'images': [],
 		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
-		'link': '',
 		'relatedLinks': [
 			{
 				'from': 'Instagram',
