@@ -22,13 +22,13 @@ html, body {
 		font-family: $karla-sans;
 		color: $darkgray;
 		overflow: hidden;
-	}
-}
 
-.app-container-inner {
-	height: 100%;
-	overflow: auto;
-	-webkit-overflow-scrolling: touch;
+		.app-container-inner {
+			height: 100%;
+			overflow: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
 }
 
 a {

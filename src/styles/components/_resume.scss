@@ -1,10 +1,20 @@
 .resume-container-outer {
 	@include outer-container;
+	// border: 2px solid green;
 	position: relative;
 	height: 100%;
+
+	@include media($mobile) {
+		@include pad(80px 0px 0px 0px);
+	}
+
+	@include media($screen-xl) {
+		@include pad(default 0px default 0px);
+	}
 }
 
 .resume-container-inner {
+	padding-bottom: 80px;
 
 	h3 {
 		font-weight: 400;

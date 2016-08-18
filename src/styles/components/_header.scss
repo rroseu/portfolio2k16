@@ -1,5 +1,6 @@
 .header-container-outer {
 	@include outer-container;
+	z-index: 9999;
 	background: $white;
 	position: relative;
 }
@@ -9,7 +10,6 @@ div.page.header {
 	padding-bottom: 20px;
 	background: $white;
 	position: fixed;
-	z-index: 9999;
 	top: 0px;
 
 	@include media($mobile) {
