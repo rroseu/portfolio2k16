@@ -54,7 +54,7 @@ h2 {
 		border-bottom: none;
 	}
 	
-	@include media($screen-xl) {
+	@include media($screen) {
 		border-bottom: 2px solid $divider-gray;
 	}
 }

@@ -60,7 +60,7 @@ export default class Resume extends Component {
 
 	renderTools() {
 		return (
-			<div className='content'>
+			<div className='content-last'>
 				<h3 className='underline'>Design Tools</h3>
 				<p>Sketch 3, Illustrator, Photoshop, Balsamiq, Pixate, Cinema 4D</p>
 			</div>
@@ -71,6 +71,7 @@ export default class Resume extends Component {
 		return (	
 			<div className='resume-container-outer'>
 				<div className='resume-container-inner'>
+					{this.renderDownloadButton()}
 					<div className='left'>
 						{this.renderEducation()}
 					</div>
