@@ -12,6 +12,11 @@
 		top: 40%;
 		@include span-columns(10 of 12);
 		@include shift(1 of 12);
+		max-width: 350px;
+	}
+
+	@include media($tablet) {
+		@include span-columns(4 of 12);
 	}
 
 	@include media($screen-xl) {
@@ -25,7 +30,6 @@
 		color: $black;
 	
 		@include media($mobile) {
-			
 			font-size: 40px;
 			line-height: 58px;
 		}

@@ -7,8 +7,8 @@ $grid-columns: 12;
 $max-width: 1200px;
 // $visual-grid: true;
 
-$small: 320px !default;
-
 // breakpoints
-$mobile: new-breakpoint(min-width $small);
-$screen-xl: new-breakpoint(min-width 1200px, 12);
+$mobile: new-breakpoint(min-width 320px);
+$tablet: new-breakpoint(min-width 720px);
+$screen: new-breakpoint(min-width 1200px);
+$screen-xl: new-breakpoint(min-width 1600px);

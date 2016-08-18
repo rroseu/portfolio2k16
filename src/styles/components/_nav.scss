@@ -10,7 +10,7 @@
 			border-top: 2px solid $divider-gray;
 		}
 
-		@include media($screen-xl) {
+		@include media($screen) {
 			border-top: 2px solid $white;
 		}
 	}
@@ -63,7 +63,7 @@
 					visibility: none;
 				}
 
-				@include media($screen-xl) {
+				@include media($screen) {
 					visibility: visible;
 					-webkit-transform: scaleX(1);
 					transform: scaleX(1);
@@ -83,11 +83,16 @@
 			bottom: 0px;
 		}
 
-		@include media($screen-xl) {
+		@include media($tablet) {
 			border-top: none;
-			@include shift(0);
 			width: 325px;
 			bottom: 40px;
-		}	
+		}
+
+		@include media($screen-xl) {
+			@include shift(0);
+		}
+
+
 	}
 }
