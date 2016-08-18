@@ -31,7 +31,7 @@ export default class Project extends Component {
 
 	renderDescription() {
 		return (
-			<div className='description-container'>
+			<div className='description-container project-content-container'>
 				<h2 className='underline'>About</h2>
 				<p>{this.state.currentProject.description}</p>
 			</div>
@@ -41,7 +41,7 @@ export default class Project extends Component {
 	renderResponsibilities() {
 		if (this.state.currentProject.responsibilities) {
 			return (
-				<div className='responsibilities-container'>
+				<div className='responsibilities-container project-content-container'>
 					<h2 className='underline'>My role</h2>
 					<p>{this.state.currentProject.responsibilities}</p>
 				</div>
@@ -52,11 +52,13 @@ export default class Project extends Component {
 	renderWebsite() {
 		if (this.state.currentProject.link) {
 			return (
-				<a href={this.state.currentProject.link} target='_blank'>
-					<div className='button-container'>
-						<span className='button-text'>View project</span>
-					</div>
-				</a>	
+				<div className='button-container-outer'>
+					<a href={this.state.currentProject.link} target='_blank'>
+						<div className='button-container'>
+							<span className='button-text'>View project</span>
+						</div>
+					</a>	
+				</div>
 			);
 		}
 	} 
@@ -90,7 +92,7 @@ export default class Project extends Component {
 	renderRelatedLinks() {
 		if (this.state.currentProject.relatedLinks && this.state.currentProject.relatedLinks.length !== 0) {
 			return (
-				<div className='project-links-container'>
+				<div className='project-links-container project-content-container'>
 					<h2 className='underline'>Related Links</h2>
 					<ul>
 					{
@@ -111,7 +113,7 @@ export default class Project extends Component {
 	renderTools() {
 		if (this.state.currentProject.tools) {
 			return (
-				<div className='tools-container'>
+				<div className='tools-container project-content-container'>
 					<h2 className='underline'>Tools</h2>
 					<p>{this.state.currentProject.tools}</p>
 				</div>
@@ -126,6 +128,7 @@ export default class Project extends Component {
 				<div className='project-container-outer'>
 					<div className='project-container-inner' id={this.props.params.url}>
 						<div className='project-info-container'>
+							{this.renderWebsite()}
 							{this.renderDescription()}
 							{this.renderResponsibilities()}
 							{this.renderTools()}

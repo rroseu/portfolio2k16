@@ -1,3 +1,16 @@
+.button-container-outer {
+	@include span-columns(12);
+	margin-bottom: 20px;
+
+	@include media($mobile) {
+		margin-top: 20px;
+	}
+
+	@include media($tablet) {
+		margin-top: 0px;
+	}
+}
+
 .button-container {
 	background: white;
 	border: 2px solid $darkgray;
@@ -12,14 +25,13 @@
 	}
 
 	@include media($mobile) {
-		bottom: 0;
-		@include span-columns(10);
-		@include shift(1);
+		@include span-columns(12);
 	}
 
-	@include media($screen-xl) {
-		top: 0;
-		right: 0;
+	@include media($tablet) {
+		@include shift(0);
+		// position: absolute;
 		width: 120px;
+		margin: 0px;
 	}
 }
