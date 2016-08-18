@@ -28,8 +28,8 @@
 }
 
 .project-container-inner {
-	padding-left: 2px;
-	padding-right: 2px;
+	padding-left: 8px;
+	padding-right: 8px;
 
 	@include media($mobile) {
 		@include span-columns(10);
