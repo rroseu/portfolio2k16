@@ -8,27 +8,16 @@ export default class App extends Component {
 		// console.log(this.props.location.pathname);
 
 		var headerName = this.props.location.pathname.replace(/^\/|\/$/g, '');
-		headerName = headerName.charAt(0).toUpperCase() + headerName.slice(1);
+		var upperCasedHeaderName = headerName.charAt(0).toUpperCase() + headerName.slice(1);
 
-		if (headerName === 'Resume') {
-			return (
-				<div className='header-container-outer'>
-					<div className='page header'>
-						<h2>{ headerName }</h2>
-						<div className="page header-divider"></div>
-					</div>
+		return (
+			<div className='header-container-outer'>
+				<div className='page header' id={headerName}>
+					<h2>{ upperCasedHeaderName }</h2>
+					<div className="page header-divider"></div>
 				</div>
-			);
-		} else {
-				return (
-					<div className='header-container-outer'>
-						<div className='page header'>
-							<h2>{ headerName }</h2>
-							<div className="page header-divider"></div>
-						</div>
-					</div>
-				);
-		}	
+			</div>
+		);
 	}
 
 	render() {
@@ -42,7 +31,7 @@ export default class App extends Component {
 			<div className='app-container-inner'>
 				{ header }
 				{this.props.children}
-				<Nav />
+				<Nav currentPath={this.props.location.pathname.replace(/^\/|\/$/g, '')} />
 			</div>
 		);
 	}

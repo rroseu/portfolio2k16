@@ -1,8 +1,13 @@
 .header-container-outer {
 	@include outer-container;
 	z-index: 9999;
-	background: $white;
 	position: relative;
+}
+
+#project.page.header, #resume.page.header {
+	@include media($mobile) {
+		border-bottom: 2px solid $divider-gray;
+	}
 }
 
 div.page.header {
@@ -20,6 +25,7 @@ div.page.header {
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
+		border-bottom: none;
 	}
 
 	h2 {

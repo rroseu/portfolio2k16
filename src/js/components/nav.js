@@ -3,9 +3,11 @@ import { Link } from 'react-router';
 
 export default class Nav extends Component {
 	render() {
+    console.log(this.props.currentPath);
+
 		return (
 			<div className='nav-container-outer'>
-				<div className='nav-container-inner'>
+				<div className='nav-container-inner' id={this.props.currentPath}>
 					<ul className='nav-links'>
 						<Link to='about' activeClassName='nav-link-active' className='nav-link'>About</Link>
 						<li className='nav-divider'>/</li>

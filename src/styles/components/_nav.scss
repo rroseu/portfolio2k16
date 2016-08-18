@@ -3,11 +3,24 @@
 	position: relative;
 	z-index: 9999;
 
-	.nav-container-inner {
+	#resume.nav-container-inner {
 		position: fixed;
 		bottom: 0px;
+
+		@include media($mobile) {
+			border-top: 2px solid $divider-gray;
+		}
+
+		@include media($screen-xl) {
+			border-top: none;
+		}
+	}
+
+	.nav-container-inner {
 		background: $white;
-		// border: 2px solid blue;
+		position: fixed;
+		bottom: 0px;
+		border-top: 2px solid $white;
 		padding-top: 20px;
 		height: 60px;
 		line-height: 20px;
@@ -72,6 +85,7 @@
 		}
 
 		@include media($screen-xl) {
+			border-top: none;
 			@include shift(0);
 			width: 325px;
 		}	

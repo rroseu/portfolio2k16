@@ -18,7 +18,7 @@ export default class Project extends Component {
 	renderHeader() {
 		return (
 			<div className='header-container-outer'>
-				<div className='page header project'>
+				<div className='page header project' id='project'>
 					<h2 className='project-title'>
 						<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
 						{this.state.currentProject.title}
