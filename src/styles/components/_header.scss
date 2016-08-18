@@ -15,8 +15,6 @@
 }
 
 div.page.header {
-	padding-top: 20px;
-	padding-bottom: 20px;
 	background: $white;
 	position: fixed;
 	top: 0px;
@@ -24,12 +22,16 @@ div.page.header {
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
 		border-bottom: none;
+		padding-top: 40px;
+		padding-bottom: 20px;
 	}
 
 	h2 {
