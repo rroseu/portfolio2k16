@@ -12,7 +12,7 @@
 		}
 
 		@include media($screen-xl) {
-			border-top: none;
+			border-top: 2px solid $white;
 		}
 	}
 

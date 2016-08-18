@@ -8,6 +8,10 @@
 	@include media($mobile) {
 		border-bottom: 2px solid $divider-gray;
 	}
+
+	@include media($screen-xl) {
+		border-bottom: 2px solid $white;
+	}
 }
 
 div.page.header {
