@@ -7,13 +7,14 @@
 		@include pad(80px 0px 0px 0px);
 	}
 
-	@include media($screen-xl) {
+	@include media($screen) {
 		@include pad(default 0px default 0px);
 	}
 }
 
 .resume-container-inner {
 	padding-bottom: 80px;
+	padding-left: 2px;
 
 	h3 {
 		font-weight: 400;
@@ -39,6 +40,21 @@
 		}
 	}
 
+	@include media($screen) {
+		@include span-columns(10);
+		@include shift(1);
+		padding-top: 40px;
+
+		p {
+			font-size: 14px;
+			line-height: 32px;
+		}
+
+		.left, .middle, .right {
+			@include span-columns(3.3 of 10);
+		}
+	}
+
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
@@ -48,7 +64,7 @@
 
 		p {
 			font-size: 16px;
-			line-height: 40px;
+			line-height: 36px;
 		}
 
 		.left, .middle, .right {

@@ -9,7 +9,7 @@
 		border-bottom: 2px solid $divider-gray;
 	}
 
-	@include media($screen-xl) {
+	@include media($screen) {
 		border-bottom: 2px solid $white;
 	}
 }
@@ -18,6 +18,8 @@ div.page.header {
 	background: $white;
 	position: fixed;
 	top: 0px;
+	// left: -2px;
+	margin-left: -2px;
 	padding-bottom: 20px;
 
 	@include media($mobile) {
