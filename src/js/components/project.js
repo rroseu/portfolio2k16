@@ -124,7 +124,7 @@ export default class Project extends Component {
 			<div className='app-container-inner'>
 			{this.renderHeader()}
 				<div className='project-container-outer'>
-					<div className='project-container-inner'>
+					<div className='project-container-inner' id={this.props.params.url}>
 						<div className='project-info-container'>
 							{this.renderDescription()}
 							{this.renderResponsibilities()}

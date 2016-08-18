@@ -63,28 +63,6 @@ export const projects = {
 			}
 		]
 	},
-	'critical-design-feminist-hackerspaces': {
-		'route': '/work/critical-design-feminist-hackerspaces',
-		'title': 'Critical Design + Feminist Hackerspaces',
-		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on feminist hackerspaces.',
-		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
-		'tools': 'Participant observation, semi-structured interviews',
-		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
-		'relatedLinks': [
-			{
-				'from': 'CSCW 2015',
-				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
-			},
-			{
-				'from': 'Critical Design Workshop',
-				'link': 'http://depts.washington.edu/tatlab/criticaldesign/'
-			},
-			{
-				'from': 'Feminist Hackerspace Zine',
-				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
-			}
-		]
-	},
 	'lunaites': {
 		'route': '/work/lunaites',
 		'title': 'Lunaites',
@@ -136,5 +114,27 @@ export const projects = {
 		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
 		'images': ['../assets/projects/euphonious/euphonious-1.png'],
 		'link': '',
+	},
+	'feminist-hackerspace-research': {
+		'route': '/work/feminist-hackerspace-research',
+		'title': 'Feminist Hackerspace Research',
+		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on critical design and feminist hackerspaces.',
+		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
+		'tools': 'Participant observation, semi-structured interviews',
+		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
+		'relatedLinks': [
+			{
+				'from': 'CSCW 2015',
+				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
+			},
+			{
+				'from': 'Critical Design Workshop',
+				'link': 'http://depts.washington.edu/tatlab/criticaldesign/'
+			},
+			{
+				'from': 'Feminist Hackerspace Zine',
+				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
+			}
+		]
 	}
 };

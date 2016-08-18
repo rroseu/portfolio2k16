@@ -3,18 +3,34 @@
 	height: 100%;
 	z-index: -1;
 
-
 	@include media($mobile) {
 		@include pad(80px 0px 40px 0px);
 	}
 
 	@include media($screen-xl) {
 		@include pad(default 0px default 0px);
+	}
+}
+
+#feminist-hackerspace-research.project-container-inner {
+	@include media($mobile) {
+		@include span-columns(10);
+		@include shift(1);
+		overflow-y: auto;	
+		margin-top: 20px;
+	}
+
+	@include media($screen-xl) {
+		@include span-columns(12);
+		@include shift(0);
 		margin-top: 40px;
 	}
 }
 
 .project-container-inner {
+	padding-left: 2px;
+	padding-right: 2px;
+
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
@@ -24,6 +40,7 @@
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
+		margin-top: 40px;
 	}
 
 	div {
@@ -39,7 +56,6 @@
 
 	h2 {
 		font-size: 18px;
-
 		@include media($mobile) {
 			padding-bottom: 0px;
 			margin-bottom: 4px;
@@ -58,16 +74,6 @@
 	}
 }
 
-.underline {
-	@include media($mobile) {
-		border-bottom: none;
-	}
-	
-	@include media($screen-xl) {
-		border-bottom: 2px solid $divider-gray;
-	}
-}
-
 .project-info-container {
 	height: 100%;
 
@@ -75,7 +81,7 @@
 		@include span-columns(12);
 	}
 
-	@include media($screen-xl) {
+	@include media($tablet) {
 		@include span-columns(4);
 		@include shift(0);
 	}
@@ -98,7 +104,7 @@
 		@include span-columns(12);
 	}
 
-	@include media($screen-xl) {
+	@include media($tablet) {
 		@include span-columns(7.5);
 		@include shift(0.5);
 	}
@@ -109,7 +115,7 @@
 		display: none;
 	}
 
-	@include media($screen-xl) {
+	@include media($tablet) {
 		display: inline;
 		float: left;
 		margin-left: -40px;

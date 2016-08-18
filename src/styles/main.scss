@@ -42,8 +42,21 @@ a:visited {
 
 h2 {
 	line-height: 24px;
-	font-size: 20px;
 	font-weight: 400;
+
+	@include media($mobile) {
+		font-size: 20px;
+	}
+}
+
+.underline {
+	@include media($mobile) {
+		border-bottom: none;
+	}
+	
+	@include media($screen-xl) {
+		border-bottom: 2px solid $divider-gray;
+	}
 }
 
 ul{
