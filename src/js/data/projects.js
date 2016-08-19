@@ -33,7 +33,7 @@ export const projects = {
 		'route': '/work/little-renders',
 		'title': 'Series: Little Renders',
 		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
-		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-05.png'],
+		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-04.png', '../assets/projects/little-renders/render-05.png'],
 		'link': 'http://rru.tumblr.com',
 		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
 		'relatedLinks': [
