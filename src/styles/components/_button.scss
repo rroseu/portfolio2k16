@@ -30,7 +30,6 @@
 
 	@include media($tablet) {
 		@include shift(0);
-		// position: absolute;
 		width: 120px;
 		margin: 0px;
 	}

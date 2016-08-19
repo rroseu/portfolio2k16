@@ -5,7 +5,7 @@ export const projects = {
 		'description': 'A web-based VR platform for creating and sharing immersive 360° photospheres.',
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform. In addition, I led the initial visual design process and UX research for this internal project. pocktVR is currently in private beta.',
 		'tools': 'HTML (Jade), CSS (Sass), Javascript (React, Node, A-Frame), Sketch 3.',
-		'images': ['../assets/projects/pocktvr/pocktvr-1.jpg'],
+		'images': ['../assets/projects/pocktvr/pocktvr-1.png'],
 		'link': 'http://pocktvr.io',
 		'relatedLinks': []
 	},

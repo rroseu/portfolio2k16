@@ -72,16 +72,15 @@
 
 	h2 {
 		font-size: 18px;
+		font-weight: bold;
 		color: $black;
 
 		@include media($mobile) {
 			padding-bottom: 0px;
 			margin-bottom: 4px;
-			font-weight: bold;
 		}
 
 		@include media($screen) {
-			// font-weight: 400;
 			padding-bottom: 12px;
 			margin-bottom: 12px;
 		}
