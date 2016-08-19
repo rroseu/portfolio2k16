@@ -15,13 +15,15 @@ export default class Project extends Component {
 		}
 	}
 
-	renderBanner() {
-		return (
-			<div className='banner-container'>
-				<img className='banner-image' src={this.state.currentProject.banner} />
-			</div>
-		);
-	}
+
+	// not sure if I want to use this yet
+	// renderBanner() {
+	// 	return (
+	// 		<div className='banner-container'>
+	// 			<img className='banner-image' src={this.state.currentProject.banner} />
+	// 		</div>
+	// 	);
+	// }
 
 	renderHeader() {
 		return (
@@ -136,7 +138,6 @@ export default class Project extends Component {
 				<div className='project-container-outer'>
 					<div className='project-container-inner' id={this.props.params.url}>
 						<div className='project-info-container'>
-							{this.renderBanner()}
 							{this.renderWebsite()}
 							{this.renderDescription()}
 							{this.renderResponsibilities()}

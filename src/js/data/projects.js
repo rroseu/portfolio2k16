@@ -106,7 +106,7 @@ export const projects = {
 		'description': 'Asteroids impacting the moon result in debris that sometimes makes its way through earth\'s atmosphere. These are lunar meteorites, also known as \'lunaites.\' "Lunaites" is a web-based information visualization for exploring lunar meteorite landings on earth.',
 		'responsibilities': 'I designed and developed this visualization.',
 		'tools': 'HTML, CSS, Javascript (D3)',
-		'images': ['../assets/projects/lunaites/lunaites-1.png'],
+		'images': ['../assets/projects/lunaites/lunaites-2.png'],
 		'link': 'http://rroseu.github.io/lunaites',
 	},
 	'euphonious': {
