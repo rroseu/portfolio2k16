@@ -16,7 +16,7 @@
 	padding-bottom: 80px;
 
 	h3 {
-		font-weight: 400;
+		font-weight: bold;
 
 		@include media($mobile) {
 			padding-bottom: 0px;
