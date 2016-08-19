@@ -1,11 +1,9 @@
 .nav-container-outer {
 	@include outer-container;
 	position: relative;
-
 	z-index: 9999;
 
 	#resume.nav-container-inner {
-		// position: fixed;
 
 		@include media($mobile) {
 			border-top: 2px solid $divider-gray;
@@ -17,7 +15,6 @@
 	}
 
 	.nav-container-inner {
-		// border: 2px solid orange;
 		background: $white;
 		position: fixed;
 		border-top: 2px solid $white;
