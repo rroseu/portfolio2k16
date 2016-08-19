@@ -80,7 +80,7 @@
 			border-bottom: 2px solid $divider-gray;
 		}
 
-		@include media($screen-xl) {
+		@include media($screen) {
 			border-bottom: 2px solid $white;
 		}
 	}
