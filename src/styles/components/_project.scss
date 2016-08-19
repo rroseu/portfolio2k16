@@ -34,6 +34,21 @@
 	}
 }
 
+.banner-container {
+	@include media($mobile) {
+		@include fill-parent;
+
+		.banner-image {
+			padding-top: 20px;
+			@include fill-parent;
+		}
+	}
+	
+	@include media($tablet) {
+		display: none;
+	}
+}
+
 .project-container-inner {
 	height: 100%;
 	padding-left: 4px;

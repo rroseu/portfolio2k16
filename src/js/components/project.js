@@ -15,6 +15,14 @@ export default class Project extends Component {
 		}
 	}
 
+	renderBanner() {
+		return (
+			<div className='banner-container'>
+				<img className='banner-image' src={this.state.currentProject.banner} />
+			</div>
+		);
+	}
+
 	renderHeader() {
 		return (
 			<div className='header-container-outer'>
@@ -124,10 +132,11 @@ export default class Project extends Component {
 	render() {
 		return (
 			<div className='app-container-inner'>
-			{this.renderHeader()}
+				{this.renderHeader()}	
 				<div className='project-container-outer'>
 					<div className='project-container-inner' id={this.props.params.url}>
 						<div className='project-info-container'>
+							{this.renderBanner()}
 							{this.renderWebsite()}
 							{this.renderDescription()}
 							{this.renderResponsibilities()}

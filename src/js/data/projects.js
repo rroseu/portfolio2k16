@@ -50,6 +50,7 @@ export const projects = {
 		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
 		'tools': 'HTML, CSS, Javascript (C3, Isotope)',	
 		'video': '<iframe src="https://player.vimeo.com/video/150455606?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+		'banner': '../assets/projects/chinafile/banner.png',
 		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_02.png', '../assets/projects/chinafile/chinafile_04.png'],
 		'link': 'http://anticorruption.chinafile.com',
 		'relatedLinks': [
