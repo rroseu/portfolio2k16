@@ -16,7 +16,7 @@ export const projects = {
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I built two ReactJS apps to support this experience.',
 		'tools': 'HTML, CSS (Sass), Javascript/ES6 (Node, React), Webpack', 
 		'video': '<iframe src="https://player.vimeo.com/video/164570589" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-		'images': ['../assets/projects/memory-observatory/memory-observatory-1.jpeg'],
+		'images': ['../assets/projects/memory-observatory/memory-observatory-1.png'],
 		'link': 'http://www.kodakmoments.com/sxsw/',
 		'relatedLinks': [
 			{
@@ -33,7 +33,7 @@ export const projects = {
 		'route': '/work/little-renders',
 		'title': 'Series: Little Renders',
 		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
-		'images': ['../assets/projects/little-renders/render-01.png'],
+		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-05.png'],
 		'link': 'http://rru.tumblr.com',
 		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
 		'relatedLinks': [
@@ -50,7 +50,7 @@ export const projects = {
 		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
 		'tools': 'HTML, CSS, Javascript (C3, Isotope)',	
 		'video': '<iframe src="https://player.vimeo.com/video/150455606?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_03.png', '../assets/projects/chinafile/chinafile_06.png'],
+		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_02.png', '../assets/projects/chinafile/chinafile_04.png'],
 		'link': 'http://anticorruption.chinafile.com',
 		'relatedLinks': [
 			{
