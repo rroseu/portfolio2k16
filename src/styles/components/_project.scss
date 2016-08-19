@@ -20,10 +20,17 @@
 		margin-top: 20px;
 	}
 
+	@include media($tablet) {
+		margin-top: 40px;
+	}
+
+	@include media($screen) {
+		margin-top: 60px;
+	}
+
 	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
-		margin-top: 40px;
 	}
 }
 
@@ -38,10 +45,18 @@
 		overflow-y: auto;	
 	}
 
+	@include media($tablet) {
+		margin-top: 20px;
+	}
+
 	@include media($screen) {
+		margin-top: 40px;
+	}
+
+	@include media($screen-xl) {
 		@include span-columns(12);
 		@include shift(0);
-		margin-top: 50px;
+		margin-top: 60px;
 	}
 
 	.project-content-container {
@@ -57,13 +72,15 @@
 
 	h2 {
 		font-size: 18px;
+		color: $black;
+
 		@include media($mobile) {
 			padding-bottom: 0px;
 			margin-bottom: 4px;
 			font-weight: bold;
 		}
 
-		@include media($screen-xl) {
+		@include media($screen) {
 			font-weight: 400;
 			padding-bottom: 12px;
 			margin-bottom: 12px;
@@ -99,6 +116,8 @@
 
 	img {
 		@include fill-parent;
+		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 
 	@include media($mobile) {

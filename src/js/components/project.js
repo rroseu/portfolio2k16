@@ -92,7 +92,7 @@ export default class Project extends Component {
 	renderRelatedLinks() {
 		if (this.state.currentProject.relatedLinks && this.state.currentProject.relatedLinks.length !== 0) {
 			return (
-				<div className='project-links-container project-content-container'>
+				<div className='project-links-container project-content-container-last'>
 					<h2 className='underline'>Related Links</h2>
 					<ul>
 					{
@@ -135,8 +135,8 @@ export default class Project extends Component {
 							{this.renderRelatedLinks()}
 						</div>
 						<div className='project-images-links-container'>
-							{this.renderVideo()}
 							{this.renderImages()}
+							{this.renderVideo()}
 						</div>
 					</div>
 				</div>

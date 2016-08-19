@@ -1,30 +1,10 @@
 export const projects = {
-	'chinafile': {
-		'route': '/work/chinafile',
-		'title': 'Catching Tigers & Flies',
-		'description': 'Schema Design collaborated with ChinaFile, a publication by Asia Society, to create an interactive tool for visualizing and understanding corruption in China.',
-		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
-		'tools': 'HTML, CSS, Javascript (C3, Isotope)',	
-		'video': '<iframe src="https://player.vimeo.com/video/150455606?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_02.png', '../assets/projects/chinafile/chinafile_03.png', '../assets/projects/chinafile/chinafile_04.png', '../assets/projects/chinafile/chinafile_05.png'],
-		'link': 'http://anticorruption.chinafile.com',
-		'relatedLinks': [
-			{
-				'from': 'New York Times',
-				'link': 'http://www.nytimes.com/2016/01/22/world/asia/china-database-tigers-and-flies-xi-jinping.html?_r=0'
-			}, 
-			{
-				'from': 'Chinafile',
-				'link': 'https://www.chinafile.com/infographics/visualizing-chinas-anti-corruption-campaign'
-			}
-		]
-	},
 	'pocktvr': {
 		'route': '/work/pocktvr',
 		'title': 'pocktVR',
 		'description': 'A web-based VR platform for creating and sharing immersive 360° photospheres.',
-		'responsibilities': 'As a Design Technologist Apprentice at Junior, I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform. In addition, I led the initial visual design process and UX research for this internal project.',
-		'tools': 'HTML (Jade), CSS (Sass), Javascript (React, Node, A-Frame), Sketch 3',
+		'responsibilities': 'As a Design Technologist Apprentice at Junior, I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform. In addition, I led the initial visual design process and UX research for this internal project. pocktVR is currently in private beta.',
+		'tools': 'HTML (Jade), CSS (Sass), Javascript (React, Node, A-Frame), Sketch 3.',
 		'images': ['../assets/projects/pocktvr/pocktvr-1.jpg'],
 		'link': 'http://pocktvr.io',
 		'relatedLinks': []
@@ -46,6 +26,62 @@ export const projects = {
 			{
 				'from': 'Adweek',
 				'link': 'http://www.adweek.com/news/technology/kodak-alaris-immersive-memory-observatory-sxsw-launches-its-new-photo-sharing-app-170131'
+			}
+		]
+	},
+	'little-renders': {
+		'route': '/work/little-renders',
+		'title': 'Series: Little Renders',
+		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
+		'images': ['../assets/projects/little-renders/render-01.png'],
+		'link': 'http://rru.tumblr.com',
+		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
+		'relatedLinks': [
+			{
+				'from': 'Instagram',
+				'link': 'http://www.instagram.com/kitty.gif'
+			}
+		]
+	},
+	'chinafile': {
+		'route': '/work/chinafile',
+		'title': 'Catching Tigers & Flies',
+		'description': 'Schema Design collaborated with ChinaFile, a publication by Asia Society, to create an interactive tool for visualizing and understanding corruption in China.',
+		'responsibilities': 'As the Creative Technologist in Residence at Schema Design, I met with the client weekly throughout their data collection process and collaborated with another developer to build the website.',
+		'tools': 'HTML, CSS, Javascript (C3, Isotope)',	
+		'video': '<iframe src="https://player.vimeo.com/video/150455606?color=ffffff&title=0&byline=0&portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+		'images': ['../assets/projects/chinafile/chinafile_01.png', '../assets/projects/chinafile/chinafile_03.png', '../assets/projects/chinafile/chinafile_06.png'],
+		'link': 'http://anticorruption.chinafile.com',
+		'relatedLinks': [
+			{
+				'from': 'New York Times',
+				'link': 'http://www.nytimes.com/2016/01/22/world/asia/china-database-tigers-and-flies-xi-jinping.html?_r=0'
+			}, 
+			{
+				'from': 'Chinafile',
+				'link': 'https://www.chinafile.com/infographics/visualizing-chinas-anti-corruption-campaign'
+			}
+		]
+	},
+	'feminist-hackerspace-research': {
+		'route': '/work/feminist-hackerspace-research',
+		'title': 'Feminist Hackerspace Research',
+		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on critical design and feminist hackerspaces.',
+		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
+		'tools': 'Participant observation, semi-structured interviews',
+		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
+		'relatedLinks': [
+			{
+				'from': 'CSCW 2015',
+				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
+			},
+			{
+				'from': 'Critical Design Workshop',
+				'link': 'http://depts.washington.edu/tatlab/criticaldesign/'
+			},
+			{
+				'from': 'Feminist Hackerspace Zine',
+				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
 			}
 		]
 	},
@@ -72,6 +108,15 @@ export const projects = {
 		'images': ['../assets/projects/lunaites/lunaites-1.png'],
 		'link': 'http://rroseu.github.io/lunaites',
 	},
+	'euphonious': {
+		'route': '/work/euphonious',
+		'title': 'Euphonious',
+		'description': 'I don\'t have a music background but wanted to create a way for people like myself to participate in music-making, so I designed euphonious, a music-making app for iOS. Map various built-in sounds to a set of buttons, or record and map your own.',
+		'tools': 'Illustrator, XCode, Objective-C',
+		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
+		'images': ['../assets/projects/euphonious/euphonious-1.png'],
+		'link': '',
+	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
 		'title': 'VidCoach',
@@ -90,51 +135,6 @@ export const projects = {
 			{
 				'from': '2014 International Meeting for Autism Research',
 				'link': 'https://www.researchgate.net/publication/268143717_Evaluation_of_the_Use_of_Mobile_Video_Modeling_for_Job_Interviews'
-			}
-		]
-	},
-	'little-renders': {
-		'route': '/work/little-renders',
-		'title': 'Series: Little Renders',
-		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
-		'images': ['../assets/projects/little-renders/render-01.png'],
-		'link': 'http://rru.tumblr.com',
-		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
-		'relatedLinks': [
-			{
-				'from': 'Instagram',
-				'link': 'http://www.instagram.com/kitty.gif'
-			}
-		]
-	},
-	'euphonious': {
-		'route': '/work/euphonious',
-		'title': 'Euphonious',
-		'description': 'I don\'t have a music background but wanted to create a way for people like myself to participate in music-making, so I designed euphonious, a music-making app for iOS. Map various built-in sounds to a set of buttons, or record and map your own.',
-		'tools': 'Illustrator, XCode, Objective-C',
-		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
-		'images': ['../assets/projects/euphonious/euphonious-1.png'],
-		'link': '',
-	},
-	'feminist-hackerspace-research': {
-		'route': '/work/feminist-hackerspace-research',
-		'title': 'Feminist Hackerspace Research',
-		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on critical design and feminist hackerspaces.',
-		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
-		'tools': 'Participant observation, semi-structured interviews',
-		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
-		'relatedLinks': [
-			{
-				'from': 'CSCW 2015',
-				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
-			},
-			{
-				'from': 'Critical Design Workshop',
-				'link': 'http://depts.washington.edu/tatlab/criticaldesign/'
-			},
-			{
-				'from': 'Feminist Hackerspace Zine',
-				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
 			}
 		]
 	}
