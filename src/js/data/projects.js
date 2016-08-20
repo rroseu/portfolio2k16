@@ -112,10 +112,10 @@ export const projects = {
 	'euphonious': {
 		'route': '/work/euphonious',
 		'title': 'Euphonious',
-		'description': 'test',
-		'tools': 'test',
-		'responsibilities': 'test',
-		'images': ['../assets/projects/chinafile/chinafile_01.png']
+		'description': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
+		'tools': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
+		'responsibilities': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
+		'images': ['../assets/projects/euphonious/euphonious.png']
 	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
