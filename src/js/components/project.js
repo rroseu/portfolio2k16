@@ -113,7 +113,6 @@ export default class Project extends Component {
 		return true;
 	}
 
-
 	renderImages() {
 		if (this.state.currentProject.images) {
 			return (
