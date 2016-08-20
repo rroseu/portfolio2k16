@@ -109,15 +109,6 @@ export const projects = {
 		'images': ['../assets/projects/lunaites/lunaites-2.png'],
 		'link': 'http://rroseu.github.io/lunaites',
 	},
-	'euphonious': {
-		'route': '/work/euphonious',
-		'title': 'Euphonious',
-		'description': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
-		'tools': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
-		'responsibilities': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
-		'images': ['../assets/projects/chinafile/chinafile_04.png'],
-		'relatedLinks': []
-	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
 		'title': 'VidCoach',
