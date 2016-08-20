@@ -109,6 +109,15 @@ export const projects = {
 		'images': ['../assets/projects/lunaites/lunaites-2.png'],
 		'link': 'http://rroseu.github.io/lunaites',
 	},
+	'euphonious': {
+		'route': '/work/euphonious',
+		'title': 'Euphonious',
+		'description': 'I don\'t have a music background but wanted to create a way for people like myself to participate in music-making, so I designed euphonious, a music-making app for iOS. Map various built-in sounds to a set of buttons, or record and map your own.',
+		'tools': 'Illustrator, XCode, Objective-C',
+		'responsibilities': 'Designed and developed Euphonious in collaboration with Aaron Waterhouse.',
+		'images': ['../assets/projects/euphonious/euphonious.png'],
+		'link': '',
+	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
 		'title': 'VidCoach',
