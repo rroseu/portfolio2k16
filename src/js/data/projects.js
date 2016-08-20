@@ -115,7 +115,8 @@ export const projects = {
 		'description': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
 		'tools': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
 		'responsibilities': 'An iOS application to support individuals with Autism Spectrum Disorder (ASD) in retaining valuable life skills.',
-		'images': ['../assets/projects/euphonious/euphonious.png']
+		'images': ['../assets/projects/euphonious/euphonious.png'],
+		'relatedLinks': []
 	},
 	'vidcoach': {
 		'route': '/work/vidcoach',
