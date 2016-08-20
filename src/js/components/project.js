@@ -10,7 +10,8 @@ export default class Project extends Component {
 
 		if (this.props.params.url) {
 			this.state = {
-				currentProject: projects[this.props.params.url]
+				currentProject: projects[this.props.params.url],
+				loadingImages: true
 			}
 		}
 	}
@@ -87,17 +88,55 @@ export default class Project extends Component {
 		}
 	}
 
+	// image rendering -----
+
+	handleImageLoad() {
+		const galleryElement = this.refs.gallery;
+		this.setState({
+			loading: !this.imagesLoaded(galleryElement)
+		});
+	}
+
+	renderImage(url) {
+		return (
+			<img key={url} src={url} onLoad={this.handleImageLoad.bind(this)}/>
+		);
+	}
+
+	imagesLoaded(element) {
+		const imageElements = element.querySelectorAll('img');
+		for (const image of imageElements) {
+			if (!image.complete) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+
 	renderImages() {
 		if (this.state.currentProject.images) {
 			return (
-				_.map(this.state.currentProject.images, (image) => {
-					return (
-						<img key={image} src={image} />
-					);
-				})
-			);
-		}
+				<div className='images-container' ref='gallery'>
+					{ this.state.currentProject.images.map(imageUrl => this.renderImage(imageUrl)) }
+				</div>
+			); 
+		} 
 	}
+
+	// renderImages() {
+	// 	if (this.state.currentProject.images) {
+	// 		return (
+	// 			_.map(this.state.currentProject.images, (image) => {
+	// 				return (
+	// 					<img key={image} src={image} />
+	// 				);
+	// 			})
+	// 		);
+	// 	}
+	// }
+
+	// -----
 
 	renderRelatedLinks() {
 		if (this.state.currentProject.relatedLinks && this.state.currentProject.relatedLinks.length !== 0) {
