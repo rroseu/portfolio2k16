@@ -130,12 +130,12 @@
 
 	img {
 		@include fill-parent;
-		padding-top: 20px;
 		padding-bottom: 20px;
 	}
 
 	@include media($mobile) {
 		@include span-columns(12);
+		padding-top: 20px;
 	}
 
 	@include media($tablet) {

@@ -5,7 +5,7 @@ export const projects = {
 		'description': 'A web-based VR platform for creating and sharing immersive 360° photospheres.',
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I contributed to the front-end development of my team\'s codebase and created fundamental React components for the platform. In addition, I led the initial visual design process and UX research for this internal project. pocktVR is currently in private beta.',
 		'tools': 'HTML (Jade), CSS (Sass), Javascript (React, Node, A-Frame), Sketch 3.',
-		'images': ['../assets/projects/pocktvr/pocktvr-1.png'],
+		'images': ['../assets/projects/pocktvr/pocktvr-1.png', '../assets/projects/pocktvr/pocktvr-2.png'],
 		'link': 'http://pocktvr.io',
 		'relatedLinks': []
 	},
@@ -35,7 +35,7 @@ export const projects = {
 		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
 		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-04.png', '../assets/projects/little-renders/render-05.png'],
 		'link': 'http://rru.tumblr.com',
-		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Sketch 3, Unity',
+		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Photoshop, Sketch 3, Unity',
 		'relatedLinks': [
 			{
 				'from': 'Instagram',
@@ -67,13 +67,13 @@ export const projects = {
 	'feminist-hackerspace-research': {
 		'route': '/work/feminist-hackerspace-research',
 		'title': 'Feminist Hackerspace Research',
-		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture, with a focus on critical design and feminist hackerspaces.',
+		'description': 'As a graduate student researcher in the Tactile & Tactical Lab, I collaborated with Sarah Fox and Professor Daniela Rosner to research the sociocultural aspects of hacker and maker culture with a focus on critical design and feminist hackerspaces.',
 		'responsibilities': 'I interviewed members of several hackerspace communities on the west coast and co-ran a critical design workshop at one feminist hackerspace.',
 		'tools': 'Participant observation, semi-structured interviews',
 		'images': ['../assets/projects/feminist-hackerspaces/feminist-hackerspace-1.png'],
 		'relatedLinks': [
 			{
-				'from': 'CSCW 2015',
+				'from': 'Publication: CSCW 2015',
 				'link': 'http://depts.washington.edu/tatlab/blog/wp-content/uploads/2014/11/2015_CSCW_Fem-Hacking-Final.pdf'
 			},
 			{
@@ -126,15 +126,15 @@ export const projects = {
 		'images': ['../assets/projects/vidcoach/vidcoach-1.jpg'],
 		'relatedLinks': [
 			{
-				'from': 'IDC 2013',
+				'from': 'Publication: IDC 2013',
 				'link': 'http://dl.acm.org/citation.cfm?id=2485870'
 			}, 
 			{	
-				'from': 'Journal of Vocational Rehabilitation',
+				'from': 'Publication: Journal of Vocational Rehabilitation',
 				'link': 'http://content.iospress.com/articles/journal-of-vocational-rehabilitation/jvr775'
 			}, 
 			{
-				'from': '2014 International Meeting for Autism Research',
+				'from': 'Publication: 2014 International Meeting for Autism Research',
 				'link': 'https://www.researchgate.net/publication/268143717_Evaluation_of_the_Use_of_Mobile_Video_Modeling_for_Job_Interviews'
 			}
 		]
