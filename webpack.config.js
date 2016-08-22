@@ -13,7 +13,7 @@ const config = {
 		'webpack-dev-server/client?http://localhost:8080',
 		
 		// for hot style updates
-		'webpack/hot/only-dev-server',
+		// 'webpack/hot/only-dev-server',
 		mainPath
 	],
 	output: {
