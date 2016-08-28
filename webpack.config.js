@@ -7,7 +7,7 @@ const mainPath = path.resolve(__dirname, 'src', 'index.js');
 
 const config = {
 	// make sure errors in the console map to correct file and line number
-	devtool: 'eval',
+	devtool: 'source-map',
 	entry: [
 		// script refreshing browser on non-hot updates
 		// 'webpack-dev-server/client?http://localhost:8080',
