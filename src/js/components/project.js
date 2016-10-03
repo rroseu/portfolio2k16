@@ -22,7 +22,7 @@ export default class Project extends Component {
 				<div className='page header project' id='project'>
 					<h2 className='project-title'>
 						<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
-						{this.state.currentProject.title}
+						Work : {this.state.currentProject.title}
 					</h2>
 					<div className="page header-divider"></div>
 				</div>

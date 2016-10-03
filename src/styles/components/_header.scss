@@ -10,7 +10,7 @@ div.page.header {
 	border-bottom: 1px solid $black;
 	position: fixed;
 	top: 0px;
-	margin-left: -2px;
+
 	padding-bottom: 20px;
 
 	@include media($mobile) {
@@ -19,9 +19,6 @@ div.page.header {
 		padding-top: 20px;
 	}
 
-	@include media($screen) {
-		// padding-top: 40px;
-	}
 
 	@include media($screen-xl) {
 		@include span-columns(12);

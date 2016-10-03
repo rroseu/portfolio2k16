@@ -5,48 +5,76 @@
 
 	.grid-projects-container-inner {
 		position: absolute;
-		// height: 10%;
 		padding-top: 100px;
 		padding-bottom: 100px;
-		// top: 50%;
-		// transform: translateY(-50%);
 
 		p.title-container {
 			padding-top: 12px;
 			padding-bottom: 12px;
 		}
 
-		// @include media($screen) {
-		// 	@include span-columns(10);
-		// 	@include shift(1);
-
-		// 	.grid-item-container {
-		// 		@include span-columns(2);
-		// 		@include omega(2n);
-		// 	}
-		// }
-
 		.hover-content-container {
-			height: 100%;
 			padding: 40px;
 			font-size: 30px;
-			// font-family: $heebo;
-			// letter-spacing: 1.25px;
 			opacity: 0;
 			line-height: 48px;
 			transition: opacity .25s ease-in-out;
 			color: transparent;
+			height: 100%;
 		}
 
 		.hover-content-container:hover {
-			background: $black;
-			opacity: 0.82;
+			background: #47AEFF;
+			opacity: 0.9;
 			color: white;
+		}
+
+		@include media($mobile) {
+			@include span-columns(10 of 12);
+			@include shift(1);
+
+			.grid-item-container {
+				border-top: 1px solid black;
+				margin-top: 20px;
+				margin-bottom: 20px;
+				max-width: 375px;
+
+				.grid-item-container-inner {
+					height: 375px;
+					background-repeat: no-repeat;
+					background-position: center;
+					background-size: cover;
+				}
+			}
+		}
+
+		@include media($tablet) {
+			@include span-columns(10 of 12);
+			@include shift(1);
+
+			.grid-item-container {
+				@include span-columns(6 of 12);
+				max-width: 400px;
+
+				.grid-item-container-inner {
+					height: 400px;
+				}
+			}
+		}
+
+		@include media($screen) {
+			.grid-item-container {
+				max-width: 450px;
+
+				.grid-item-container-inner {
+					height: 450px;
+				}
+			}
 		}
 
 		@include media($screen-xl) {
 			@include span-columns(12);
-			// @include shift(1);
+			@include shift(0);
 
 			.grid-item-container {
 				@include span-columns(4);
@@ -58,7 +86,6 @@
 
 				.grid-item-container-inner {
 					height: 375px;
-					background-size: cover;
 				}
 			}
 		}
