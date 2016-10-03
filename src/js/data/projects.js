@@ -15,7 +15,7 @@ export const projects = {
 		'id': 'kodak-memory-observatory',
 		'route': '/work/kodak-memory-observatory',
 		'title': 'The Memory Observatory',
-		'caption': 'Supporting the launch of the new Kodak Moments mobile app at SXSW 2016.',
+		'caption': 'Supporting the Kodak Moments app launch at SXSW 2016.',
 		'description': 'Junior collaborated with Kodak Alaris and Special Guest to create the Memory Observatory at SXSW 2016. People were able to share and step into a past memory with smells, colors, and custom sounds.',
 		'responsibilities': 'As a Design Technologist Apprentice at Junior, I built two ReactJS apps to support this experience.',
 		'tools': 'HTML, CSS (Sass), Javascript/ES6 (Node, React), Webpack', 
@@ -56,27 +56,11 @@ export const projects = {
 			}
 		]
 	},
-	'little-renders': {
-		'id': 'little-renders',
-		'route': '/work/little-renders',
-		'title': 'Series: Little Renders',
-		'caption': 'An ongoing personal project for learning 3D graphics and animation.',
-		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
-		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-04.png', '../assets/projects/little-renders/render-05.png'],
-		'link': 'http://rru.tumblr.com',
-		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Photoshop, Sketch 3, Unity',
-		'relatedLinks': [
-			{
-				'from': 'Instagram',
-				'link': 'http://www.instagram.com/kitty.gif'
-			}
-		]
-	},
 	'galaxy-visualization': {
 		'id': 'galaxy-vis',
 		'route': '/work/galaxy-visualization',
 		'title': 'Galaxy Audio Visualization',
-		'caption': 'A Processing audio visualization.',
+		'caption': 'Vizualizing audio with Processing.',
 		'description': 'I created this audio visualization for a Coursera course on \'Creative Programming for Digital Media & Mobile Apps.\'',
 		'tools': 'Processing',
 		'video': '<iframe src="https://player.vimeo.com/video/101334922" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
@@ -88,6 +72,23 @@ export const projects = {
 			}
 		]
 	},
+	'little-renders': {
+		'id': 'little-renders',
+		'route': '/work/little-renders',
+		'title': 'Series: Little Renders',
+		'caption': 'An ongoing series in learning 3D graphics and animation.',
+		'description': '\'Little Renders\' is an ongoing personal project for learning 3D graphics and animation.',
+		'images': ['../assets/projects/little-renders/render-02.png', '../assets/projects/little-renders/render-04.png', '../assets/projects/little-renders/render-05.png'],
+		'link': 'http://rru.tumblr.com',
+		'tools': 'Cinema 4D, Processing, openFrameworks, Illustrator, Photoshop, Sketch 3, Unity',
+		'relatedLinks': [
+			{
+				'from': 'Instagram',
+				'link': 'http://www.instagram.com/kitty.gif'
+			}
+		]
+	},
+
 	'feminist-hackerspace-research': {
 		'id': 'feminist-hackerspace-research',
 		'route': '/work/feminist-hackerspace-research',

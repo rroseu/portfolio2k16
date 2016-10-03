@@ -30,13 +30,16 @@
 			height: 100%;
 			padding: 40px;
 			font-size: 30px;
-			line-height: 42px;
+			// font-weight: bold;
+			opacity: 0;
+			line-height: 48px;
+			transition: opacity .25s ease-in-out;
 			color: transparent;
 		}
 
 		.hover-content-container:hover {
-			background: $hover;
-			opacity: 0.8;
+			background: $black;
+			opacity: 0.85;
 			color: white;
 		}
 
