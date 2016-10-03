@@ -6,8 +6,7 @@ export default class About extends Component {
 			<div className='about-container-outer'>
 				<div className='about-container-inner'>
 					<h2>Hi, I'm Rachel.</h2>
-					<p>I'm a developer & designer living in the bay area. My background is in human–computer interaction and qualitative UX research.</p><br />
-					<p>As a mostly self-taught developer, I enjoy experimenting with code and interactive media to imagine new ways of engaging with the world.</p>
+					<p>I'm a front-end developer living in the bay area with a background in human–computer interaction & UX research. I experiment with code and interactive media to imagine new ways of engaging with the world.</p>
 				</div>
 			</div>
 		);

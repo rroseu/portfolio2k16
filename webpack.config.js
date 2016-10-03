@@ -10,10 +10,10 @@ const config = {
 	devtool: 'source-map',
 	entry: [
 		// script refreshing browser on non-hot updates
-		// 'webpack-dev-server/client?http://localhost:8080',
+		'webpack-dev-server/client?http://localhost:8080',
 		
 		// for hot style updates
-		// 'webpack/hot/only-dev-server',
+		'webpack/hot/only-dev-server',
 		mainPath
 	],
 	output: {

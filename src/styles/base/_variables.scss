@@ -1,12 +1,16 @@
 // fonts
 @import url(https://fonts.googleapis.com/css?family=Karla:400,700);
+@import url(https://fonts.googleapis.com/css?family=Heebo:300,400,500,700);
+
 $karla_sans: 'Karla', sans-serif;
+$heebo: 'Heebo', sans-serif;
 
 // colors
 $lightgray: #646065;
 $darkgray: #4a4a4a;
 $black: #000000;
 $white: #ffffff;
+$hover: #190A63;
 $divider-gray: #e7e7e7;
 $brightblue: #03ccff;
 $highlight: $black;

@@ -16,16 +16,6 @@ export default class Project extends Component {
 		}
 	}
 
-
-	// not sure if I want to use this yet
-	// renderBanner() {
-	// 	return (
-	// 		<div className='banner-container'>
-	// 			<img className='banner-image' src={this.state.currentProject.banner} />
-	// 		</div>
-	// 	);
-	// }
-
 	renderHeader() {
 		return (
 			<div className='header-container-outer'>

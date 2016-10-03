@@ -4,46 +4,46 @@
 	position: relative;
 
 	.projects-menu-container-inner {
-	position: absolute;
-	top: 50%;
-	transform : translateY(-50%);
+		position: absolute;
+		top: 50%;
+		transform : translateY(-50%);
 
-	.title-container {
-		border-bottom: 2px solid $divider-gray;
-		span {
-			text-transform: uppercase;
+		.title-container {
+			border-bottom: 2px solid $divider-gray;
+			span {
+				text-transform: uppercase;
+			}
 		}
-	}
 
-	// breakpoints
-	@include media($mobile) {
-		@include span-columns(10 of 12);
-		@include shift(1 of 12);
+		// breakpoints
+		@include media($mobile) {
+			@include span-columns(10 of 12);
+			@include shift(1 of 12);
 
-		ul {		
-			li {
-				font-size: 16px;
-				line-height: 40px;
+			ul {		
+				li {
+					font-size: 16px;
+					line-height: 40px;
+				}
+			}
+		}
+
+		@include media($screen) {
+			@include span-columns(5);
+			@include shift(3.5);
+
+			.title-container:hover {
+				border-bottom: 2px solid $highlight;
+				cursor: pointer;
+			}
+
+			ul {		
+				li {
+					font-size: 18px;
+					line-height: 44px;
+					letter-spacing: 0.25px;
+				}
 			}
 		}
 	}
-
-	@include media($screen) {
-		@include span-columns(5);
-		@include shift(3.5);
-
-		.title-container:hover {
-			border-bottom: 2px solid $highlight;
-			cursor: pointer;
-		}
-
-		ul {		
-			li {
-				font-size: 18px;
-				line-height: 44px;
-				letter-spacing: 0.25px;
-			}
-		}
-	}
-}
 }

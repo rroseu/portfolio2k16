@@ -1,0 +1,87 @@
+.grid-projects-container-outer {
+	@include outer-container;
+	height: 100%;
+	position: relative;
+
+	.grid-projects-container-inner {
+		position: absolute;
+		height: 80%;
+		top: 50%;
+		transform: translateY(-50%);
+
+		p.title-container {
+			padding-top: 12px;
+			padding-bottom: 12px;
+		}
+
+		// @include media($screen) {
+		// 	@include span-columns(10);
+		// 	@include shift(1);
+
+		// 	.grid-item-container {
+		// 		@include span-columns(2);
+		// 		@include omega(2n);
+		// 	}
+		// }
+
+		.hover-content-container {
+			height: 100%;
+			padding: 40px;
+			font-size: 30px;
+			line-height: 42px;
+			color: transparent;
+		}
+
+		.hover-content-container:hover {
+			background: $hover;
+			opacity: 0.8;
+			color: white;
+		}
+
+		@include media($screen-xl) {
+			@include span-columns(12);
+
+			.grid-item-container {
+				@include span-columns(4);
+				@include omega(3n);
+				border-top: 1px solid black;
+				margin-top: 20px;
+				margin-bottom: 20px;
+
+				.grid-item-container-inner {
+					height: 375px;
+					background-size: cover;
+				}
+			}
+		}
+	}
+
+	#little-renders {
+		background-image: url('/assets/projects/little-renders/render_thumb.png');
+	}
+
+	#euphonious {
+		background-image: url('/assets/projects/euphonious/euphonious_thumb.png');
+	}
+
+	#chinafile {
+		background-image: url('/assets/projects/chinafile/chinafile_thumb.png');
+	}
+
+	#pocktvr {
+		background-image: url('/assets/projects/pocktvr/pocktvr_thumb2.png');
+	}
+
+	#galaxy-vis {
+		background-image: url('/assets/projects/galaxy/galaxy_thumb.png');
+	}
+
+	#kodak-memory-observatory {
+		background-image: url('/assets/projects/memory-observatory/memory-observatory_thumb.png');
+	}
+
+	#feminist-hackerspace-research {
+		background-image: url('/assets/projects/feminist-hackerspaces/feminist-hackerspace_thumb.png');	
+	}
+
+}

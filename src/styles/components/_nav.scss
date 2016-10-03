@@ -1,25 +1,16 @@
 .nav-container-outer {
 	@include outer-container;
 	position: relative;
-	z-index: 9999;
-
-	#resume.nav-container-inner {
-
-		@include media($mobile) {
-			border-top: 2px solid $divider-gray;
-		}
-
-		@include media($screen) {
-			border-top: 2px solid $white;
-		}
-	}
 
 	.nav-container-inner {
+		@include outer-container;
+
+		border-top: 1px solid $black;
 		background: $white;
 		position: fixed;
-		border-top: 2px solid $white;
 		padding-top: 20px;
-		height: 60px;
+		padding-bottom: 20px;
+		height: 80px;
 		line-height: 20px;
 
 		.nav-links {
@@ -84,8 +75,6 @@
 
 		@include media($screen) {
 			@include span-columns(12);
-			border-top: none;
-			padding-bottom: 80px;
 		}
 
 		@include media($screen-xl) {
