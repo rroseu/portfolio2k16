@@ -1,3 +1,21 @@
+/**
+ * THIS OMEGA RESET WAS DRIVING ME NUTS
+ * THANK YOU to Josh Fry:
+ * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat
+ */
+
+@mixin omega-reset($nth) {  
+  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+  &:nth-child(#{$nth}+1) { clear: none }
+}
+
+/**
+ *
+ * outer/inner come from work.js
+ *
+ */
+
+
 .grid-projects-container-outer {
 	@include outer-container;
 	height: 100%;
@@ -5,207 +23,137 @@
 
 	.grid-projects-container-inner {
 		position: absolute;
-		// height: 100%;
 		padding-top: 100px;
 		padding-bottom: 100px;
 
-		@include media($screen) {
-			@include span-columns(12);
+		/**
+		 *
+		 * MEDIA QUERIES
+		 *
+		 */
+
+		@include media($mobile) {
+			@include span-columns(10);
+			@include shift(1);
 
 			.grid-item-link {
-				border-top: 1px solid $black;
-				margin-top: 20px;
-				margin-bottom: 20px;
+				@include span-columns(10 of 10);
+			}
+		}
+
+		@include media($tablet) {
+			@include span-columns(10 of 12);
+			@include shift(1);
+
+			.grid-item-link {
+				@include span-columns(5 of 10);
+				@include omega(2n);
+			}
+		}
+
+		@include media($screen-xl) {
+			@include span-columns(12);
+			@include shift(0);
+
+			.grid-item-link {
 				@include span-columns(4);
+				@include omega-reset(2n);
 				@include omega(3n);
-
-				.grid-item-container {
-					p.title-container {
-						padding-top: 12px;
-						padding-bottom: 12px;
-					}
-				}
 			}
+		}
 
-			.grid-item-container-content {
-				position: relative;
-					background-repeat: no-repeat;
-			    background-position: center;
-					background-size: cover;
+		/**
+		 *
+		 * DON NOT TOUCH ANYTHING BELOW THIS LINE
+		 *
+		 */
+
+		.grid-item-link {
+			border-top: 1px solid $black;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.grid-item-container {
+			p.title-container {
+				padding-top: 12px;
+				padding-bottom: 12px;
 			}
+		}
 
-			.grid-item-container-content:after {
-				padding-top: 100%;
-				display: block;
-				content: '';
-			}
 
-			.grid-item-container-hover {
-				position: absolute;
-				top: 0;
-				bottom: 0;
-				right: 0;
-				left: 0;
-				padding: 40px;
-				font-size: 30px;
-				opacity: 0;
-				line-height: 48px;
-				transition: opacity .25s ease-in-out;
-				color: transparent;
-			}
+		.grid-item-container-content {
+			position: relative;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			width: 99%;
+		}
 
-			.grid-item-container-hover:hover {
-				background: #47AEFF;
-				opacity: 0.9;
-				color: white;
-			}
+		.grid-item-container-content:after {
+			padding-top: 99%;
+			display: block;
+			content: '';
+		}
 
+		.grid-item-container-hover {
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			padding: 40px;
+			font-size: 30px;
+			opacity: 0;
+			line-height: 48px;
+			transition: opacity .25s ease-in-out;
+			color: transparent;
+		}
+
+		.grid-item-container-hover:hover {
+			background: #47AEFF;
+			opacity: 0.9;
+			color: white;
 		}
 	}
 }
 
-// .grid-row-items {
-// 	@include span-columns(12);
-// }
+/**
+ *
+ * BACKGROUND IMAGE LINKS
+ *
+ */
 
-// .grid-item-container {
-// 		border: 1px solid orange;
-// 	width: 400px;
-// 	height: 400px;
-// 	border: 1px solid black;
-// }
+#little-renders {
+	background-image: url('/assets/projects/little-renders/render_thumb.png');
+}
 
+#euphonious {
+	background-image: url('/assets/projects/euphonious/euphonious_thumb.png');
+}
 
+#chinafile {
+	background-image: url('/assets/projects/chinafile/chinafile_thumb3.png');
+}
 
+#pocktvr {
+	background-image: url('/assets/projects/pocktvr/pocktvr_thumb2.png');
+}
 
-// .grid-projects-container-outer {
-// 	@include outer-container;
-// 	height: 100%;
-// 	position: relative;
-// }
+#galaxy-vis {
+	background-image: url('/assets/projects/galaxy/galaxy_thumb.png');
+}
 
-// 	.grid-projects-container-inner {
-// 		position: absolute;
-// 		padding-top: 100px;
-// 		padding-bottom: 100px;
+#vidcoach {
+	background-image: url('/assets/projects/vidcoach/vidcoach_thumb.png');
+}
 
-// 		.grid-item-link {
+#kodak-memory-observatory {
+	background-image: url('/assets/projects/memory-observatory/memory-observatory_thumb.png');
+}
 
-// 		}
-
-// 		p.title-container {
-// 			padding-top: 12px;
-// 			padding-bottom: 12px;
-// 		}
-
-// 		.hover-content-container {
-// 			padding: 40px;
-// 			font-size: 30px;
-// 			opacity: 0;
-// 			line-height: 48px;
-// 			transition: opacity .25s ease-in-out;
-// 			color: transparent;
-// 			height: 100%;
-// 		}
-
-// 		.hover-content-container:hover {
-// 			background: #47AEFF;
-// 			opacity: 0.9;
-// 			color: white;
-// 		}
-
-// 		@include media($mobile) {
-// 			@include span-columns(10 of 12);
-// 			@include shift(1);
-
-// 			.grid-item-container {
-// 				border-top: 1px solid black;
-// 				margin-top: 20px;
-// 				margin-bottom: 20px;
-// 				max-width: 375px;
-
-// 				.grid-item-container-inner {
-// 					height: 375px;
-// 					background-repeat: no-repeat;
-// 					background-position: center;
-// 					background-size: cover;
-// 				}
-// 			}
-// 		}
-
-// 		@include media($tablet) {
-// 			@include span-columns(10 of 12);
-// 			@include shift(1);
-
-// 			.grid-item-container {
-// 				@include span-columns(6 of 12);
-// 				max-width: 400px;
-
-// 				.grid-item-container-inner {
-// 					height: 400px;
-// 				}
-// 			}
-// 		}
-
-// 		@include media($screen) {
-// 			.grid-item-container {
-// 				max-width: 450px;
-
-// 				.grid-item-container-inner {
-// 					height: 450px;
-// 				}
-// 			}
-// 		}
-
-// 		@include media($screen-xl) {
-// 			@include span-columns(12);
-// 			@include shift(0);
-
-// 			.grid-item-container {
-// 				@include span-columns(4);
-// 				@include omega(3n);
-// 				max-width: 375px;
-// 				border-top: 1px solid black;
-// 				margin-top: 20px;
-// 				margin-bottom: 20px;				
-
-// 				.grid-item-container-inner {
-// 					height: 375px;
-// 				}
-// 			}
-// 		}
-
-
-	#little-renders {
-		background-image: url('/assets/projects/little-renders/render_thumb.png');
-	}
-
-	#euphonious {
-		background-image: url('/assets/projects/euphonious/euphonious_thumb.png');
-	}
-
-	#chinafile {
-		background-image: url('/assets/projects/chinafile/chinafile_thumb3.png');
-	}
-
-	#pocktvr {
-		background-image: url('/assets/projects/pocktvr/pocktvr_thumb2.png');
-	}
-
-	#galaxy-vis {
-		background-image: url('/assets/projects/galaxy/galaxy_thumb.png');
-	}
-
-	#vidcoach {
-		background-image: url('/assets/projects/vidcoach/vidcoach_thumb.png');
-	}
-
-	#kodak-memory-observatory {
-		background-image: url('/assets/projects/memory-observatory/memory-observatory_thumb.png');
-	}
-
-	#feminist-hackerspace-research {
-		background-image: url('/assets/projects/feminist-hackerspaces/feminist-hackerspace_thumb.png');	
-	}
+#feminist-hackerspace-research {
+	background-image: url('/assets/projects/feminist-hackerspaces/feminist-hackerspace_thumb.png');	
+}
 
 // }

@@ -10,7 +10,6 @@ div.page.header {
 	border-bottom: 1px solid $black;
 	position: fixed;
 	top: 0px;
-
 	padding-bottom: 20px;
 
 	@include media($mobile) {
