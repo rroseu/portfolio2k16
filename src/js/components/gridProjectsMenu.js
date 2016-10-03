@@ -9,11 +9,11 @@ export default class GridProjectsMenu extends Component {
 		return (
 			_.map(projects, (project) => {
 				return (
-					<Link to={`${project.route}`} key={ project.title } className='grid-item-container'>
-						<div>
+					<Link to={`${project.route}`} key={ project.title } className='grid-item-link'>
+						<div className="grid-item-container">
 							<p className="title-container">{ project.title }</p>
-							<div className="grid-item-container-inner" id={ project.id }>
-								<div className="hover-content-container">
+							<div className="grid-item-container-content" id={project.id}>
+								<div className="grid-item-container-hover">
 									{ project.caption }
 								</div>
 							</div>
@@ -23,6 +23,8 @@ export default class GridProjectsMenu extends Component {
 			})
 		);
 	}
+
+
 
 	render() {
 		return (
