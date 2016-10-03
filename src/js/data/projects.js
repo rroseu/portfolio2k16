@@ -72,6 +72,22 @@ export const projects = {
 			}
 		]
 	},
+	'galaxy-visualization': {
+		'id': 'galaxy-vis',
+		'route': '/work/galaxy-visualization',
+		'title': 'Galaxy Audio Visualization',
+		'caption': 'A Processing audio visualization.',
+		'description': 'I created this audio visualization for a Coursera course on \'Creative Programming for Digital Media & Mobile Apps.\'',
+		'tools': 'Processing',
+		'video': '<iframe src="https://player.vimeo.com/video/101334922" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
+		'images': ['../assets/projects/galaxy/galaxy-1.png'],
+		'relatedLinks': [
+			{
+				'from': 'GitHub',
+				'link': 'https://github.com/rroseu/galaxy-audioviz'
+			}
+		]
+	},
 	'feminist-hackerspace-research': {
 		'id': 'feminist-hackerspace-research',
 		'route': '/work/feminist-hackerspace-research',
@@ -93,22 +109,6 @@ export const projects = {
 			{
 				'from': 'Feminist Hackerspace Zine',
 				'link': 'http://depts.washington.edu/tatlab/blog/feministhackerspacezine/'
-			}
-		]
-	},
-	'galaxy-visualization': {
-		'id': 'galaxy-vis',
-		'route': '/work/galaxy-visualization',
-		'title': 'Galaxy Audio Visualization',
-		'caption': 'An audio visualization written in Processing.',
-		'description': 'I created this audio visualization for a Coursera course on \'Creative Programming for Digital Media & Mobile Apps.\'',
-		'tools': 'Processing',
-		'video': '<iframe src="https://player.vimeo.com/video/101334922" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>',
-		'images': ['../assets/projects/galaxy/galaxy-1.png'],
-		'relatedLinks': [
-			{
-				'from': 'GitHub',
-				'link': 'https://github.com/rroseu/galaxy-audioviz'
 			}
 		]
 	},
