@@ -26,7 +26,8 @@ html, body {
 
 		.app-container-inner {
 			height: 100%;
-			overflow: auto;
+			overflow-y: scroll;
+			// right: -17px;
 			-webkit-overflow-scrolling: touch;
 		}
 	}
