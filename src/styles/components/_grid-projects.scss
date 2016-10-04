@@ -35,9 +35,14 @@
 			@include span-columns(10);
 			@include shift(1);
 			padding-left: 10px;
+			padding-right: 10px;
 
 			.grid-item-link {
 				@include span-columns(10 of 10);
+			}
+
+			.grid-item-container-hover:hover {
+				visibility: hidden;
 			}
 		}
 
@@ -48,6 +53,22 @@
 			.grid-item-link {
 				@include span-columns(5 of 10);
 				@include omega(2n);
+			}
+
+			.grid-item-container-hover {
+				line-height: 42px;
+				font-size: 24px;
+			}
+
+			.grid-item-container-hover:hover {
+				visibility: visible;
+			}
+		}
+
+		@include media($screen) {
+			.grid-item-container-hover {
+				line-height: 48px;
+				font-size: 30px;
 			}
 		}
 
@@ -109,9 +130,7 @@
 			right: 0;
 			left: 0;
 			padding: 40px;
-			font-size: 30px;
 			opacity: 0;
-			line-height: 48px;
 			transition: opacity .35s ease-in-out;
 			color: transparent;
 		}
