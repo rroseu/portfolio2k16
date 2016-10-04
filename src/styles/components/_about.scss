@@ -3,18 +3,22 @@
 	@include outer-container;
 	position: relative;
 
-	@include media($mobile) {
-		@include pad(0px 0px 0px 0px);
-	}
-
-	@include media($screen-xl) {
-		@include pad(default 0px default 0px);
-	}
-
 	.about-container-inner {
 		position: absolute;
 		top: 50%;
 		transform: translateY(-50%);
+
+		h2 {
+			font-weight: 400;
+			font-size: 40px;
+			color: $black;
+		}
+
+		/**
+		*
+		* MEDIA QUERIES
+		*
+		*/
 
 		@include media($mobile) {
 			@include span-columns(10 of 12);
@@ -32,20 +36,19 @@
 		}
 
 		@include media($screen) {
-			@include span-columns(5);
-			@include shift(3.5);
+			@include span-columns(8);
+			@include shift(2);
+
+			h2 {
+				@include span-columns(3 of 8);
+			}
 
 			p {
+				@include span-columns(5 of 8);
 				font-size: 18px;
 				line-height: 44px;
 				color: $black;
 			}
-		}
-
-		h2 {
-			font-weight: 400;
-			font-size: 40px;
-			color: $black;
 		}
 	}
 }

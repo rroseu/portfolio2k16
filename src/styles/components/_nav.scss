@@ -82,11 +82,11 @@
 
 	.ul-container {
 		@include media($mobile) {
-			max-width: 350px;
+			max-width: 325px;
 		}
 
 		@include media($tablet) {
-			width: 350px;
+			width: 325px;
 		}
 	}
 

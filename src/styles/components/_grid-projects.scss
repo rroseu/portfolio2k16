@@ -56,8 +56,8 @@
 			}
 
 			.grid-item-container-hover {
-				line-height: 42px;
-				font-size: 24px;
+				line-height: 40px;
+				font-size: 22px;
 			}
 
 			.grid-item-container-hover:hover {
@@ -136,7 +136,7 @@
 		}
 
 		.grid-item-container-hover:hover {
-			background: #47AEFF;
+			background: $hover;
 			opacity: 0.9;
 			color: white;
 		}

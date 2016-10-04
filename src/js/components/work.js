@@ -16,6 +16,7 @@ export default class Work extends Component {
 			<div className='grid-projects-container-outer'>
 				<div className='grid-projects-container-inner'>
 					{this.props.children}
+
 				</div>
 			</div>
 		);
