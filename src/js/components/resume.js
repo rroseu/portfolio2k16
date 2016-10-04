@@ -18,7 +18,7 @@ export default class Resume extends Component {
 	renderEducation() {
 		return (
 			<div className='content'>
-				<h3 className='underline'>Education</h3>
+				<h3>Education</h3>
 				<p className='emphasize'>M.S. Human Centered Design & Engineering</p>
 				<p>University of Washington</p><br/>
 				<p className='emphasize'>Student</p>
@@ -34,7 +34,7 @@ export default class Resume extends Component {
 	renderExperience() {
 		return (
 			<div className='content'>
-				<h3 className='underline'>Experience</h3>
+				<h3>Experience</h3>
 				<p className='emphasize'>Design Technologist Apprentice</p>
 				<p>Junior, San Francisco, CA</p><br/>
 				<p className='emphasize'>Creative Technologist in Residence</p>
@@ -52,35 +52,27 @@ export default class Resume extends Component {
 	renderTechnicalSkills() {
 		return (
 			<div className='content'>
-				<h3 className='underline'>Technical Skills</h3>
-				<p>HTML, CSS (Sass, Bourbon, Neat, Bootstrap), Javascript (JQuery, Node, React, Redux), Git, Webpack. <br/><br/> Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity.</p>
+				<h3>Technical Skills & Design Tools</h3>
+				<p>HTML, CSS (Sass, Bourbon, Neat, Bootstrap), Javascript (JQuery, Node, React, Redux), Git, Webpack. <br/><br/> Java (Android, Processing), basic knowledge of openFrameworks, Arduino, & Unity. <br/><br/>Sketch 3, Illustrator, Photoshop, Balsamiq, Pixate, Cinema 4D.</p>
 			</div>
 		);
 	}
 
-	renderTools() {
-		return (
-			<div className='content-last'>
-				<h3 className='underline'>Design Tools</h3>
-				<p>Sketch 3, Illustrator, Photoshop, Balsamiq, Pixate, Cinema 4D</p>
-			</div>
-		);
-	}	
 
 	render() { 
 		return (	
 			<div className='resume-container-outer'>
 				<div className='resume-container-inner'>
-					{this.renderDownloadButton()}
-					<div className='left'>
-						{this.renderEducation()}
-					</div>
-					<div className='middle'>
-						{this.renderExperience()}
-					</div>
-					<div className='right'>
-						{this.renderTechnicalSkills()}
-						{this.renderTools()}
+					<div className='resume-sections'>
+						<div className='resume-section'>
+							{this.renderEducation()}
+						</div>
+						<div className='resume-section'>
+							{this.renderExperience()}
+						</div>
+						<div className='resume-section'>
+							{this.renderTechnicalSkills()}
+						</div>
 					</div>
 				</div>
 			</div>

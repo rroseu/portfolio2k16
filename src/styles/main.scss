@@ -57,7 +57,7 @@ h2 {
 	}
 	
 	@include media($screen) {
-		border-bottom: 2px solid $divider-gray;
+		border-bottom: 1px solid $black;
 	}
 }
 

@@ -75,21 +75,28 @@
 
 		.grid-item-container {
 			p.title-container {
+				font-size: 16px;
+				font-weight: bold;
 				padding-top: 12px;
 				padding-bottom: 12px;
 			}
 		}
+
+		/**
+		* this did the trick:
+		* http://stackoverflow.com/questions/12121090/responsively-change-div-size-keeping-aspect-ratio
+		*/
+		
 
 		.grid-item-container-content {
 			position: relative;
 			background-repeat: no-repeat;
 			background-position: center;
 			background-size: cover;
-			width: 99%;
 		}
 
 		.grid-item-container-content:after {
-			padding-top: 99%;
+			padding-top: 100%;
 			display: block;
 			content: '';
 		}
@@ -104,7 +111,7 @@
 			font-size: 30px;
 			opacity: 0;
 			line-height: 48px;
-			transition: opacity .25s ease-in-out;
+			transition: opacity .35s ease-in-out;
 			color: transparent;
 		}
 
