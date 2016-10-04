@@ -24,8 +24,6 @@ export default class GridProjectsMenu extends Component {
 		);
 	}
 
-
-
 	render() {
 		return (
 			<div className='grid-row-items'>

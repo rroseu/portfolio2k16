@@ -1,20 +1,19 @@
 /**
- * THIS OMEGA RESET WAS DRIVING ME NUTS
- * THANK YOU to Josh Fry:
- * http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat
- */
+* THIS OMEGA RESET WAS DRIVING ME NUTS
+* THANK YOU to Josh Fry:
+* http://www.joshfry.me/blog/2013/05/13/omega-reset-for-bourbon-neat
+*/
 
 @mixin omega-reset($nth) {  
-  &:nth-child(#{$nth}) { margin-right: flex-gutter(); }
-  &:nth-child(#{$nth}+1) { clear: none }
+	&:nth-child(#{$nth}) { margin-right: flex-gutter(); }
+	&:nth-child(#{$nth}+1) { clear: none }
 }
 
 /**
- *
- * outer/inner come from work.js
- *
- */
-
+*
+* outer/inner come from work.js
+*
+*/
 
 .grid-projects-container-outer {
 	@include outer-container;
@@ -27,10 +26,10 @@
 		padding-bottom: 100px;
 
 		/**
-		 *
-		 * MEDIA QUERIES
-		 *
-		 */
+		*
+		* MEDIA QUERIES
+		*
+		*/
 
 		@include media($mobile) {
 			@include span-columns(10);
@@ -63,10 +62,10 @@
 		}
 
 		/**
-		 *
-		 * DON NOT TOUCH ANYTHING BELOW THIS LINE
-		 *
-		 */
+		*
+		* DO NOT TOUCH ANYTHING BELOW THIS LINE
+		*
+		*/
 
 		.grid-item-link {
 			border-top: 1px solid $black;
@@ -80,7 +79,6 @@
 				padding-bottom: 12px;
 			}
 		}
-
 
 		.grid-item-container-content {
 			position: relative;
@@ -119,41 +117,39 @@
 }
 
 /**
- *
- * BACKGROUND IMAGE LINKS
- *
- */
+*
+* BACKGROUND IMAGE LINKS
+*
+*/
 
-#little-renders {
+.grid-item-container-content#little-renders {
 	background-image: url('/assets/projects/little-renders/render_thumb.png');
 }
 
-#euphonious {
+.grid-item-container-content#euphonious {
 	background-image: url('/assets/projects/euphonious/euphonious_thumb.png');
 }
 
-#chinafile {
+.grid-item-container-content#chinafile {
 	background-image: url('/assets/projects/chinafile/chinafile_thumb3.png');
 }
 
-#pocktvr {
+.grid-item-container-content#pocktvr {
 	background-image: url('/assets/projects/pocktvr/pocktvr_thumb2.png');
 }
 
-#galaxy-vis {
+.grid-item-container-content#galaxy-vis {
 	background-image: url('/assets/projects/galaxy/galaxy_thumb.png');
 }
 
-#vidcoach {
+.grid-item-container-content#vidcoach {
 	background-image: url('/assets/projects/vidcoach/vidcoach_thumb.png');
 }
 
-#kodak-memory-observatory {
+.grid-item-container-content#kodak-memory-observatory {
 	background-image: url('/assets/projects/memory-observatory/memory-observatory_thumb.png');
 }
 
-#feminist-hackerspace-research {
+.grid-item-container-content#feminist-hackerspace-research {
 	background-image: url('/assets/projects/feminist-hackerspaces/feminist-hackerspace_thumb.png');	
 }
-
-// }
