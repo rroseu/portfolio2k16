@@ -34,6 +34,7 @@
 		@include media($mobile) {
 			@include span-columns(10);
 			@include shift(1);
+			padding-left: 10px;
 
 			.grid-item-link {
 				@include span-columns(10 of 10);

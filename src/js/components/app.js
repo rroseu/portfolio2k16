@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import Nav from './nav';
+import { Link } from 'react-router';
 
 export default class App extends Component {
 	renderHeader() {
-		// this seems a bit overcomplicated for what it is trying to accomplish.
-		// but apparently react-router dropped support for named routes
+		// react-router dropped support for named routes
 		// console.log(this.props.location.pathname);
 
 		var headerName = this.props.location.pathname.replace(/^\/|\/$/g, '');
-		var upperCasedHeaderName = headerName.charAt(0).toUpperCase() + headerName.slice(1);
+		// var upperCasedHeaderName = headerName.charAt(0).toUpperCase() + headerName.slice(1);
 
 		return (
 			<div className='header-container-outer'>
 				<div className='page header' id={headerName}>
-					<h2>{ upperCasedHeaderName }</h2>
+					<Link to='/'>
+						<h2>Rachel Rose Ulgado</h2>
+					</Link>
 					<div className="page header-divider"></div>
 				</div>
 			</div>

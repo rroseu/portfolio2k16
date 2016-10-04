@@ -15,9 +15,8 @@ div.page.header {
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		padding-top: 20px;
+		padding-top: 30px;
 	}
-
 
 	@include media($screen-xl) {
 		@include span-columns(12);
@@ -27,11 +26,12 @@ div.page.header {
 	h2 {
 		margin-top: 0px;
 		color: $black;
-		font-weight: bold;
+		font-weight: normal;
+		display: inline-block;
 	}
 
 	.page.header-divider {
-		margin-top: -12px;
+		margin-top: -8px;
 		margin-bottom: 0px;
 		height: 3px;
 		width: 28px;
