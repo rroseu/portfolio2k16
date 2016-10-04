@@ -39,15 +39,25 @@
 			@include span-columns(8);
 			@include shift(2);
 
-			h2 {
-				@include span-columns(3 of 8);
+			.about-right {
+				@include span-columns(5 of 8);
+				padding-left: 20px;
+				
+				p {
+					font-size: 18px;
+					line-height: 48px;
+				}
 			}
 
-			p {
-				@include span-columns(5 of 8);
-				font-size: 18px;
-				line-height: 44px;
-				color: $black;
+			.about-left {
+				text-align: right;
+				padding-top: 48px;
+				@include span-columns(3 of 8);
+
+				h3 {
+					font-size: 18px;
+					font-weight: 400;
+				}
 			}
 		}
 	}
