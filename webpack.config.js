@@ -3,9 +3,6 @@ const path = require('path');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const buildPath = path.resolve(__dirname, 'dist');
 const mainPath = path.resolve(__dirname, 'src', 'index.js');
-const ExtractTextPlugin = require('extract-text-webpack-plugin');
-
-
 
 const config = {
 	// make sure errors in the console map to correct file and line number
@@ -32,7 +29,7 @@ const config = {
 				},
 				{
 					test: /\.scss$/,
-					loader: ExtractTextPlugin.extract('css!sass')
+					loaders: ['style', 'css', 'sass']
 				},
 				{
 					test: /\.(jpe?g|png|gif|svg)$/i,
@@ -53,14 +50,11 @@ const config = {
 		},
 		plugins: [
 		// new webpack.HotModuleReplacementPlugin(),
-			new ExtractTextPlugin('style.css', {
-        allChunks: true
-      }),
-			new webpack.DefinePlugin({
-				'process.env': {
-					'NODE_ENV': JSON.stringify('production')
-				}
-			})
+		new webpack.DefinePlugin({
+			'process.env': {
+				'NODE_ENV': JSON.stringify('production')
+			}
+		})
 		]
 	};
 
