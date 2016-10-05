@@ -42,8 +42,8 @@
 				@include span-columns(10 of 10);
 			}
 
-			.grid-item-container-hover:hover {
-				display: none;
+			.grid-item-container-hover {
+				pointer-events: none;
 			}
 		}
 
@@ -57,13 +57,18 @@
 			}
 
 			.grid-item-container-hover {
+				pointer-events: auto;
 				line-height: 40px;
 				font-size: 22px;
-			}
-
-			.grid-item-container-hover:hover {
-				visibility: visible;
-				display: inline;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				padding: 40px;
+				opacity: 0;
+				transition: opacity .35s ease-in-out;
+				color: transparent;
 			}
 		}
 
@@ -123,18 +128,6 @@
 			padding-top: 100%;
 			display: block;
 			content: '';
-		}
-
-		.grid-item-container-hover {
-			position: absolute;
-			top: 0;
-			bottom: 0;
-			right: 0;
-			left: 0;
-			padding: 40px;
-			opacity: 0;
-			transition: opacity .35s ease-in-out;
-			color: transparent;
 		}
 
 		.grid-item-container-hover:hover {
