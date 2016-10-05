@@ -10,9 +10,9 @@
 			background: $white;
 			border-top: 1px solid $black;
 			position: fixed;
-			padding-top: 20px;
-			padding-bottom: 20px;
-			height: 80px;
+			// padding-top: 20px;
+			// padding-bottom: 20px;
+			height: 60px;
 			line-height: 20px;
 
 			@include media($mobile) {
@@ -27,6 +27,10 @@
 			}
 
 			.nav-links {
+				position: absolute;
+				width: 100%;
+				top: 48%;
+				transform: translateY(-48%);
 				display: flex;
 				flex-direction: row;
 				justify-content: space-between;
