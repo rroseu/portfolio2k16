@@ -7,13 +7,13 @@ const mainPath = path.resolve(__dirname, 'src', 'index.js');
 
 const config = {
 	// make sure errors in the console map to correct file and line number
-	devtool: 'source-map',
+	devtool: 'cheap-module-source-map',
 	entry: [
 		// script refreshing browser on non-hot updates
-		'webpack-dev-server/client?http://localhost:8080',
+		// 'webpack-dev-server/client?http://localhost:8080',
 		
 		// for hot style updates
-		'webpack/hot/only-dev-server',
+		// 'webpack/hot/only-dev-server',
 		mainPath
 	],
 	output: {
@@ -47,7 +47,12 @@ const config = {
 		hot: true
 	},
 	plugins: [
-		new webpack.HotModuleReplacementPlugin(),
+		// new webpack.HotModuleReplacementPlugin(),
+		new webpack.DefinePlugin({
+			'process.env': {
+      	'NODE_ENV': JSON.stringify('production')
+    	}
+		})
 	]
 };
 
