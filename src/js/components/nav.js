@@ -13,8 +13,6 @@ export default class Nav extends Component {
 							<Link to='work' activeClassName='nav-link-active' className='nav-link'>WORK</Link>
 							<li className='nav-divider'></li>
 							<Link to='resume' activeClassName='nav-link-active' className='nav-link'>RESUME</Link>
-							<li className='nav-divider'></li>
-							<Link to='contact' activeClassName='nav-link-active' className='nav-link'>CONTACT</Link>
 						</ul>
 					</div>
 				</div>

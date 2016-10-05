@@ -9,45 +9,15 @@
 	top: 50%;
 	transform: translateY(-50%);
 
-	.contact-title-container {
-		@include span-columns(6 of 6);
-		border-bottom: 2px solid $divider-gray;
+	/**
+	*
+	* MEDIA QUERIES
+	*
+	*/
 
-		.link-container {
-			@include span-columns(5 of 6);
-		}
-
-		a, a:hover, a:visited {
-			color: $darkgray;
-		}
-	}
-
-	.contact-title-container:hover {
-		border-bottom: 2px solid $highlight;
-		cursor: pointer;
-	}
-
-	.icon-container {
-		@include span-columns(1 of 6);
-		height: 40px;
-	}
-
-	.icon {
-		float: right;
-		max-width: 22px;
-		width: 22px;
-		height: 40px;
-	}
-
-	ul {
-		padding: 0;
-		margin: 0;
-	}
-
-	// breakpoints
 	@include media($mobile) {
 		@include span-columns(10 of 12);
-		@include shift(1 of 12);
+		@include shift(1);
 
 		li {
 			list-style-type: none;
@@ -57,15 +27,42 @@
 		}
 	}
 
-	@include media($screen) {
-		@include span-columns(5);
-		@include shift(3.5);
+	@include media($screen-xl) {
+		@include span-columns(12);
+		@include shift(0);
 
-		li {
-			list-style-type: none;
-			color: $lightgray;
-			font-size: 18px;
-			line-height: 44px;
+		.contact-left {
+			@include span-columns(6);
+
+			li {
+				@include span-columns(1 of 6);
+				font-size: 18px;
+				line-height: 44px;
+			}
+
+			.label {
+				font-size: 36px;
+			}
 		}
+
+		.contact-links {
+			@include span-columns(6);
+		}
+	}
+
+	.icon-container {
+
+		height: 40px;
+	}
+
+	.icon {
+		max-width: 22px;
+		width: 22px;
+		height: 40px;
+	}
+
+	ul {
+		padding: 0;
+		margin: 0;
 	}
 }

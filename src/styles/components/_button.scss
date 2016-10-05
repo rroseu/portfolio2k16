@@ -1,36 +1,16 @@
 .button-container-outer {
-	@include span-columns(12);
-	margin-bottom: 20px;
-
-	@include media($mobile) {
-		margin-top: 20px;
+	.button-container {
+		background: white;
+		border: 2px solid $black;
+		height: 44px;
+		text-align: center;
+		font-size: 16px;
+		line-height: 40px;
+		width: 150px;
 	}
 
-	@include media($tablet) {
-		margin-top: 0px;
-	}
-}
-
-.button-container {
-	background: white;
-	border: 2px solid $darkgray;
-	border-radius: 0px;
-	height: 38px;
-	text-align: center;
-
-	.button-text {
-		font-size: 14px;
-		font-weight: bold;
-		line-height: 36px;
-	}
-
-	@include media($mobile) {
-		@include span-columns(12);
-	}
-
-	@include media($tablet) {
-		@include shift(0);
-		width: 120px;
-		margin: 0px;
+	.button-container:hover {
+		background: $black;
+		color: white;
 	}
 }

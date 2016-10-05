@@ -1,158 +1,97 @@
 .project-container-outer {	
 	@include outer-container;
-	min-height: 100%;
-	z-index: -1;
+	height: 100%;
+	position: relative;
 
-	@include media($mobile) {
-		@include pad(80px 0px 40px 0px);
-	}
+	.project-container-inner {
+		position: absolute;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		padding-left: 10px;
+		padding-right: 10px;
 
-	@include media($screen-xl) {
-		@include pad(default 0px default 0px);
-	}
-}
+		/**
+		*
+		* MEDIA QUERIES
+		*
+		*/
+		
+		@include media($mobile) {
+			@include span-columns(10);
+			@include shift(1);
 
-#feminist-hackerspace-research.project-container-inner {
-	@include media($mobile) {
-		@include span-columns(10);
-		@include shift(1);
-		overflow-y: auto;	
-		margin-top: 20px;
-	}
+			.project-info-container {
+				// padding-top: 20px;
+				@include span-columns(12);
+			}
 
-	@include media($tablet) {
-		margin-top: 40px;
-	}
+			.project-images-links-container {
+				@include span-columns(12);
+				padding-top: 20px;
+			}
+		}
 
-	@include media($screen) {
-		margin-top: 60px;
-	}
+		@include media($tablet) {
+			.project-info-container {
+				@include span-columns(4);
+				@include shift(0);
+			}
 
-	@include media($screen-xl) {
-		@include span-columns(12);
-		@include shift(0);
-	}
-}
+			.project-images-links-container {
+				@include span-columns(8);
+				@include shift(0);
+			}
+		}
 
-.banner-container {
-	@include media($mobile) {
-		@include fill-parent;
+		@include media($screen-xl) {
+			@include span-columns(12);
+			@include shift(0);
+		}
 
-		.banner-image {
+		/**
+		*
+		* DO NOT TOUCH ANYTHING BELOW THIS LINE
+		*
+		*/
+		.project-content-container.first {
+			border: none;
+		}
+
+		.project-content-container {
 			padding-top: 20px;
+			padding-bottom: 32px;
+			border-top: 1px solid $black;
+
+			p { 
+				line-height: 32px;
+			}
+
+			.project-title {
+				margin-top: 0px;
+				font-weight: 400;
+				line-height: 48px;
+				color: $black;
+			}
+
+			h2 {
+				margin-top: 0px;
+				font-size: 16px;
+				font-weight: 400;
+				text-transform: uppercase;
+			}
+
+			li {
+				line-height: 28px;
+			}
+		}
+
+		iframe {
 			@include fill-parent;
 		}
-	}
-	
-	@include media($tablet) {
-		display: none;
-	}
-}
 
-.project-container-inner {
-	min-height: 100%;
-	padding-left: 4px;
-	padding-right: 4px;
-
-	@include media($mobile) {
-		@include span-columns(10);
-		@include shift(1);
-		overflow-y: auto;	
-	}
-
-	@include media($tablet) {
-		margin-top: 20px;
-	}
-
-	@include media($screen) {
-		margin-top: 40px;
-	}
-
-	@include media($screen-xl) {
-		@include span-columns(12);
-		@include shift(0);
-		margin-top: 60px;
-	}
-
-	.project-content-container {
-		padding-bottom: 20px;
-		@include media($mobile) {
-			border-bottom: 2px solid $divider-gray;
+		img {
+			@include fill-parent;
+			padding-bottom: 20px;
 		}
-
-		@include media($screen) {
-			border-bottom: 2px solid $white;
-		}
-	}
-
-	h2 {
-		font-size: 18px;
-		font-weight: bold;
-		color: $black;
-
-		@include media($mobile) {
-			padding-bottom: 0px;
-			margin-bottom: 4px;
-		}
-
-		@include media($screen) {
-			padding-bottom: 12px;
-			margin-bottom: 12px;
-		}
-	}
-
-	li {
-		line-height: 28px;
-	}
-}
-
-.project-info-container {
-	min-height: 100%;
-
-	@include media($mobile) {
-		@include span-columns(12);
-	}
-
-	@include media($tablet) {
-		@include span-columns(4);
-		@include shift(0);
-	}
-}
-
-.description-container {
-	@include fill-parent;
-}
-
-.project-images-links-container {
-	iframe {
-		@include fill-parent;
-	}
-
-	img {
-		@include fill-parent;
-		padding-bottom: 20px;
-	}
-
-	@include media($mobile) {
-		@include span-columns(12);
-		padding-top: 20px;
-	}
-
-	@include media($tablet) {
-		@include span-columns(7.5);
-		@include shift(0.5);
-	}
-}
-
-.back {
-	@include media($mobile) {
-		display: none;
-	}
-
-	@include media($tablet) {
-		display: inline;
-		float: left;
-		margin-left: -40px;
-		height: 24px;
 	}
 }

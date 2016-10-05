@@ -9,7 +9,6 @@
 @import 'components/landing';
 @import 'components/resume';
 @import 'components/contact';
-@import 'components/projects';
 @import 'components/project';
 @import 'components/grid-projects';
 
@@ -22,12 +21,10 @@ html, body {
 		height: 100%;
 		font-family: $karla-sans;
 		color: $darkgray;
-		// overflow: hidden;
 
 		.app-container-inner {
 			height: 100%;
 			overflow-y: scroll;
-			// right: -17px;
 			-webkit-overflow-scrolling: touch;
 		}
 	}

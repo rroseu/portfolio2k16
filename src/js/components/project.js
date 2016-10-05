@@ -16,25 +16,12 @@ export default class Project extends Component {
 		}
 	}
 
-	renderHeader() {
-		return (
-			<div className='header-container-outer'>
-				<div className='page header project' id='project'>
-					<h2 className='project-title'>
-						<Link to='/work'><img className='back' src='../../assets/nav/back-arrow.svg' /></Link>
-						Work : {this.state.currentProject.title}
-					</h2>
-					<div className="page header-divider"></div>
-				</div>
-			</div>
-		);
-	}
-
 	renderDescription() {
 		return (
-			<div className='description-container project-content-container'>
-				<h2 className='underline'>About</h2>
+			<div className='description-container project-content-container first'>
+				<h1 className='project-title'>{ this.state.currentProject.title }</h1>
 				<p>{this.state.currentProject.description}</p>
+				{this.renderWebsiteButton()}
 			</div>
 		);
 	}
@@ -43,20 +30,21 @@ export default class Project extends Component {
 		if (this.state.currentProject.responsibilities) {
 			return (
 				<div className='responsibilities-container project-content-container'>
-					<h2 className='underline'>My role</h2>
+					<h2>My role</h2>
 					<p>{this.state.currentProject.responsibilities}</p>
 				</div>
 			);
 		}
 	}
 
-	renderWebsite() {
+	renderWebsiteButton() {
 		if (this.state.currentProject.link) {
 			return (
 				<div className='button-container-outer'>
+					<br/>
 					<a href={this.state.currentProject.link} target='_blank'>
 						<div className='button-container'>
-							<span className='button-text'>View project</span>
+							<span>View project</span>
 						</div>
 					</a>	
 				</div>
@@ -113,25 +101,11 @@ export default class Project extends Component {
 		} 
 	}
 
-	// renderImages() {
-	// 	if (this.state.currentProject.images) {
-	// 		return (
-	// 			_.map(this.state.currentProject.images, (image) => {
-	// 				return (
-	// 					<img key={image} src={image} />
-	// 				);
-	// 			})
-	// 		);
-	// 	}
-	// }
-
-	// -----
-
 	renderRelatedLinks() {
 		if (this.state.currentProject.relatedLinks && this.state.currentProject.relatedLinks.length !== 0) {
 			return (
-				<div className='project-links-container project-content-container-last'>
-					<h2 className='underline'>Related Links</h2>
+				<div className='project-links-container project-content-container'>
+					<h2>Related Links</h2>
 					<ul>
 					{
 						_.map(this.state.currentProject.relatedLinks, (link) => {
@@ -152,7 +126,7 @@ export default class Project extends Component {
 		if (this.state.currentProject.tools) {
 			return (
 				<div className='tools-container project-content-container'>
-					<h2 className='underline'>Tools</h2>
+					<h2>Tools</h2>
 					<p>{this.state.currentProject.tools}</p>
 				</div>
 			);
@@ -161,21 +135,17 @@ export default class Project extends Component {
 
 	render() {
 		return (
-			<div className='app-container-inner'>
-				{this.renderHeader()}	
-				<div className='project-container-outer'>
-					<div className='project-container-inner' id={this.props.params.url}>
-						<div className='project-info-container'>
-							{this.renderWebsite()}
-							{this.renderDescription()}
-							{this.renderResponsibilities()}
-							{this.renderTools()}
-							{this.renderRelatedLinks()}
-						</div>
-						<div className='project-images-links-container'>
-							{this.renderImages()}
-							{this.renderVideo()}
-						</div>
+			<div className='project-container-outer'>
+				<div className='project-container-inner' id={this.props.params.url}>
+					<div className='project-info-container'>
+						{this.renderDescription()}
+						{this.renderResponsibilities()}
+						{this.renderTools()}
+						{this.renderRelatedLinks()}
+					</div>
+					<div className='project-images-links-container'>
+						{this.renderImages()}
+						{this.renderVideo()}
 					</div>
 				</div>
 			</div>

@@ -30,7 +30,8 @@
 			@include shift(1);
 
 			.resume-section {
-				@include span-columns(3.3);
+				@include span-columns(4);
+				@include omega(3n);
 			}
 		}
 
@@ -51,18 +52,22 @@
 
 		.resume-section {
 			margin-top: 20px;
-			margin-bottom: 20px;
 			border-top: 1px solid $black;
 		}
 
+		.content-bullet {
+			padding-top: 16px;
+			padding-bottom: 16px;
+		}
+
 		h3 {
-			padding-bottom: 0px;
 			font-size: 16px;
-			font-weight: bold;
+			font-weight: 400;
+			text-transform: uppercase;
 		}
 
 		p.emphasize {
-			font-size: 16x;
+			font-size: 16px;
 			font-weight: bold;
 		}
 
