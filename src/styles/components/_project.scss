@@ -62,7 +62,7 @@
 			padding-bottom: 32px;
 			border-top: 1px solid $black;
 
-			p { 
+			p, li { 
 				line-height: 32px;
 			}
 
@@ -78,10 +78,6 @@
 				font-size: 16px;
 				font-weight: 400;
 				text-transform: uppercase;
-			}
-
-			li {
-				line-height: 28px;
 			}
 		}
 

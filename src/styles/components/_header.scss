@@ -8,14 +8,13 @@ div.page.header {
 	@include outer-container;
 	background: $white;
 	border-bottom: 1px solid $black;
+	height: 80px;
 	position: fixed;
-	top: 0px;
-	padding-bottom: 20px;
+	top: 0p;
 
 	@include media($mobile) {
 		@include span-columns(10);
 		@include shift(1);
-		padding-top: 30px;
 	}
 
 	@include media($screen-xl) {
@@ -24,6 +23,9 @@ div.page.header {
 	}
 
 	h2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
 		margin-top: 0px;
 		color: $black;
 		font-weight: normal;
@@ -31,10 +33,12 @@ div.page.header {
 	}
 
 	.page.header-divider {
-		margin-top: -8px;
-		margin-bottom: 0px;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		margin-top: 20px;
 		height: 3px;
 		width: 28px;
-		background-color: $highlight;
+		background-color: $black;
 	}
 }
