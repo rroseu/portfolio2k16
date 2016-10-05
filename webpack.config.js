@@ -3,6 +3,8 @@ const path = require('path');
 const nodeModulesPath = path.resolve(__dirname, 'node_modules');
 const buildPath = path.resolve(__dirname, 'dist');
 const mainPath = path.resolve(__dirname, 'src', 'index.js');
+const ExtractTextPlugin = require('extract-text-webpack-plugin');
+
 
 
 const config = {
@@ -30,7 +32,7 @@ const config = {
 				},
 				{
 					test: /\.scss$/,
-					loaders: ['style', 'css', 'sass']
+					loader: ExtractTextPlugin.extract('css!sass')
 				},
 				{
 					test: /\.(jpe?g|png|gif|svg)$/i,
@@ -51,11 +53,14 @@ const config = {
 		},
 		plugins: [
 		// new webpack.HotModuleReplacementPlugin(),
-		new webpack.DefinePlugin({
-			'process.env': {
-				'NODE_ENV': JSON.stringify('production')
-			}
-		})
+			new ExtractTextPlugin('style.css', {
+        allChunks: true
+      }),
+			new webpack.DefinePlugin({
+				'process.env': {
+					'NODE_ENV': JSON.stringify('production')
+				}
+			})
 		]
 	};
 

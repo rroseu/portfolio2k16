@@ -9,7 +9,7 @@ import Project from './js/components/project';
 import Resume from './js/components/resume';
 import Contact from './js/components/contact';
 
-require('./styles/main.scss');
+// require('./styles/main.scss');
 
 ReactDOM.render(
 	<Router history={browserHistory}>
