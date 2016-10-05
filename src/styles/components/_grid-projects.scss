@@ -43,6 +43,7 @@
 			}
 
 			.grid-item-container-hover {
+				visibility: hidden;
 				pointer-events: none;
 			}
 		}
@@ -57,6 +58,7 @@
 			}
 
 			.grid-item-container-hover {
+				visibility: visible;
 				pointer-events: auto;
 				line-height: 40px;
 				font-size: 22px;
