@@ -3,101 +3,105 @@
 	z-index: 9999;
 	position: relative;
 
-	.nav-container-inner {
-		@include outer-container;
-		position: fixed;
-		height: 80px;
+	@include media($mobile) {
 
-		/**
-		*
-		* MEDIA QUERIES
-		*
-		*/
-	
-		@include media($mobile) {
-			@include span-columns(10);
-			@include shift(1);
-			top: 0px;
+		.nav-container-inner {
+			@include outer-container;
+			background: $white;
+			border-top: 1px solid $black;
+			position: fixed;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			height: 80px;
+			line-height: 20px;
 
-			.ul-container {
-				position: absolute;
-				max-width: 325px;
-			}
-		}
-
-		@include media($tablet) {
-			.ul-container {
-				width: 250px;
-				top: 50%;
-				transform: translateY(-50%);
-				right: 0;
-			}
-		}
-
-		@include media($screen-xl) {
-			@include span-columns(12)
-			@include shift(0);
-		}
-
-		/**
-		 *
-		 * DO NOT TOUCH ANYTHING BELOW THIS LINE
-		 *
-		 */
-		
-		.nav-links {
-			display: flex;
-			flex-direction: row;
-			justify-content: space-between;
-			list-style-type: none;
-
-			.nav-divider {
-				font-size: 20px;
+			@include media($mobile) {
+				@include span-columns(10);
+				@include shift(1);
+				bottom: 0px;
 			}
 
-			/* underline styling from http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
-
-			a.nav-link {
-				position: relative;
-				font-size: 14px;
+			@include media($screen-xl) {
+				@include span-columns(12)
+				@include shift(0);
 			}
 
-			a.nav-link:hover {
-				color: $black;
-			}
+			.nav-links {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				list-style-type: none;
 
-			a.nav-link:before, a.nav-link-active:before {
-				content: "";
-				position: absolute;
-				width: 100%;
-				height: 2px;
-				bottom: -3px;
-				left: 0;
-				background: $highlight;
-				visibility: hidden;
-				-webkit-transform: scaleX(0);
-				transform: scaleX(0);
-				-webkit-transition: all 0.2s ease-in-out 0s;
-				transition: all 0.2s ease-in-out 0s;
-			}
-
-			a.nav-link:hover:before {
-				@include media($mobile) {
-					visibility: none;
+				.nav-divider {
+					font-size: 20px;
 				}
 
-				@include media($screen) {
+				/* underline styling from http://tobiasahlin.com/blog/css-trick-animating-link-underlines/ */
+				a.nav-link {
+					position: relative;
+					font-size: 14px;
+				}
+
+				a.nav-link:hover {
+					@include media($tablet){
+						color: $highlight;
+					}
+				}
+
+				a.nav-link:before, a.nav-link-active:before {
+					@include media($mobile) {
+						content: "";
+						position: absolute;
+						width: 100%;
+						height: 2px;
+						bottom: -3px;
+						left: 0;
+						background: $highlight;
+						visibility: hidden;
+						-webkit-transform: scaleX(0);
+						transform: scaleX(0);
+						-webkit-transition: all 0.2s ease-in-out 0s;
+						transition: all 0.2s ease-in-out 0s;
+					}
+
+					@include media($tablet) {
+						background: transparent;
+					}
+				}
+
+				a.nav-link:hover:before {
+					@include media($mobile) {
+						visibility: hidden;
+					}
+
+					@include media($screen) {
+						visibility: visible;
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
+					}
+				}
+
+				a.nav-link-active:before {
 					visibility: visible;
 					-webkit-transform: scaleX(1);
 					transform: scaleX(1);
 				}
 			}
 
-			a.nav-link-active:before {
-				visibility: visible;
-				-webkit-transform: scaleX(1);
-				transform: scaleX(1);
+			.ul-container {
+				@include media($mobile) {
+					max-width: 325px;
+				}
+
+				@include media($tablet) {
+					width: 250px;
+				}
 			}
+
 		}
+	}
+
+	@include media($tablet) {
+		visibility: hidden;
 	}
 }
