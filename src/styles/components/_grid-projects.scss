@@ -43,7 +43,7 @@
 			}
 
 			.grid-item-container-hover:hover {
-				visibility: hidden;
+				display: none;
 			}
 		}
 
@@ -63,6 +63,7 @@
 
 			.grid-item-container-hover:hover {
 				visibility: visible;
+				display: inline;
 			}
 		}
 
