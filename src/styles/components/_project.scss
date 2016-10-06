@@ -22,6 +22,10 @@
 
 			.project-info-container {
 				@include span-columns(12);
+
+				.description-container {
+					padding-top: 0px;
+				}
 			}
 
 			.project-images-links-container {

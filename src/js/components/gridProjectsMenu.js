@@ -28,6 +28,7 @@ export default class GridProjectsMenu extends Component {
 		return (
 			<div className='grid-projects-container-outer'>
 				<div className='grid-projects-container-inner'>
+					<h2 className='grid-projects-label'>Work</h2>
 					<div className='grid-row-items'>
 						{ this.renderGridItems() }
 					</div>

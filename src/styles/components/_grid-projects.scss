@@ -33,11 +33,30 @@
 
 			.grid-item-link {
 				@include span-columns(10 of 10);
+				margin-top: 16px;
+				margin-bottom: 16px;
+				padding-bottom: 40px;
 			}
 
 			.grid-item-container-hover {
 				visibility: hidden;
 				pointer-events: none;
+			}
+
+			.grid-projects-label {
+				font-weight: 400;
+			}
+
+			.grid-item-container {
+				p.title-container {
+					font-size: 16px;
+					padding-bottom: 16px;
+					border-bottom: 1px solid $black;
+				}
+
+				.grid-item-container-content {
+					margin-top: 28px;
+				}
 			}
 		}
 
@@ -45,9 +64,27 @@
 			@include span-columns(10 of 12);
 			@include shift(1);
 
+			.grid-projects-label {
+				display: none;
+			}
+
 			.grid-item-link {
 				@include span-columns(5 of 10);
 				@include omega(2n);
+				border-top: 1px solid $black;
+				padding-bottom: 0px;
+			}
+
+			.grid-item-container {
+				p.title-container {
+					padding-top: 16px;
+					padding-bottom: 16px;
+					border-bottom: none;
+				}
+
+				.grid-item-container-content {
+					margin-top: 0px;
+				}
 			}
 
 			.grid-item-container-hover {
@@ -91,20 +128,6 @@
 		*
 		*/
 
-		.grid-item-link {
-			border-top: 1px solid $black;
-			margin-top: 20px;
-			margin-bottom: 20px;
-		}
-
-		.grid-item-container {
-			p.title-container {
-				font-size: 16px;
-				// font-weight: bold;
-				padding-top: 12px;
-				padding-bottom: 12px;
-			}
-		}
 
 		/**
 		* this did the trick:
