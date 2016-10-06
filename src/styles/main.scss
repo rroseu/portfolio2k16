@@ -2,75 +2,41 @@
 @import 'layout/grid-settings';
 @import 'mixins/neat/neat';
 @import 'base/variables';
-@import 'components/nav';
-@import 'components/header';
-@import 'components/button';
-@import 'components/about';
-@import 'components/landing';
-@import 'components/resume';
-@import 'components/contact';
-@import 'components/project';
-@import 'components/grid-projects';
+@import 'components/index';
 
-html, body {
+html {
+	overflow-y: scroll;
 	height: 100%;
-	min-height: 100%;
+}	
+
+::-webkit-scrollbar {
+	width: 0px;
+	background: transparent;
+}
+
+body {
 	margin: 0;
+}
 
-	#app {
-		height: 100%;
-		font-family: $karla-sans;
+#app {
+	font-family: $karla-sans;
+	color: $darkgray;
+
+	a, a:visited {
 		color: $darkgray;
+		text-decoration: none;
+	}
 
-		.app-container-inner {
-			height: 100%;
-			overflow-y: scroll;
-			-webkit-overflow-scrolling: touch;
+	ul{
+		padding: 0;
+		margin: 0; 
+
+		li {
+			list-style-type: none;
 		}
 	}
-}
 
-a {
-	text-decoration: none;
-	color: $darkgray;
-}
-
-a:visited {
-	color: $darkgray;
-}
-
-h2 {
-	line-height: 24px;
-	font-weight: 400;
-
-	@include media($mobile) {
-		font-size: 20px;
+	p {
+		margin: 0px;
 	}
-}
-
-.underline {
-	@include media($mobile) {
-		border-bottom: none;
-	}
-	
-	@include media($screen) {
-		border-bottom: 1px solid $black;
-	}
-}
-
-ul{
-	padding: 0;
-	margin: 0; 
-
-	li {
-		list-style-type: none;
-		color: $lightgray;
-	}
-}
-
-p {
-	line-height: 28px;
-	font-size: 16px;
-	color: $darkgray;
-	margin: 0px;
 }

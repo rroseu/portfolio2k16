@@ -4,11 +4,11 @@
 $column: 60px; 
 $gutter: 44px;
 $grid-columns: 12;
-$max-width: 1200px;
+$max-width: 1280px;
 // $visual-grid: true;
 
 // breakpoints
 $mobile: new-breakpoint(min-width 320px);
 $tablet: new-breakpoint(min-width 750px);
-$screen: new-breakpoint(min-width 1200px);
+$screen: new-breakpoint(min-width 1280px);
 $screen-xl: new-breakpoint(min-width 1300px);

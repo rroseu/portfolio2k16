@@ -20,7 +20,6 @@ ReactDOM.render(
 			<Route path='/work/:url' component={Project} />
 			<Route path='resume' component={Resume} />
 			<Route path='contact' component={Contact} /> 
-			
 		</Route>
 	</Router>,
 	document.getElementById('app')
