@@ -35,16 +35,12 @@
 				@include span-columns(10 of 10);
 				margin-top: 16px;
 				margin-bottom: 16px;
-				padding-bottom: 40px;
+				padding-bottom: 20px;
 			}
 
 			.grid-item-container-hover {
 				visibility: hidden;
 				pointer-events: none;
-			}
-
-			.grid-projects-label {
-				font-weight: 400;
 			}
 
 			.grid-item-container {
@@ -63,10 +59,6 @@
 		@include media($tablet) {
 			@include span-columns(10 of 12);
 			@include shift(1);
-
-			.grid-projects-label {
-				display: none;
-			}
 
 			.grid-item-link {
 				@include span-columns(5 of 10);

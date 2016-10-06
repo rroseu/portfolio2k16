@@ -10,9 +10,9 @@ export default class GridProjectsMenu extends Component {
 			_.map(projects, (project) => {
 				return (
 					<Link to={`${project.route}`} key={ project.title } className='grid-item-link'>
-						<div className="grid-item-container">
-							<p className="title-container">{ project.title.toUpperCase() }</p>
-							<div className="grid-item-container-content" id={project.id}>
+						<div className='grid-item-container'>
+							<p className='title-container'>{ project.title.toUpperCase() }</p>
+							<div className='grid-item-container-content' id={project.id}>
 								<div className="grid-item-container-hover">
 									{ project.caption }
 								</div>
@@ -28,7 +28,6 @@ export default class GridProjectsMenu extends Component {
 		return (
 			<div className='grid-projects-container-outer'>
 				<div className='grid-projects-container-inner'>
-					<h2 className='grid-projects-label'>Work</h2>
 					<div className='grid-row-items'>
 						{ this.renderGridItems() }
 					</div>
