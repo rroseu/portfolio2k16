@@ -15,9 +15,9 @@ export default class App extends Component {
 					</div>
 					<div className='header-right'>
 						<ul className='nav-links'>
-							<Link to='about' activeClassName='nav-link-active' className='nav-link'>ABOUT</Link>
-							<Link to='work' activeClassName='nav-link-active' className='nav-link'>WORK</Link>
-							<Link to='resume' activeClassName='nav-link-active' className='nav-link'>RESUME</Link>
+							<Link to='/about' activeClassName='nav-link-active' className='nav-link'>ABOUT</Link>
+							<Link to='/work' activeClassName='nav-link-active' className='nav-link'>WORK</Link>
+							<Link to='/resume' activeClassName='nav-link-active' className='nav-link'>RESUME</Link>
 						</ul>
 					</div>
 				</div>
