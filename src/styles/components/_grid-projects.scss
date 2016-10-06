@@ -12,10 +12,9 @@
 
 .grid-projects-container-outer {
 	@include outer-container;
-	height: 100%;
-	position: relative;
 
 	.grid-projects-container-inner {
+		@include outer-container;
 		position: absolute;
 		padding-top: 100px;
 		padding-bottom: 100px;
@@ -29,8 +28,6 @@
 		@include media($mobile) {
 			@include span-columns(10);
 			@include shift(1);
-			padding-left: 10px;
-			padding-right: 10px;
 
 			.grid-item-link {
 				@include span-columns(10 of 10);
@@ -69,6 +66,7 @@
 		}
 
 		@include media($screen) {
+			border: 1px solid blue;
 			.grid-item-container-hover {
 				line-height: 48px;
 				font-size: 30px;

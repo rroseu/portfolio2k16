@@ -1,20 +1,12 @@
 .about-container-outer {
-	height: 100%;
 	@include outer-container;
-	position: relative;
 
 	.about-container-inner {
+		@include outer-container;
 		position: absolute;
+		// border: 1px solid blue;
 		padding-top: 100px;
 		padding-bottom: 100px;
-		padding-left: 10px;
-		padding-right: 10px;
-
-		h2 {
-			font-weight: 400;
-			font-size: 40px;
-			color: $black;
-		}
 
 		/**
 		*
@@ -55,29 +47,37 @@
 		}
 
 		@include media($tablet) {
-			@include span-columns(10 of 12);
-			@include shift(1);
 			top: 50%;
 			transform: translateY(-50%);
-		}
-
-		@include media($screen) {
 			@include span-columns(10);
 			@include shift(1);
 
-			.about-right {
-				@include span-columns(6 of 10);
-			}
-
 			.about-left {
-				text-align: right;
-				margin-top: -12px;
-				@include span-columns(4 of 10);
-
 				h3 {
 					font-size: 18px;
 				}
 			}
+		}
+
+		@include media($screen-xl) {
+			@include span-columns(12);
+			@include shift(0);
+
+			.about-left {
+				text-align: right;
+				margin-top: -12px;
+				@include span-columns(3.5 of 8);
+			}
+
+			.about-right {
+				@include span-columns(3.5 of 8);
+			}
+		}
+
+		h2 {
+			font-weight: 400;
+			font-size: 40px;
+			color: $black;
 		}
 	}
 }

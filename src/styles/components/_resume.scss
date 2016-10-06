@@ -17,8 +17,6 @@
 		@include media($mobile) {
 			@include span-columns(10);
 			@include shift(1);
-			padding-left: 10px;
-			padding-right: 10px;
 
 			.resume-section {
 				@include span-columns(12 of 12);
@@ -66,8 +64,12 @@
 			text-transform: uppercase;
 		}
 
-		p.emphasize {
+		p {
 			font-size: 16px;
+			line-height: 28px;
+		}
+
+		p.emphasize {
 			font-weight: bold;
 		}
 
