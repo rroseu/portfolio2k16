@@ -20,6 +20,10 @@
 			@include span-columns(10);
 			@include shift(1);
 
+			p {
+				font-size: 14px;
+			}
+
 			.project-info-container {
 				@include span-columns(12);
 
@@ -35,6 +39,10 @@
 		}
 
 		@include media($tablet) {
+			p {
+				font-size: 16px;
+			}
+
 			.project-info-container {
 				@include span-columns(4);
 				@include shift(0);
@@ -62,7 +70,7 @@
 		}
 
 		.project-content-container {
-			padding-top: 20px;
+			padding-top: 16px;
 			padding-bottom: 32px;
 			border-top: 1px solid $black;
 
