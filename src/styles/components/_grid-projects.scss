@@ -10,12 +10,6 @@
 	&:nth-child(#{$nth}+1) { clear: none }
 }
 
-/**
-*
-* outer/inner come from work.js
-*
-*/
-
 .grid-projects-container-outer {
 	@include outer-container;
 	height: 100%;
