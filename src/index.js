@@ -4,6 +4,7 @@ import { IndexRedirect, Router, Route, IndexRoute, browserHistory } from 'react-
 import App from './js/components/app';
 import Landing from './js/components/landing';
 import About from './js/components/about';
+import Work from './js/components/work';
 import GridProjectsMenu from './js/components/gridProjectsMenu';
 import Project from './js/components/project';
 import Resume from './js/components/resume';
@@ -14,10 +15,12 @@ require('./styles/main.scss');
 ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path='/' component={App}>
-			<IndexRedirect to='/work' />
+			<IndexRedirect to='work' />
 			<Route path='about' component={About} />
-			<Route path='work' component={GridProjectsMenu} />
-			<Route path='/work/:url' component={Project} />
+			<Route path='work' component={Work}>
+				<IndexRoute component={GridProjectsMenu} />
+				<Route path=':url' component={Project} />
+			</Route>
 			<Route path='resume' component={Resume} />
 			<Route path='contact' component={Contact} /> 
 		</Route>
